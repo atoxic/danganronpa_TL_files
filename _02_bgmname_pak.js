@@ -1,0 +1,45 @@
+function _02_bgmname_pak()
+{
+	var p = new BinPAK(2, true, false);
+	p.add("DANGANRONPA");
+	p.add("Dangan Ronpa!");
+	p.add("Beautiful Dead");
+	p.add("Welcome to Despair Academy");
+	p.add("Beautiful Morning");
+	p.add("Live to Kill");
+	p.add("Weekly Shounen Despair Magazine");
+	p.add("Despair Disorder");
+	p.add("Despair Syndrome");
+	p.add("A Desire for Execution");
+	p.add("A Desire for Execution (No Intro)");
+	p.add("All All Apologies");
+	p.add("Beautiful Days");
+	p.add("Junk Food for the Scampering Youth");
+	p.add("New World Order");
+	p.add("Mr. Monokuma's Extracurricular Lesson");
+	p.add("BOX 15");
+	p.add("BOX 16");
+	p.add("DISTRUST");
+	p.add("Mr. Monokuma's Lesson");
+	p.add("Underground Trial");
+	p.add("Class Trial (Dawn Edition)");
+	p.add("Class Trial (Turbulent Edition)");
+	p.add("Class Trial (Solar Edition)");
+	p.add("Discussion -BREAK-");
+	p.add("Discussion -HEAT UP-");
+	p.add("Discussion -HOPE VS DESPAIR-");
+	p.add("Epiphanagram");
+	p.add("Climax Logic");
+	p.add("Climax Replay");
+	p.add("M.T.B.");
+	p.add("SUPER M.T.B.");
+	p.add("SUPER FINAL M.T.B.");
+	p.add("Goodbye, Despair Academy");
+	p.add("Rebuild");
+	p.add("???");
+	p.add("※");
+	p.add("※");
+	p.add("※");
+	p.add("???");
+	return(p);
+}

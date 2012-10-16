@@ -1,0 +1,48 @@
+function eboot()
+{
+	var p = new BinPAK(4, true, true);
+	p.add("Dangan Ronpa: The Academy of\nHope and Students of Despair");
+	p.add("Dangan Ronpa: The Academy of\nHope and Students of Despair");
+	p.add("Save Data");
+	p.add("New Save Data");
+	p.add("Not enough free space.\nYou need %dKB or more free\nspace to save your game.");
+	p.add("Save canceled.");
+	p.add("Failed to save.\n(Debug: Error 0x%x)");
+	p.add("Load canceled.");
+	p.add("No Memory Stick inserted.\nYou need %dKB or more free\nspace to save your game.");
+	p.add("Failed to load save data.\n(Debug: Error 0x%x)");
+	p.add("No save data.");
+	p.add("No Memory Stick inserted.");
+	p.add("Continue saving?");
+	p.add("Erase save data?");
+	p.add("%s　は\n既にインストールされています。\n\nインストールデータを削除して、再インストールしますか？");
+	p.add("%s　の\nインストールデータが破損しています。\n\nインストールデータを削除して、再インストールしますか？");
+	p.add("メモリースティック™のアクセスに失敗したため、\nUMD®からゲームデータを読み込みます。\n\nインストールデータからゲームデータを読み込むには、「インストール機能」を「有効」にしてください。");
+	p.add("インストールデータが破損しているため、\nUMD®からゲームデータを読み込みます。\n\nインストールデータからゲームデータを読み込むには、インストールデータを再インストールしてください。");
+	p.add("インストールを中断しました。");
+	p.add("Erase save data?");
+	p.add("メモリースティック™ が差さっていません。\n\nインストールをするメモリースティック™ を\n差してから INSTALL DATA を選択してください。");
+	p.add("Chapter %02d");
+	p.add("Prologue");
+	p.add("Epilogue");
+	p.add("End");
+	p.add("School Life");
+	p.add("(Ab)normal Days");
+	p.add("(Ab)normal Days: Free Time");
+	p.add("Abnormal Days");
+	p.add("Abnormal Days: Investigation");
+	p.add("After Trial");
+	p.add("Save Point");
+	p.add("Class Trial");
+	p.add("Class Trial: Briefing");
+	p.add("Class Trial: Recess");
+	p.add("Day");
+	p.add("Night");
+	p.add("Morning");
+	p.add("Midnight");
+	p.add("Unknown Time");
+	p.add("Phase %02d");
+	p.add("%d Monokuma medals");
+	p.add("Saved %d times");
+	return(p);
+}

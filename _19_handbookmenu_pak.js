@@ -1,0 +1,41 @@
+function _19_handbookmenu_pak()
+{
+	var p = new BinPAK(2, true, false);
+	p.add("Map");
+	p.add("Ammunition");
+	p.add("Presents");
+	p.add("Contacts");
+	p.add("School Rules");
+	p.add("System");
+	p.add("Save");
+	p.add("Load");
+	p.add("Log");
+	p.add("Options");
+	p.add("BGM Volume");
+	p.add("SFX Volume");
+	p.add("Voice Volume");
+	p.add("Install Data?");
+	p.add("Reset");
+	p.add("Yes");
+	p.add("No");
+	p.add("Reset");
+	p.add("Name");
+	p.add("Height");
+	p.add("Weight");
+	p.add("Bust Size");
+	p.add("Special Note");
+	p.add("Information");
+	p.add("Skills Received");
+	p.add("Choose Ammo");
+	p.add("View Ammo");
+	p.add("Choose Present");
+	p.add("View Present");
+	p.add("Name");
+	p.add("Height");
+	p.add("Weight");
+	p.add("Bust Size");
+	p.add("Special Note");
+	p.add("Information");
+	p.add("Skills Received");
+	return(p);
+}
