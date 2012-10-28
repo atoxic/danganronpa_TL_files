@@ -624,7 +624,7 @@ function e00_001_000_lin()
 
 	// Line 54: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>\"Why is a normal student like me among this\n'super freshman class'?\"\n<CLT>");    // "<CLT 4>そんな“超高校級”が揃うメンバーの中に、\nどうして普通の高校生のボクが選ばれたのかって事だ。\n<CLT>"
+	s.showLine("<CLT 4>\"Why is a normal student like you among this\n'super freshman class'?\"\n<CLT>");    // "<CLT 4>そんな“超高校級”が揃うメンバーの中に、\nどうして普通の高校生のボクが選ばれたのかって事だ。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();

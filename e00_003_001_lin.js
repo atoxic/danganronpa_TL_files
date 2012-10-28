@@ -56,7 +56,7 @@ function e00_003_001_lin()
 	// Line 4: "Makoto Naegi"
 	s.op(0x25, [0x00, 0x00]);
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("Anyways... time to go to the entrance hall...\n");    // "とりあえず…玄関ホールに行こう…\n"
+	s.showLine("Anyway... time to go to the entrance hall...\n");    // "とりあえず…玄関ホールに行こう…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 

@@ -371,7 +371,7 @@ function enter_entrance_hall(s)
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("Naegi, how outrageous of you to be late!!\nYou were instructed to be here at 8!\n");    // "苗木くんッ！　遅刻とはけしからんじゃないか！！\n８時集合と知らされてあったはずだろう！\n"
+	s.showLine("Naegi, how outrageous of you to be late!\nYou were instructed to be here at 8!\n");    // "苗木くんッ！　遅刻とはけしからんじゃないか！！\n８時集合と知らされてあったはずだろう！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -399,7 +399,7 @@ function enter_entrance_hall(s)
 	s.playVoice("Aoi Asahina", 99, 39);
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("Anyways, let's introduce ourselves\nto our late classmate!\n");    // "それより、改めて自己紹介しない！？\n遅れてきたクラスメイトくんの為にもさ！\n"
+	s.showLine("Anyway, let's introduce ourselves\nto our late classmate!\n");    // "それより、改めて自己紹介しない！？\n遅れてきたクラスメイトくんの為にもさ！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -408,7 +408,7 @@ function enter_entrance_hall(s)
 	s.showSprite(0, "Mondo Oowada", 2, 1, 0);
 	s.setSpeaker("???");
 	s.playVoice("Mondo Oowada", 99, 18);
-	s.showLine("...Self-introductions?\nLike hell we have time for that!!\n");    // "…自己紹介だぁ？\nんな事やってる場合じゃねーだろ！！\n"
+	s.showLine("...Self-introductions?\nLike hell we have time for that!\n");    // "…自己紹介だぁ？\nんな事やってる場合じゃねーだろ！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -570,7 +570,7 @@ function self_intro_ishimaru(s)
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
 	s.playVoice("Kiyotaka Ishimaru", 99, 1);
-	s.showLine("I'm Kiyotaka Ishimaru! My motto is \"honest\nwork\"! Let's support each other in learning!!\n");    // "僕の名前は石丸清多夏だ！　座右の銘は質実剛健！\nお互い、学業に切磋琢磨して頑張ろうではないか！！\n"
+	s.showLine("I'm Kiyotaka Ishimaru! My motto is \"honest\nwork\"! Let's support each other in learning!\n");    // "僕の名前は石丸清多夏だ！　座右の銘は質実剛健！\nお互い、学業に切磋琢磨して頑張ろうではないか！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -654,7 +654,7 @@ function self_intro_ishimaru(s)
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("And you should work hard to grow everyday\nso you can fulfill your namesake!!\n");    // "そして、君もその名前に負けぬよう、\n日々精進したまえよッ！！\n"
+	s.showLine("And you should work hard to grow everyday\nso you can fulfill your namesake!\n");    // "そして、君もその名前に負けぬよう、\n日々精進したまえよッ！！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -877,7 +877,7 @@ function self_intro_reon(s)
 	s.op(0x22, [0x00, 0x01, 0x18]);
 	s.op(0x25, [0x01, 0x01]);
 	s.playVoice("Reon Kuwata", 99, 14);
-	s.showLine("Woah!! You saw pics of me playing baseball!?\nNo way! Those lame shots of me!?\n");    // "うへぇー！！　オレの野球してる写真見ちゃった！？\nマジで？　あのダサいの見られちゃったのぉ！？\n"
+	s.showLine("Woah! You saw pics of me playing baseball!?\nNo way! Those lame shots of me!?\n");    // "うへぇー！！　オレの野球してる写真見ちゃった！？\nマジで？　あのダサいの見られちゃったのぉ！？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -942,7 +942,7 @@ function self_intro_reon(s)
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("So I'm quitting baseball now that I got in!!\nI have another dream for my future!\n");    // "つー訳で、この入学を機に野球はやめっから！！\nオレには将来の夢もあるんでッ！\n"
+	s.showLine("So I'm quitting baseball now that I got in!\nI have another dream for my future!\n");    // "つー訳で、この入学を機に野球はやめっから！！\nオレには将来の夢もあるんでッ！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -967,13 +967,13 @@ function self_intro_reon(s)
 	// Line 66: "Reon Kuwata"
 	s.showSprite(0, "Reon Kuwata", 2, 1, 2);
 	s.playVoice("Reon Kuwata", 99, 5);
-	s.showLine("I'm the vocalist,\nso I just gotta find members and a songwriter!!\n");    // "オレはボーカルだから、\n後は演奏するヤツと曲作るヤツいりゃ最強っしょ！！\n"	// TODO: replace members?
+	s.showLine("I'm the vocalist,\nso I just gotta find members and a songwriter!\n");    // "オレはボーカルだから、\n後は演奏するヤツと曲作るヤツいりゃ最強っしょ！！\n"	// TODO: replace members?
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 67: "Reon Kuwata"
-	var lines_reon = ["Sprinting towards my dream makes me feel\nlike this is the coolest that I've ever been!!\n",
+	var lines_reon = ["Sprinting towards my dream makes me feel\nlike this is the coolest that I've ever been!\n",
 						"<CLT 4>I can't let any baseball fans hear him say that...\n<CLT>"];
 	s.showSprite(0, "Reon Kuwata", 11, 1, 2);
 	s.playVoice("Reon Kuwata", 99, 13);
@@ -1325,7 +1325,7 @@ function self_intro_maizono(s)
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Anyways... her skin is like a doll's...\nthe more I look at her, the prettier she looks...\n<CLT>");    // "<CLT 4>それにしても…見れば見るほどキレイだな…\n肌なんて、まるでお人形みたいだし…\n<CLT>"
+	s.showLine("<CLT 4>Anyway... her skin is like a doll's...\nthe more I look at her, the prettier she looks...\n<CLT>");    // "<CLT 4>それにしても…見れば見るほどキレイだな…\n肌なんて、まるでお人形みたいだし…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1427,7 +1427,7 @@ function self_intro_maizono(s)
 	s.setSpeaker("Kiyotaka Ishimaru");
 	s.op(0x2A, [0x02, 0x00]);
 	s.playVoice("Kiyotaka Ishimaru", 99, 44);
-	s.showLine("Hey, you two!! Are you going to\nspend all day introducing yourselves!?\n");    // "おい、君達ッ！！　いつまで長話をしているのだ！\n自己紹介だけで貴重な１日を終わらせるつもりか！？\n"
+	s.showLine("Hey, you two! Are you going to\nspend all day introducing yourselves!?\n");    // "おい、君達ッ！！　いつまで長話をしているのだ！\n自己紹介だけで貴重な１日を終わらせるつもりか！？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1451,7 +1451,7 @@ function self_intro_maizono(s)
 	s.setSpeaker("Kiyotaka Ishimaru");
 	s.op(0x2A, [0x02, 0x02]);
 	s.playVoice("Kiyotaka Ishimaru", 99, 11);
-	s.showLine("Remember that self-introductions are about\nintroducing yourself, not about random chatter!!\n");    // "自己紹介とは自己を紹介する場であって、\n決して雑談の場ではないと心得よ！！\n"
+	s.showLine("Remember that self-introductions are about\nintroducing yourself, not about random chatter!\n");    // "自己紹介とは自己を紹介する場であって、\n決して雑談の場ではないと心得よ！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1689,7 +1689,7 @@ function self_intro_fukawa(s)
 	s.playSoundEffectA(28, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("Don't look at me like I'm dirty!!\n");    // "汚らしい物を見るような目で見ないでよッ！！\n"
+	s.showLine("Don't look at me like I'm dirty!\n");    // "汚らしい物を見るような目で見ないでよッ！！\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -1730,7 +1730,7 @@ function self_intro_fukawa(s)
 	s.playSoundEffectA(28, 100);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
 	s.op(0x25, [0x0D, 0x01]);
-	s.showLine("D-Don't try to fool me!!\n");    // "ご、ごまかしたって無駄よ！！\n"
+	s.showLine("D-Don't try to fool me!\n");    // "ご、ごまかしたって無駄よ！！\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -2438,9 +2438,9 @@ function self_intro_asahina(s)
 
 
 	// Line 211: "Aoi Asahina"
-	var lines_asahina = ["Well, anyways! I hope we get along!!\n",
+	var lines_asahina = ["Well, anyway! I hope we get along!\n",
 						"Y-Yea...\nMe too...\n",
-						"<CLT 4>Anyways... At least I got to know that\nshe's a very energetic person...\n<CLT>"];
+						"<CLT 4>Anyway... At least I got to know that\nshe's a very energetic person...\n<CLT>"];
 	
 	s.showSprite(0, "Aoi Asahina", 4, 1, 2);
 	s.playVoice("Aoi Asahina", 99, 41);
@@ -4031,7 +4031,7 @@ function announcement(s)
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("That's the freakin' problem!!\n");    // "だから困ってんだろがッ！！\n"	// TODO: profanity?
+	s.showLine("That's the freakin' problem!\n");    // "だから困ってんだろがッ！！\n"	// TODO: profanity?
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -4116,7 +4116,7 @@ function announcement(s)
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("How!?\nHow in the world!!?\n");    // "なぜだッ！　一体なぜなのだッ！！\n"
+	s.showLine("How!?\nHow in the world!?\n");    // "なぜだッ！　一体なぜなのだッ！！\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);

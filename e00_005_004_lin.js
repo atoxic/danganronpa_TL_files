@@ -131,7 +131,7 @@ function e00_005_004_lin()
 	// Line 11: "Hifumi Yamada"
 	s.showSprite(0, "Hifumi Yamada", 21, 1, 4);
 	s.playVoice("Hifumi Yamada", 99, 58);
-	s.showLine("Ah, wait!\nDon't leave me by myself!!\n");    // "あぁ、待って！　１人にしないでッ！！\n"
+	s.showLine("Ah, wait!\nDon't leave me by myself!\n");    // "あぁ、待って！　１人にしないでッ！！\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x1E]);
 	s.playSoundEffectA(142, 100);

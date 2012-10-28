@@ -118,7 +118,7 @@ function e00_006_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("???");
 	s.playVoice("Monokuma", 99, 161);
-	s.showLine("Hey, is everyone here!?\nThen, let's start!!\n");    // "オーイ、全員集まった～！？\nそれじゃあ、そろそろ始めよっか！！\n"
+	s.showLine("Hey, is everyone here!?\nThen, let's start!\n");    // "オーイ、全員集まった～！？\nそれじゃあ、そろそろ始めよっか！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -161,7 +161,7 @@ function e00_006_007_lin()
 
 	// Line 11: "Monokuma"
 	s.playVoice("Monokuma", 99, 164);
-	s.showLine("I'm your... This school's...\nprincipal!!\n");    // "キミたちの…この学園の…\n学園長なのだッ！！\n"
+	s.showLine("I'm your... This school's...\nprincipal!\n");    // "キミたちの…この学園の…\n学園長なのだッ！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -215,7 +215,7 @@ function e00_006_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Monokuma");
 	s.playVoice("Monokuma", 99, 165);
-	s.showLine("Nice to meet'cha!!\n");    // "ヨロシクねッ！！\n"
+	s.showLine("Nice to meet'cha!\n");    // "ヨロシクねッ！！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -244,7 +244,7 @@ function e00_006_007_lin()
 	s.playVoice("Hifumi Yamada", 99, 29);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.playSoundEffectA(29, 100);
-	s.showLine("U-...Uwawawa...\nThe stuffed animal talked!!\n");    // "う…うわわわ…\nヌイグルミが喋ったぁぁぁ！！\n"
+	s.showLine("U-...Uwawawa...\nThe stuffed animal talked!\n");    // "う…うわわわ…\nヌイグルミが喋ったぁぁぁ！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -283,7 +283,7 @@ function e00_006_007_lin()
 	s.playVoice("Hifumi Yamada", 99, 29);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.playSoundEffectA(29, 100);
-	s.showLine("Uwahhh!\nIt moved!!\n");    // "うわぁぁぁぁ！　動いたぁぁぁ！！\n"
+	s.showLine("Uwahhh!\nIt moved!\n");    // "うわぁぁぁぁ！　動いたぁぁぁ！！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -321,7 +321,7 @@ function e00_006_007_lin()
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
 		// Reference: Persona 4, Teddie
-	s.showLine("...Please don't say beary sad things like that\nthat can break children's dreams!!\n");    // "…って、夢をデストロイするような発言を\nさせないで欲しいクマー！！\n"
+	s.showLine("...Please don't say beary sad things like that\nthat can break children's dreams!\n");    // "…って、夢をデストロイするような発言を\nさせないで欲しいクマー！！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -341,7 +341,7 @@ function e00_006_007_lin()
 	s.playVoice("Monokuma", 99, 8);
 		// Original reference was about Hiroshi Takigawa (Croquette)
 		// Change to reference about Sonic (TODO better reference?)
-	s.showLine("Well, we gotta go fast!\nLet's start!!\n");    // "じゃあ、進行もおしてるんで、\nさっさと始めちゃうナリよ！\n"
+	s.showLine("Well, we gotta go fast!\nLet's start!\n");    // "じゃあ、進行もおしてるんで、\nさっさと始めちゃうナリよ！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -469,7 +469,7 @@ function e00_006_007_lin()
 	s.playVoice("Monokuma", 99, 79);
 	s.playSoundEffectA(28, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("You guys will stay here <CLT 3>for the rest of your lives<CLT>!!\n");    // "期限はありませんっ！！\n"
+	s.showLine("You guys will stay here <CLT 3>for the rest of your lives<CLT>!\n");    // "期限はありませんっ！！\n"
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
 	s.waitFrames(2);
@@ -546,7 +546,7 @@ function e00_006_007_lin()
 
 
 	// Line 52: "Monokuma"
-	s.showLine("So you don't need to worry about\nthe dirty world outside!!\n");    // "だから、汚れた外の世界の心配なんて、\nもう必要ないからねっ！！\n"
+	s.showLine("So you don't need to worry about\nthe dirty world outside!\n");    // "だから、汚れた外の世界の心配なんて、\nもう必要ないからねっ！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -728,7 +728,7 @@ function e00_006_007_lin()
 	// Line 74: "Monokuma"
 	s.playSoundEffectA(28, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("It's the <CLT 3>\"Graduation Rule\"<CLT>!!\n");    // "それが<CLT 3>『卒業』<CLT>というルール！！\n"
+	s.showLine("It's the <CLT 3>\"Graduation Rule\"<CLT>!\n");    // "それが<CLT 3>『卒業』<CLT>というルール！！\n"
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
 	s.waitFrames(1);
@@ -930,7 +930,7 @@ function e00_006_007_lin()
 	s.playVoice("Hifumi Yamada", 99, 29);
 	s.playSoundEffectA(28, 100);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("That's right! Stop making all of these bad jokes!\nJust let us go home already!!\n");    // "そうだ、そうだ！　ふざけた事ばっかり言うな！\nさっさと家に帰せー！！\n"
+	s.showLine("That's right! Stop making all of these bad jokes!\nJust let us go home already!\n");    // "そうだ、そうだ！　ふざけた事ばっかり言うな！\nさっさと家に帰せー！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1003,7 +1003,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("Kill all you want, then kill so more,\nand kill kill kill kill kill kill kill kill kill kill kill kill!!\n");    // "殺りたい放題、殺らして殺るから、\n殺って殺って殺って殺りまくっちゃえっつーの！！\n"
+	s.showLine("Kill all you want, then kill so more,\nand kill kill kill kill kill kill kill kill kill kill kill kill!\n");    // "殺りたい放題、殺らして殺るから、\n殺って殺って殺って殺りまくっちゃえっつーの！！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -1079,7 +1079,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("Your bad joke's gone too far!\nI'm not gonna forgive you now!!\n");    // "オイコラ、今更謝ってもおせぇぞ！\nテメェの悪ふざけは度が過ぎたッ！！\n"
+	s.showLine("Your bad joke's gone too far!\nI'm not gonna forgive you now!\n");    // "オイコラ、今更謝ってもおせぇぞ！\nテメェの悪ふざけは度が過ぎたッ！！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -1164,7 +1164,7 @@ function e00_006_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Mondo Oowada");
 	s.playVoice("Mondo Oowada", 99, 45);
-	s.showLine("Gotcha!!\nI don't care if you're a stuffed animal or a RC toy...\n");    // "捕まえたぞ、コラァ！！\nラジコンだかヌイグルミだか知らねぇが…\n"
+	s.showLine("Gotcha!\nI don't care if you're a stuffed animal or a RC toy...\n");    // "捕まえたぞ、コラァ！！\nラジコンだかヌイグルミだか知らねぇが…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1172,7 +1172,7 @@ function e00_006_007_lin()
 	// Line 118: "Mondo Oowada"
 	s.setSpeaker("Mondo Oowada");
 	s.playVoice("Mondo Oowada", 99, 46);
-	s.showLine("I'm gonna crush you with my bare hands!!\n");    // "バッキバキに捻り潰してやんよっ！！\n"
+	s.showLine("I'm gonna crush you with my bare hands!\n");    // "バッキバキに捻り潰してやんよっ！！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -1188,7 +1188,7 @@ function e00_006_007_lin()
 	// Line 120: "Mondo Oowada"
 	s.setSpeaker("Mondo Oowada");
 	s.playVoice("Mondo Oowada", 99, 47);
-	s.showLine("Shaddup!! You're gonna let us out now,\nwhether you like it or not...!\n");    // "るせぇ！！　今すぐ俺らをここから出せッ！\nでなきゃ力ずくでも…！\n"
+	s.showLine("Shaddup! You're gonna let us out now,\nwhether you like it or not...!\n");    // "るせぇ！！　今すぐ俺らをここから出せッ！\nでなきゃ力ずくでも…！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1233,7 +1233,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("Don't make weird sounds and say something!!\n");    // "妙な機械音出してねぇで、\nなんとか言いやがれッ！！\n"
+	s.showLine("Don't make weird sounds and say something!\n");    // "妙な機械音出してねぇで、\nなんとか言いやがれッ！！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -1290,7 +1290,7 @@ function e00_006_007_lin()
 
 	// Line 130: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>A moment later...!!\n<CLT>");    // "<CLT 4>と、次の瞬間…！！\n<CLT>"
+	s.showLine("<CLT 4>A moment later...!\n<CLT>");    // "<CLT 4>と、次の瞬間…！！\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1377,7 +1377,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(28, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.op(0x25, [0x0D, 0x01]);
-	s.showLine("I'm not a stuffed animal!\nI'm Monokuma!!\n");    // "ヌイグルミじゃなくてモノクマ！！\n"
+	s.showLine("I'm not a stuffed animal!\nI'm Monokuma!\n");    // "ヌイグルミじゃなくてモノクマ！！\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -1500,7 +1500,7 @@ function e00_006_007_lin()
 
 
 	// Line 151: "Monokuma"
-	s.showLine("This digitalized notepad for students is called...!!\n");    // "電子化された生徒手帳、\nその名も…なんとっ！！\n"
+	s.showLine("This digitalized notepad for students is called...!\n");    // "電子化された生徒手帳、\nその名も…なんとっ！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1509,7 +1509,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(29, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.op(0x03, [0x03]);
-	s.showLine("the <CLT 3>Student Tablet<CLT>!!\n");    // "<CLT 3>電子生徒手帳<CLT>です！！\n"
+	s.showLine("the <CLT 3>Student Tablet<CLT>!\n");    // "<CLT 3>電子生徒手帳<CLT>です！！\n"
 	s.op(0x03, [0x00]);
 	s.waitFrames(1);
 	s.waitForInput();
@@ -1532,7 +1532,7 @@ function e00_006_007_lin()
 
 
 	// Line 155: "Monokuma"
-	s.showLine("Your Student Tablets are absolutely necessary\nfor your school life, so don't ever lose them!!\n");    // "電子生徒手帳は学園生活に欠かす事の出来ない\n必需品だから、絶対になくさないようにね！！\n"
+	s.showLine("Your Student Tablets are absolutely necessary\nfor your school life, so don't ever lose them!\n");    // "電子生徒手帳は学園生活に欠かす事の出来ない\n必需品だから、絶対になくさないようにね！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1600,7 +1600,7 @@ function e00_006_007_lin()
 
 
 	// Line 164: "Monokuma"
-	s.showLine("Then, that's all for the entrance ceremony!!\n");    // "ではでは、入学式はこれで終了となります！！\n"
+	s.showLine("Then, that's all for the entrance ceremony!\n");    // "ではでは、入学式はこれで終了となります！！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 

@@ -84,7 +84,7 @@ function e00_002_000_lin()
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>I woke up on a wooden desk...\n<CLT>");    // "<CLT 4>ボクは硬い机の上で目を覚ました。\n<CLT>"
+	s.showLine("<CLT 4>I woke up on a wooden desk.\n<CLT>");    // "<CLT 4>ボクは硬い机の上で目を覚ました。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -267,7 +267,7 @@ function e00_002_000_lin()
 
 
 	// Line 23: "Makoto Naegi"
-	var lines_clock = ["<CLT 4>The time is... somehow 8:00 A.M.\n<CLT>",
+	var lines_clock = ["<CLT 4>The time is... somehow 8:00 A.M. now.\n<CLT>",
 						"<CLT 4>When I came in, it was 7:10...\nSo it's been almost an hour...\n<CLT>"];
 	
 	s.op(0x25, [0x01, 0x00]);
@@ -307,7 +307,7 @@ function e00_002_000_lin()
 						"<CLT 4>a metal plate bolted into the wall.\n<CLT>",
 						"<CLT 4>When I knock on it...\n<CLT>",
 						"<CLT 23>\"clang clang\"...\n<CLT>",
-						"It's really a metal plate...\nand a pretty thick one.\n",
+						"It's really a metal plate...\nA pretty thick one.\n",
 						"<CLT 4>No, the details aren't important...\nWhy is there a metal plate here?\n<CLT>"];
 	
 	s.op(0x25, [0x01, 0x00]);
@@ -470,8 +470,8 @@ function e00_002_000_lin()
 						"<CLT 4>And on top of the desk is...\n<CLT>",
 						"\"School... Guide\"?\n",
 						"What a cheap-looking pamphlet...\nAnd it's even hand-written...\n",
-						"<CLT 4>\"The new school year is upon us...\"\n<CLT>",
-						"<CLT 4>\"so you guys should start fresh\nand make this school your new world.\"...\n<CLT>",
+						"<CLT 4>\"The new school year is upon us...\n<CLT>",
+						"<CLT 4>so you guys should start fresh\nand make this school your new world.\"...\n<CLT>",
 						"What is this...\nSome kind of a bad joke?\n"];
 						
 	
@@ -610,7 +610,7 @@ function e00_002_000_lin()
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>I fainted from anxiety in the entrance hall,\nand somone carried me here... right?\n<CLT>");    // "<CLT 4>緊張のあまり玄関ホールで立ちくらみしたボクを\n誰かがこの教室まで運んでくれた…とか？\n<CLT>"
+	s.showLine("<CLT 4>I fainted in the entrance hall from anxiety,\nand somone carried me here... right?\n<CLT>");    // "<CLT 4>緊張のあまり玄関ホールで立ちくらみしたボクを\n誰かがこの教室まで運んでくれた…とか？\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -628,7 +628,7 @@ function e00_002_000_lin()
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>a classroom in Mount Hope Academy.\n<CLT>");    // "<CLT 4>希望ヶ峰学園の…教室って事になるよな。\n<CLT>"
+	s.showLine("<CLT 4>in Mount Hope Academy.\n<CLT>");    // "<CLT 4>希望ヶ峰学園の…教室って事になるよな。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -637,7 +637,7 @@ function e00_002_000_lin()
 	// Line 55: "Makoto Naegi"
 	s.op(0x25, [0x00, 0x00]);
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("But... then...\n");    // "でも…それにしては…\n"
+	s.showLine("But... even then...\n");    // "でも…それにしては…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -671,7 +671,7 @@ function e00_002_000_lin()
 	// Line 59: "Makoto Naegi"
 	s.op(0x25, [0x00, 0x00]);
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("Anyways... I should go back\nto the entrance hall...\n");    // "とりあえず…もう１度玄関ホールに戻ってみようかな…\n"
+	s.showLine("Anyway... I should go back\nto the entrance hall...\n");    // "とりあえず…もう１度玄関ホールに戻ってみようかな…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
