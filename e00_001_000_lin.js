@@ -93,7 +93,7 @@ function e00_001_000_lin()
 
 	// Line 7: "???"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Some call it <CLT><CLT 3>\"Academy of Hope\"<CLT><CLT 4> because it is where\nthe <CLT><CLT 3>\"hopes\"<CLT><CLT 4> that will carry the nation are taught.\n<CLT>");    // "<CLT 4>国の将来を担う<CLT><CLT 3>“希望”<CLT><CLT 4>を育て上げる事を目的とした、\nまさに、<CLT><CLT 3>“希望の学園”<CLT><CLT 4>と呼ぶに、ふさわしい場所だ。\n<CLT>"
+	s.showLine("<CLT 4>Some call it <CLT><CLT 3>\"Academy of Hope\"<CLT><CLT 4> because it's where\nthe <CLT><CLT 3>\"hopes\"<CLT><CLT 4> that will carry the nation are taught.\n<CLT>");    // "<CLT 4>国の将来を担う<CLT><CLT 3>“希望”<CLT><CLT 4>を育て上げる事を目的とした、\nまさに、<CLT><CLT 3>“希望の学園”<CLT><CLT 4>と呼ぶに、ふさわしい場所だ。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -119,7 +119,7 @@ function e00_001_000_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("???");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>There are two qualifications for getting in are...\n<CLT>");    // "<CLT 4>そんな学園への入学資格は２つ…\n<CLT>"
+	s.showLine("<CLT 4>There are two qualifications for getting in...\n<CLT>");    // "<CLT 4>そんな学園への入学資格は２つ…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -127,7 +127,7 @@ function e00_001_000_lin()
 
 	// Line 9: "???"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>1. \"Being a current high school student\"\n2. \"Being the best of the best at something\"\n<CLT>");    // "<CLT 4>“現役の高校生であること”\n“各分野において超一流であること”\n<CLT>"
+	s.showLine("<CLT 4>1. \"Being a current high school student.\"\n2. \"Being the best of the best at something.\"\n<CLT>");    // "<CLT 4>“現役の高校生であること”\n“各分野において超一流であること”\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -333,7 +333,7 @@ function e00_001_000_lin()
 
 	// Line 30: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>I should start by talking about the <CLT><CLT 3>\"preparations\"<CLT><CLT 4>\nI did last night.\n<CLT>");    // "<CLT 4>まずは、昨日の晩の<CLT><CLT 3>“事前準備”<CLT><CLT 4>の事を\n説明した方がいいだろう。\n<CLT>"
+	s.showLine("<CLT 4>I should start by talking about\nthe <CLT><CLT 3>\"preparations\"<CLT><CLT 4>I did last night.\n<CLT>");    // "<CLT 4>まずは、昨日の晩の<CLT><CLT 3>“事前準備”<CLT><CLT 4>の事を\n説明した方がいいだろう。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -380,7 +380,7 @@ function e00_001_000_lin()
 
 	// Line 34: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>The <CLT><CLT 3>\"super high school students\"<CLT><CLT 4> mentioned in the\nthread could not be any farther from the ordinary.\n<CLT>");    // "<CLT 4>そこには、いずれも平均値から大きくとび抜けた\n<CLT><CLT 3>“超高校級”<CLT><CLT 4>の面々ばかりが揃っていた。\n<CLT>"
+	s.showLine("<CLT 4>The <CLT><CLT 3>\"super high school students\"<CLT><CLT 4> mentioned in the\nthreads could not be any farther from the ordinary.\n<CLT>");    // "<CLT 4>そこには、いずれも平均値から大きくとび抜けた\n<CLT><CLT 3>“超高校級”<CLT><CLT 4>の面々ばかりが揃っていた。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
@@ -467,7 +467,7 @@ function e00_001_000_lin()
 	s.op(0x03, [0x04]);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
-	s.showLine("<CLT 4>The <CLT><CLT 3>\"super gal\"<CLT><CLT 4> that was accepted\ninto the academy...\n<CLT>");    // "<CLT 4><CLT><CLT 3>“超高校級のギャル”<CLT><CLT 4>として入学するのは…\n<CLT>"
+	s.showLine("<CLT 4>The <CLT><CLT 3>\"super fashion girl\"<CLT><CLT 4> that was accepted\ninto the academy...\n<CLT>");    // "<CLT 4><CLT><CLT 3>“超高校級のギャル”<CLT><CLT 4>として入学するのは…\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x04]);
 	s.waitFrames(1);
@@ -481,7 +481,7 @@ function e00_001_000_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>is a popular model that adorns the covers of\ngal fashion magazines...\n<CLT>");    // "<CLT 4>ギャル系ファッション雑誌で表紙を飾る人気モデルで、\n女子高校生達のカリスマ的存在だし…\n<CLT>"
+	s.showLine("<CLT 4>is a popular model that adorns the covers of\nfashion magazines...\n<CLT>");    // "<CLT 4>ギャル系ファッション雑誌で表紙を飾る人気モデルで、\n女子高校生達のカリスマ的存在だし…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -505,7 +505,7 @@ function e00_001_000_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Someone called a <CLT><CLT 3>\"super delinquent\"<CLT><CLT 4> also got in...\n<CLT>");    // "<CLT 4>おまけに<CLT><CLT 3>“超高校級の暴走族”<CLT><CLT 4>なんて肩書きで\n入学するヤツもいて…\n<CLT>"
+	s.showLine("<CLT 4>A <CLT><CLT 3>\"super delinquent\"<CLT><CLT 4> also got in...\n<CLT>");    // "<CLT 4>おまけに<CLT><CLT 3>“超高校級の暴走族”<CLT><CLT 4>なんて肩書きで\n入学するヤツもいて…\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -632,7 +632,7 @@ function e00_001_000_lin()
 
 	// Line 55: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>In order to know why... you just need to look at\nthe acceptance letter from Mount Hope Academy.\n<CLT>");    // "<CLT 4>その理由は…\n<CLT>"
+	s.showLine("<CLT 4>You just need to look at the acceptance letter from\nMount Hope Academy to know why.\n<CLT>");    // "<CLT 4>その理由は…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -692,7 +692,7 @@ function e00_001_000_lin()
 
 	// Line 60: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Maybe I should have turned them down...\n<CLT>");    // "<CLT 4>本当なら、辞退した方が良かったのかもしれないけど…\n<CLT>"
+	s.showLine("<CLT 4>I was thinking about them down...\n<CLT>");    // "<CLT 4>本当なら、辞退した方が良かったのかもしれないけど…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -739,7 +739,7 @@ function e00_001_000_lin()
 	// Line 64: "Makoto Naegi"
 	s.op(0x25, [0x00, 0x00]);
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("...But I can't keep on standing in front of\nthe school gates...\n");    // "…でも、いつまでも校門の前で\n立ち往生してる訳にもいかないよな…\n"
+	s.showLine("...but I can't keep on standing in front of\nthe school gates...\n");    // "…でも、いつまでも校門の前で\n立ち往生してる訳にもいかないよな…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -782,7 +782,7 @@ function e00_001_000_lin()
 
 
 	// Line 69: "Makoto Naegi"
-	s.showLine("Yeah... Let's go!!\n");    // "うん…行くぞ…！！\n"
+	s.showLine("Yeah... Let's go!\n");    // "うん…行くぞ…！！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -870,7 +870,7 @@ function e00_001_000_lin()
 
 	// Line 78: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Oh yea, maybe I should look around the school.\nThat will also help me to relax.\n<CLT>");    // "<CLT 4>そうだ、先に学園の中でも回ってみようかな。\n緊張をほぐす意味でも。\n<CLT>"
+	s.showLine("<CLT 4>Oh yea, maybe I should look around the school.\nThat'll help me relax too.\n<CLT>");    // "<CLT 4>そうだ、先に学園の中でも回ってみようかな。\n緊張をほぐす意味でも。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -912,7 +912,7 @@ function e00_001_000_lin()
 
 	// Line 83: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>...Well, that's that I wanted it to be.\n<CLT>");    // "<CLT 4>…となるはずだった。\n<CLT>"
+	s.showLine("<CLT 4>...Well, that's what I wanted it to be.\n<CLT>");    // "<CLT 4>…となるはずだった。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -940,7 +940,7 @@ function e00_001_000_lin()
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>However, at the same time I took that first step...\n<CLT>");    // "<CLT 4>だけど、その１歩目を踏み出したのと同時に…\n<CLT>"
+	s.showLine("<CLT 4>However, right when I took that first step...\n<CLT>");    // "<CLT 4>だけど、その１歩目を踏み出したのと同時に…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
