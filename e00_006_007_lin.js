@@ -19,7 +19,7 @@ function e00_006_007_lin()
 	s.op(0x15, [0x07, 0x00, 0xFF]);
 	s.op(0x25, [0x09, 0x00]);
 	s.showSprite(0, "Kyouko Kirigiri", 0, 0, 0);
-	s.showSprite(1, "Celestia Rudenberk", 0, 0, 0);
+	s.showSprite(1, "Celestia Rudenberg", 0, 0, 0);
 	s.showSprite(3, "Aoi Asahina", 0, 0, 0);
 	s.showSprite(4, "Sakura Oogami", 0, 0, 0);
 	s.showSprite(8, "Byakuya Togami", 0, 0, 0);
@@ -37,7 +37,7 @@ function e00_006_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>I anxiously entered the gym like we were told.\n<CLT>");    // "<CLT 4>不安と恐怖を抱えながら、\n校内放送で指定された体育館へとやって来た。\n<CLT>"
+	s.showLine("<CLT 4>I followed the instructions\nand anxiously entered the gym.\n<CLT>");    // "<CLT 4>不安と恐怖を抱えながら、\n校内放送で指定された体育館へとやって来た。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -49,8 +49,6 @@ function e00_006_007_lin()
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
-
-
 	// Line 3: "Makoto Naegi"
 	s.op(0x25, [0x01, 0x00]);
 	s.op(0x22, [0x01, 0x01, 0x18]);
@@ -78,7 +76,7 @@ function e00_006_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Yasuhiro Hagakure");
 	s.playVoice("Yasuhiro Hagakure", 99, 2);
-	s.showLine("Look, I told you guys\nthat this is just a <CLT 3>\"normal\"<CLT> entrance ceremony.\n");    // "ほら、俺の言った通りだべ？\n実際のトコ<CLT 3>“普通”<CLT>の入学式じゃねーか。\n"
+	s.showLine("See, I told you guys\nthat this is just a <CLT 3>\"normal\"<CLT> entrance ceremony.\n");    // "ほら、俺の言った通りだべ？\n実際のトコ<CLT 3>“普通”<CLT>の入学式じゃねーか。\n"
 	s.waitFrames(1);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -118,7 +116,7 @@ function e00_006_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("???");
 	s.playVoice("Monokuma", 99, 161);
-	s.showLine("Hey, is everyone here!?\nThen, let's start!\n");    // "オーイ、全員集まった～！？\nそれじゃあ、そろそろ始めよっか！！\n"
+	s.showLine("Hey, is everyone here?\nThen, let's start!\n");    // "オーイ、全員集まった～！？\nそれじゃあ、そろそろ始めよっか！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -161,7 +159,7 @@ function e00_006_007_lin()
 
 	// Line 11: "Monokuma"
 	s.playVoice("Monokuma", 99, 164);
-	s.showLine("I'm your... This school's...\nprincipal!\n");    // "キミたちの…この学園の…\n学園長なのだッ！！\n"
+	s.showLine("I'm the...\nprincipal of this school!\n");    // "キミたちの…この学園の…\n学園長なのだッ！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -232,7 +230,7 @@ function e00_006_007_lin()
 
 	// Line 17: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>My unease changed into limitless fear.\n<CLT>");    // "<CLT 4>ボクの抱いていた不快感は\nいつの間にか、底知れぬ恐怖へと変わっていた。\n<CLT>"
+	s.showLine("<CLT 4>My unease changed into immeasurable fear.\n<CLT>");    // "<CLT 4>ボクの抱いていた不快感は\nいつの間にか、底知れぬ恐怖へと変わっていた。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -244,7 +242,7 @@ function e00_006_007_lin()
 	s.playVoice("Hifumi Yamada", 99, 29);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.playSoundEffectA(29, 100);
-	s.showLine("U-...Uwawawa...\nThe stuffed animal talked!\n");    // "う…うわわわ…\nヌイグルミが喋ったぁぁぁ！！\n"
+	s.showLine("Ooh...Uwawawa...\nThe stuffed animal talked!\n");    // "う…うわわわ…\nヌイグルミが喋ったぁぁぁ！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -252,7 +250,7 @@ function e00_006_007_lin()
 	// Line 19: "Kiyotaka Ishimaru"
 	s.showSprite(0, "Kiyotaka Ishimaru", 10, 1, 4);
 	s.playVoice("Kiyotaka Ishimaru", 99, 17);
-	s.showLine("Calm down...!\nThere's probably just a speaker inside it...!\n");    // "落ち着くんだ…！　ヌイグルミの中に\nスピーカーが仕込んであるだけだろう…！\n"
+	s.showLine("Calm down...!\nI bet that there's just a speaker inside it...!\n");    // "落ち着くんだ…！　ヌイグルミの中に\nスピーカーが仕込んであるだけだろう…！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -328,9 +326,9 @@ function e00_006_007_lin()
 	s.waitForInput();
 
 
-	// Line 27: "Celestia Rudenberk"
-	s.showSprite(1, "Celestia Rudenberk", 5, 1, 1);
-	s.playVoice("Celestia Rudenberk", 99, 11);
+	// Line 27: "Celestia Rudenberg"
+	s.showSprite(1, "Celestia Rudenberg", 5, 1, 1);
+	s.playVoice("Celestia Rudenberg", 99, 11);
 	s.showLine("\"Beary\"...?\nNot very original, are we?\n");    // "クマ…？　ベタですわね？\n"
 	s.waitFrames(1);
 	s.waitForInput();
@@ -340,7 +338,7 @@ function e00_006_007_lin()
 	s.showSprite(0, "Monokuma", 0, 1, 2);
 	s.playVoice("Monokuma", 99, 8);
 		// Original reference was about Hiroshi Takigawa (Croquette)
-		// Change to reference about Sonic (TODO better reference?)
+		// Change to reference about Sonic
 	s.showLine("Well, we gotta go fast!\nLet's start!\n");    // "じゃあ、進行もおしてるんで、\nさっさと始めちゃうナリよ！\n"
 	s.waitFrames(2);
 	s.waitForInput();
@@ -411,7 +409,7 @@ function e00_006_007_lin()
 
 
 	// Line 37: "Monokuma"
-	s.showLine("You guys are so full of talent\nthat you're the <CLT 3>\"hopes of the world\"<CLT>!\n");    // "えー、オマエラのような才能溢れる高校生は、\n<CLT 3>“世界の希望”<CLT>に他なりません！\n"
+	s.showLine("Umm, you talented guys are embodiments\nof <CLT 3>\"the hopes of this world\"<CLT>!\n");    // "えー、オマエラのような才能溢れる高校生は、\n<CLT 3>“世界の希望”<CLT>に他なりません！\n"
 	s.waitFrames(1);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -431,14 +429,14 @@ function e00_006_007_lin()
 	s.playSoundEffectA(28, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.op(0x03, [0x03]);
-	s.showLine("will be living together in this school and <CLT 3>forbidden from going outside<CLT>!\n");    // "<CLT 3>“この学園内だけ”<CLT>で、\n共同生活を送ってもらいます！\n"
+	s.showLine("will be living together in this school and\n<CLT 3>be forbidden from going outside<CLT>!\n");    // "<CLT 3>“この学園内だけ”<CLT>で、\n共同生活を送ってもらいます！\n"
 	s.op(0x03, [0x00]);
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 40: "Monokuma"
-	s.showLine("Live in peace in here, you guys!\n");    // "みんな、仲良く秩序を守って暮らすようにね！\n"
+	s.showLine("Let's live in peace here, you guys!\n");    // "みんな、仲良く秩序を守って暮らすようにね！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -621,7 +619,7 @@ function e00_006_007_lin()
 
 
 	// Line 60: "Reon Kuwata"
-	s.showLine("This is such a bad joke,\nfor Mount Hope Academy...\n");    // "希望ヶ峰学園が用意したにしては、\nいくらなんでも悪ふざけが過ぎるんじゃ…\n"
+	s.showLine("This is such a bad joke\ncoming from Mount Hope Academy...\n");    // "希望ヶ峰学園が用意したにしては、\nいくらなんでも悪ふざけが過ぎるんじゃ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -651,20 +649,20 @@ function e00_006_007_lin()
 
 
 	// Line 64: "Monokuma"
-	s.showLine("Well, you guys can check my words\nfor yourselves after this.\n");    // "まぁ、ボクの言葉が本当かどうかは、\n後でオマエラ自身が確かめてみればいいよ。\n"
+	s.showLine("Well, you guys can see\nfor yourselves after this.\n");    // "まぁ、ボクの言葉が本当かどうかは、\n後でオマエラ自身が確かめてみればいいよ。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 65: "Monokuma"
-	s.showLine("Then you'll see\nthat I'm telling the 100% uncut truth!\n");    // "そうすれば、すぐにわかるから。\nボクの言葉が、純度１００％の真実だって事がさ！\n"
+	s.showLine("You'll see\nthat I'm telling the 100% uncut truth!\n");    // "そうすれば、すぐにわかるから。\nボクの言葉が、純度１００％の真実だって事がさ！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
-	// Line 66: "Celestia Rudenberk"
-	s.showSprite(0, "Celestia Rudenberk", 4, 1, 1);
-	s.playVoice("Celestia Rudenberk", 99, 9);
+	// Line 66: "Celestia Rudenberg"
+	s.showSprite(0, "Celestia Rudenberg", 4, 1, 1);
+	s.playVoice("Celestia Rudenberg", 99, 9);
 	s.showLine("Oh my... What a bother...\nLiving in this school forever...\n");    // "そんな…困りますわ…\nこんな学校でずっと暮らすなんて…\n"
 	s.waitFrames(2);
 	s.waitForInput();
@@ -693,7 +691,7 @@ function e00_006_007_lin()
 	// Line 70: "Monokuma"
 	s.showSprite(1, "Monokuma", 3, 1, 2);
 	s.playVoice("Monokuma", 99, 5);
-	s.showLine("Well, but...\n");    // "まぁ、だけど…\n"
+	s.showLine("Well, then again...\n");    // "まぁ、だけど…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -701,7 +699,7 @@ function e00_006_007_lin()
 	// Line 71: "Monokuma"
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("To be honest,\nthere is a way to get out of here...\n");    // "ぶっちゃけた話、ない訳じゃないよ。\nここから出られる方法…\n"
+	s.showLine("there IS a way to get out of here...\n");    // "ぶっちゃけた話、ない訳じゃないよ。\nここから出られる方法…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -750,7 +748,7 @@ function e00_006_007_lin()
 
 
 	// Line 77: "Monokuma"
-	s.showLine("But if someone breaks that peace, then that person\nand only that person will be able to get out.\n");    // "もし、その秩序を破った者が現れた場合…\nその人物だけは、学園から出て行く事になるのです。\n"
+	s.showLine("but if someone breaks that peace, then that person\nand only that person will be able to get out.\n");    // "もし、その秩序を破った者が現れた場合…\nその人物だけは、学園から出て行く事になるのです。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -777,7 +775,7 @@ function e00_006_007_lin()
 	s.playBGM(255, 90, 0);
 	s.showSprite(1, "Monokuma", 3, 1, 2);
 	s.playVoice("Monokuma", 99, 29);
-	s.showLine("Ehehe...\nBy that, I mean.........\n");    // "うぷぷ…それはね………\n"
+	s.showLine("Upupupu...\nBy that, I mean.........\n");    // "うぷぷ…それはね………\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x1E]);
 	s.waitForInput();
@@ -787,7 +785,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(28, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.op(0x03, [0x03]);
-	s.showLine("<CLT 3>Killing someone<CLT>…\n");    // "<CLT 3>人が人を殺す事<CLT>だよ…\n"
+	s.showLine("<CLT 3>killing someone<CLT>...\n");    // "<CLT 3>人が人を殺す事<CLT>だよ…\n"
 	s.op(0x03, [0x00]);
 	s.waitFrames(1);
 	s.waitForInput();
@@ -861,19 +859,19 @@ function e00_006_007_lin()
 	s.op(0x25, [0x00, 0x00]);
 	s.showSprite(1, "Monokuma", 3, 1, 2);
 	s.playVoice("Monokuma", 99, 29);
-	s.showLine("Ehehe...\nThis level of excitement is on another level...\n");    // "うぷぷ…こんな脳汁ほとばしるドキドキ感は、\n鮭や人間を襲う程度じゃ得られませんな…\n"
+	s.showLine("Upupupu...\nThis level of excitement is on another level...\n");    // "うぷぷ…こんな脳汁ほとばしるドキドキ感は、\n鮭や人間を襲う程度じゃ得られませんな…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 90: "Monokuma"
-	s.showLine("I said that you guys are the \"hopes of the world\"...\n");    // "さっきも言った通り、\nオマエラは言わば“世界の希望”な訳だけど…\n"
+	s.showLine("I said that you guys are \"the hopes of the world\"...\n");    // "さっきも言った通り、\nオマエラは言わば“世界の希望”な訳だけど…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 91: "Monokuma"
-	s.showLine("But watching the <CLT 3>\"hopes\"<CLT>\nkill each other in <CLT 3>\"despair\"<CLT>...\n");    // "そんな<CLT 3>“希望”<CLT>同士が殺し合う、\n<CLT 3>“絶望”<CLT>的シチュエーションなんて…\n"
+	s.showLine("but watching the <CLT 3>\"hopes\"<CLT>\nkill each other in <CLT 3>\"despair\"<CLT>...\n");    // "そんな<CLT 3>“希望”<CLT>同士が殺し合う、\n<CLT 3>“絶望”<CLT>的シチュエーションなんて…\n"
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
 	s.waitFrames(1);
@@ -889,7 +887,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("Make my heart race!\n");    // "ドキドキする～！\n"
+	s.showLine("makes my heart race!\n");    // "ドキドキする～！\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -959,7 +957,7 @@ function e00_006_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Monokuma");
 	s.playVoice("Monokuma", 99, 167);
-	s.showLine("What you mean \"all of these bad jokes\"...\n");    // "ばっかりってなんだよ、ばっかりって…\nばっかりなんて言い草ばっかりするなっての！\n"
+	s.showLine("What you mean, \"all of these bad jokes\"...\n");    // "ばっかりってなんだよ、ばっかりって…\nばっかりなんて言い草ばっかりするなっての！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -976,7 +974,7 @@ function e00_006_007_lin()
 	s.op(0x22, [0x00, 0x01, 0x18]);
 	s.op(0x25, [0x01, 0x01]);
 	s.playVoice("Monokuma", 99, 97);
-	s.showLine("You guys sure have thick skulls.\n");    // "ホントに物分かりの悪い連中だよ。\n"
+	s.showLine("You guys sure are thickheaded.\n");    // "ホントに物分かりの悪い連中だよ。\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -992,7 +990,7 @@ function e00_006_007_lin()
 
 
 	// Line 101: "Monokuma"
-	s.showLine("Listen up. This school is going to be your home\nand your world, you know?\n");    // "いいかい？　これからは、\nこの学園が、オマエラの家であり世界なんだよ？\n"
+	s.showLine("Listen up. This school is going to be your home\nand your world, okay?\n");    // "いいかい？　これからは、\nこの学園が、オマエラの家であり世界なんだよ？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1003,7 +1001,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("Kill all you want, then kill so more,\nand kill kill kill kill kill kill kill kill kill kill kill kill!\n");    // "殺りたい放題、殺らして殺るから、\n殺って殺って殺って殺りまくっちゃえっつーの！！\n"
+	s.showLine("Kill all you want, then kill some more,\nand kill kill kill kill kill kill kill kill kill kill kill kill!\n");    // "殺りたい放題、殺らして殺るから、\n殺って殺って殺って殺りまくっちゃえっつーの！！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -1031,7 +1029,7 @@ function e00_006_007_lin()
 	// Line 105: "Yasuhiro Hagakure"
 	s.showSprite(0, "Yasuhiro Hagakure", 1, 1, 1);
 	s.playVoice("Yasuhiro Hagakure", 99, 3);
-	s.showLine("You got us already,\nso why don't you just drop the joke?\n");    // "もう十分ビックリしたからよ、\nそろそろネタばらしにすんべ？\n"
+	s.showLine("You got us already,\nso why don't you just drop the act?\n");    // "もう十分ビックリしたからよ、\nそろそろネタばらしにすんべ？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1041,7 +1039,7 @@ function e00_006_007_lin()
 	s.playVoice("Monokuma", 99, 44);
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("Drop the joke...?\n");    // "ネタばらし…？\n"
+	s.showLine("Drop the act...?\n");    // "ネタばらし…？\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -1066,7 +1064,7 @@ function e00_006_007_lin()
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Oowada pushed Hagakure aside and\nsurprised Monokuma with his boominga voice.\n<CLT>");    // "<CLT 4>葉隠クンを押しのけつつ最前列に立った大和田クンは、\nまるで地響きのような声でモノクマに凄んだ。\n<CLT>"
+	s.showLine("<CLT 4>Oowada pushed Hagakure aside and\nsurprised Monokuma with his booming voice.\n<CLT>");    // "<CLT 4>葉隠クンを押しのけつつ最前列に立った大和田クンは、\nまるで地響きのような声でモノクマに凄んだ。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1079,7 +1077,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("Your bad joke's gone too far!\nI'm not gonna forgive you now!\n");    // "オイコラ、今更謝ってもおせぇぞ！\nテメェの悪ふざけは度が過ぎたッ！！\n"
+	s.showLine("Your bad joke's gone too far!\nI'm not gonna go easy on you now!\n");    // "オイコラ、今更謝ってもおせぇぞ！\nテメェの悪ふざけは度が過ぎたッ！！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -1127,17 +1125,19 @@ function e00_006_007_lin()
 
 	// Line 115: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>He jumped and lunged forward like a bullet.\n");    // "<CLT 4>跳躍した彼の体は、\n弾丸のように一直線に突き進んだ。\n"
+	s.showLine("<CLT 4>Like a bullet, he jumped and lunged forward\nin a straight line towards his prey...\n");    // "<CLT 4>跳躍した彼の体は、\n弾丸のように一直線に突き進んだ。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 116: "Makoto Naegi"
+	/*
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>In a straight line to his prey...\n<CLT>");    // "<CLT 4>獲物へと向かって一直線に…\n<CLT>"
+	s.showLine("<CLT 4>獲物へと向かって一直線に…\n<CLT>");    // "<CLT 4>獲物へと向かって一直線に…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
+	// */
 
 
 	// Line 117: "Mondo Oowada"
@@ -1233,7 +1233,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("Don't make weird sounds and say something!\n");    // "妙な機械音出してねぇで、\nなんとか言いやがれッ！！\n"
+	s.showLine("Don't just make weird mechanical sounds!\nSay something!\n");    // "妙な機械音出してねぇで、\nなんとか言いやがれッ！！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -1282,7 +1282,7 @@ function e00_006_007_lin()
 
 	// Line 129: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>And threw Monokuma.\n<CLT>");    // "<CLT 4>モノクマを放り投げた。\n<CLT>"
+	s.showLine("<CLT 4>and threw Monokuma.\n<CLT>");    // "<CLT 4>モノクマを放り投げた。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1440,7 +1440,7 @@ function e00_006_007_lin()
 	// Line 143: "Junko Enoshima (fake)"
 	s.showSprite(0, "Junko Enoshima (fake)", 3, 1, 3);
 	s.playVoice("Junko Enoshima (fake)", 99, 9);
-	s.showLine("H-Hey... Don't tell me that\nthere are lots of copies of you...?\n");    // "ね、ねぇ…ひょっとして、アンタみたいのって、\n他にもたくさんいたりするの…？\n"
+	s.showLine("H-Hey... Don't tell me that\nthere are more copies of you...?\n");    // "ね、ねぇ…ひょっとして、アンタみたいのって、\n他にもたくさんいたりするの…？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1448,19 +1448,21 @@ function e00_006_007_lin()
 	// Line 144: "Monokuma"
 	s.showSprite(1, "Monokuma", 0, 1, 2);
 	s.playVoice("Monokuma", 99, 74);
-	s.showLine("Monokumas are placed at various places\nthroughout this school.\n");    // "モノクマは、学園内の至る所に配置されております。\n"
+	s.showLine("Monokumas and security cameras\nare placed all over this school.\n");    // "モノクマは、学園内の至る所に配置されております。\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
 
 	// Line 145: "Monokuma"
+	/*
 	s.showLine("Also, security cameras are\nplaced all over the school.\n");    // "さらに、学園内には監視カメラも配備されております。\n"
 	s.waitFrames(1);
 	s.waitForInput();
+	// */
 
 
 	// Line 146: "Monokuma"
-	s.showLine("If anyone breaks the school rules,\nthey'll get a punishment like that!\n");    // "そして、校則を破る者を発見した場合は、\n今みたいなグレートな体罰を発動しちゃうからねっ！\n"
+	s.showLine("If anyone breaks the school rules,\nthey'll get punished, just like that!\n");    // "そして、校則を破る者を発見した場合は、\n今みたいなグレートな体罰を発動しちゃうからねっ！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1468,7 +1470,7 @@ function e00_006_007_lin()
 	// Line 147: "Monokuma"
 	s.showSprite(1, "Monokuma", 3, 1, 2);
 	s.playVoice("Monokuma", 99, 29);
-	s.showLine("Ehehe... Next time, I won't miss...\nDon't let there be a next time!\n");    // "うぷぷ…次からは外さないから…\nそうならないように気をつけてね！\n"
+	s.showLine("Upupupu... Next time, I won't miss...\nDon't let there be a next time!\n");    // "うぷぷ…次からは外さないから…\nそうならないように気をつけてね！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1500,7 +1502,7 @@ function e00_006_007_lin()
 
 
 	// Line 151: "Monokuma"
-	s.showLine("This digitalized notepad for students is called...!\n");    // "電子化された生徒手帳、\nその名も…なんとっ！！\n"
+	s.showLine("This digital notepad for students is called...!\n");    // "電子化された生徒手帳、\nその名も…なんとっ！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1532,13 +1534,13 @@ function e00_006_007_lin()
 
 
 	// Line 155: "Monokuma"
-	s.showLine("Your Student Tablets are absolutely necessary\nfor your school life, so don't ever lose them!\n");    // "電子生徒手帳は学園生活に欠かす事の出来ない\n必需品だから、絶対になくさないようにね！！\n"
+	s.showLine("your Student Tablets are absolutely necessary\nfor your school life, so don't ever lose them!\n");    // "電子生徒手帳は学園生活に欠かす事の出来ない\n必需品だから、絶対になくさないようにね！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 156: "Monokuma"
-	s.showLine("When you start it up, it shows your name,\nso make sure that the tablet belongs to you.\n");    // "それと、起動時に自分の本名が表示されるから、\nちゃんと確認しておいてね。\n"
+	s.showLine("When they start up, they'll display your names,\nso make sure that the tablet belongs to you.\n");    // "それと、起動時に自分の本名が表示されるから、\nちゃんと確認しておいてね。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1670,7 +1672,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("Wh-What was that...?\nWhat is thaaaaaaaaaaaat!?\n");    // "な、なんなの…？\nなんなのよぉぉぉおッ！？\n"
+	s.showLine("Wh-What was that...?\nWhat was thaaaaaaaaaaaat!?\n");    // "な、なんなの…？\nなんなのよぉぉぉおッ！？\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -1712,12 +1714,12 @@ function e00_006_007_lin()
 	s.waitForInput();
 
 
-	// Line 176: "Celestia Rudenberk"
-	s.showSprite(0, "Celestia Rudenberk", 1, 1, 2);
-	s.playVoice("Celestia Rudenberk", 99, 37);
+	// Line 176: "Celestia Rudenberg"
+	s.showSprite(0, "Celestia Rudenberg", 1, 1, 2);
+	s.playVoice("Celestia Rudenberg", 99, 37);
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("To kill another student and get out... right?\n");    // "生きて出る為に、\n“仲間の誰かを殺す”…でしたわね？\n"
+	s.showLine("to kill another student and get out... right?\n");    // "生きて出る為に、\n“仲間の誰かを殺す”…でしたわね？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1738,13 +1740,13 @@ function e00_006_007_lin()
 	// Line 178: "Hifumi Yamada"
 	s.showSprite(0, "Hifumi Yamada", 5, 1, 2);
 	s.playVoice("Hifumi Yamada", 99, 21);
-	s.showLine("Getting kidnapped all of a sudden...\nLocked in a school-like place...\n");    // "いきなり拉致られて…\n学校らしき場所に閉じ込められて…\n"
+	s.showLine("Getting kidnapped out of nowhere...\nLocked in a school-like place...\n");    // "いきなり拉致られて…\n学校らしき場所に閉じ込められて…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 179: "Hifumi Yamada"
-	s.showLine("And told to kill each other...\n");    // "そんで、いきなり殺し合い…ってコレ…\n"
+	s.showLine("and told to kill each other...\n");    // "そんで、いきなり殺し合い…ってコレ…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -1754,7 +1756,7 @@ function e00_006_007_lin()
 	s.playVoice("Hifumi Yamada", 99, 59);
 	s.playSoundEffectA(29, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("...What in heavens is this!?\n");    // "…ってコレ、なんなんですかーッ！\n"
+	s.showLine("...What the hell is this!?\n");    // "…ってコレ、なんなんですかーッ！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -1780,7 +1782,7 @@ function e00_006_007_lin()
 	s.playVoice("Byakuya Togami", 99, 23);
 	s.playSoundEffectA(28, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("Whether or not there's someone among us\nwho thinks that it's true...\n");    // "この中に、その話を本気にするヤツが\nいるかどうかだ…\n"
+	s.showLine("Whether or not there's someone among us\nwho took his words seriously...\n");    // "この中に、その話を本気にするヤツが\nいるかどうかだ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1915,7 +1917,7 @@ function e00_006_007_lin()
 
 	// Line 196: "Makoto Naegi"
 	s.op(0x03, [0x03]);
-	s.showLine("<CLT 4>was the <CLT><CLT 3>\"Academy of Despair.\"\n<CLT>");    // "<CLT 3>“絶望の学園”<CLT><CLT 4>だったんだ。\n<CLT>"
+	s.showLine("<CLT 4>is the <CLT><CLT 3>\"Academy of Despair.\"\n<CLT>");    // "<CLT 3>“絶望の学園”<CLT><CLT 4>だったんだ。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x04]);
 	s.waitFrames(1);

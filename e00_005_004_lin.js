@@ -33,7 +33,7 @@ function e00_005_004_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Mondo Oowada");
 	s.playVoice("Mondo Oowada", 99, 5);
-	s.showLine("To think that Mount Hope Academy\nis such a dark place...\n");    // "それにしてもよぉ…\n希望ヶ峰学園がこんな辛気くせぇ場所だとはなぁ…\n"
+	s.showLine("Never woulda thought that Mount Hope Academy\nis such a dark place...\n");    // "それにしてもよぉ…\n希望ヶ峰学園がこんな辛気くせぇ場所だとはなぁ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -47,7 +47,7 @@ function e00_005_004_lin()
 	// Line 3: "Sayaka Maizono"
 	s.showSprite(1, "Sayaka Maizono", 1, 1, 3);
 	s.playVoice("Sayaka Maizono", 99, 6);
-	s.showLine("Besides... why isn't anyone else here?\nWe haven't seen anyone else...\n");    // "それに…どうして誰もいないんですかね？\n今だって校内を歩いてても、誰とも会わなかったし…\n"
+	s.showLine("Also... why isn't anyone else here?\nWe haven't seen anyone else...\n");    // "それに…どうして誰もいないんですかね？\n今だって校内を歩いてても、誰とも会わなかったし…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -90,7 +90,7 @@ function e00_005_004_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("Grrah! Who was the bastard that\ndared to tell me where to go!?\n");    // "オラァ！　俺様を呼び出しやがったのは、\nどこのどいつだぁ！！\n"
+	s.showLine("Grrah! Who was the bastard that\ndared to order me where to go!?\n");    // "オラァ！　俺様を呼び出しやがったのは、\nどこのどいつだぁ！！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -295,7 +295,7 @@ function e00_005_004_lin()
 
 	// Line 22: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Maybe they're for schoolwide broadcasts\nlike that strange one just now?\n<CLT>");    // "<CLT 4>さっきの変な校内放送のためじゃないよな？\n<CLT>"
+	s.showLine("<CLT 4>Maybe they're for broadcasts like\nthat strange announcement just now?\n<CLT>");    // "<CLT 4>さっきの変な校内放送のためじゃないよな？\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();

@@ -660,7 +660,7 @@ function e00_001_000_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>\"This year, we decided to hold a lottery to select\na student from a list of all average students.\"\n<CLT>");    // "<CLT 4>『今回、我が校では平均的な学生の中から、\n　抽選によって１名を抽出いたしました。』\n<CLT>"
+	s.showLine("<CLT 4>\"This year, we decided to hold a lottery to select\na student from a list of all average students.\n<CLT>");    // "<CLT 4>『今回、我が校では平均的な学生の中から、\n　抽選によって１名を抽出いたしました。』\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();

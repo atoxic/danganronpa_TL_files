@@ -330,10 +330,10 @@ function enter_entrance_hall(s)
 	s.waitForInput();
 
 
-	// Line 13: "Celestia Rudenberk"
-	s.showSprite(1, "Celestia Rudenberk", 7, 1, 4);
+	// Line 13: "Celestia Rudenberg"
+	s.showSprite(1, "Celestia Rudenberg", 7, 1, 4);
 	s.setSpeaker("???");
-	s.playVoice("Celestia Rudenberk", 99, 13);
+	s.playVoice("Celestia Rudenberg", 99, 13);
 	s.showLine("The mystery deepens...\n");    // "とすると、ますます妙ですわね…\n"
 	s.waitFrames(1);
 	s.waitForInput();
@@ -413,16 +413,16 @@ function enter_entrance_hall(s)
 	s.waitForInput();
 
 
-	// Line 22: "Celestia Rudenberk"
-	s.showSprite(1, "Celestia Rudenberk", 0, 1, 4);
+	// Line 22: "Celestia Rudenberg"
+	s.showSprite(1, "Celestia Rudenberg", 0, 1, 4);
 	s.setSpeaker("???");
-	s.playVoice("Celestia Rudenberk", 99, 5);
+	s.playVoice("Celestia Rudenberg", 99, 5);
 	s.showLine("However, before we attack the problem,\nwe should understand our backgrounds.\n");    // "ですが、問題について話し合う前に、\nお互いの素性はわかっていた方がよろしいでしょう。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
-	// Line 23: "Celestia Rudenberk"
+	// Line 23: "Celestia Rudenberg"
 	s.showLine("We cannot discuss among ourselves\nif we do not even know who is talking...\n");    // "なんてお呼びしていいのかわからないままでは、\n話し合いも出来ないじゃありませんか…\n"
 	s.waitFrames(2);
 	s.waitForInput();
@@ -502,7 +502,7 @@ function self_intro_ishimaru(s)
 	s.showSprite(8, "Aoi Asahina", 98, 0, 0);
 	s.showSprite(9, "Touko Fukawa", 98, 0, 0);
 	s.showSprite(10, "Sakura Oogami", 98, 0, 0);
-	s.showSprite(11, "Celestia Rudenberk", 98, 0, 0);
+	s.showSprite(11, "Celestia Rudenberg", 98, 0, 0);
 	s.showSprite(12, "Junko Enoshima (fake)", 98, 0, 0);
 	s.showSprite(13, "Chihiro Fujisaki", 98, 0, 0);
 	s.showSprite(6, "Kiyotaka Ishimaru", 0, 0, 1);
@@ -3037,7 +3037,7 @@ function self_intro_togami(s)
 	s.op(0x2A, [0x00, 0x04]);
 	s.op(0x25, [0x09, 0x00]);
 	s.showSprite(0, "Byakuya Togami", 0, 0, 1);
-	s.showSprite(3, "Celestia Rudenberk", 0, 0, 21);
+	s.showSprite(3, "Celestia Rudenberg", 0, 0, 21);
 	s.showSprite(2, "Yasuhiro Hagakure", 0, 0, 31);
 	s.showSprite(6, "Sakura Oogami", 0, 0, 11);
 	s.op(0x25, [0x1B, 0x00]);
@@ -3235,7 +3235,7 @@ function self_intro_hagakure(s)
 	s.op(0x34, [0x02, 0x1B]);
 	s.op(0x25, [0x09, 0x00]);
 	s.showSprite(0, "Byakuya Togami", 98, 0, 0);
-	s.showSprite(3, "Celestia Rudenberk", 98, 0, 0);
+	s.showSprite(3, "Celestia Rudenberg", 98, 0, 0);
 	s.showSprite(2, "Yasuhiro Hagakure", 98, 0, 0);
 	s.showSprite(6, "Sakura Oogami", 98, 0, 0);
 	s.op(0x34, [0x00, 0x02]);
@@ -3422,7 +3422,7 @@ function self_intro_oogami(s)
 	s.op(0x34, [0x02, 0x1E]);
 	s.op(0x25, [0x09, 0x00]);
 	s.showSprite(0, "Byakuya Togami", 98, 0, 0);
-	s.showSprite(3, "Celestia Rudenberk", 98, 0, 0);
+	s.showSprite(3, "Celestia Rudenberg", 98, 0, 0);
 	s.showSprite(2, "Yasuhiro Hagakure", 98, 0, 0);
 	s.showSprite(6, "Sakura Oogami", 98, 0, 0);
 	s.op(0x34, [0x00, 0x02]);
@@ -3521,7 +3521,7 @@ function self_intro_oogami(s)
 
 	// Line 316: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>If you're a freshman at Mount Hope Academy,\nthen heed this warning:\n<CLT>");    // "<CLT 4>もし、このスレを見ている\n希望ヶ峰学園の新入生がいたら、先に忠告しておこう。\n<CLT>"
+	s.showLine("<CLT 4>\"If you're a freshman at Mount Hope Academy,\nthen heed this warning:\n<CLT>");    // "<CLT 4>もし、このスレを見ている\n希望ヶ峰学園の新入生がいたら、先に忠告しておこう。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -3529,7 +3529,7 @@ function self_intro_oogami(s)
 
 	// Line 317: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>don't get close to her if you want to live\"...\n<CLT>");    // "<CLT 4>命が惜しければ、決して彼女には近寄らない事だ…\n<CLT>"
+	s.showLine("<CLT 4>\"don't get close to her if you want to live\"...\n<CLT>");    // "<CLT 4>命が惜しければ、決して彼女には近寄らない事だ…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -3653,7 +3653,7 @@ function self_intro_oogami(s)
 
 function self_intro_celes(s)
 {
-	// Line 329: "Celestia Rudenberk"
+	// Line 329: "Celestia Rudenberg"
 	s.showSprite(0, "Sakura Oogami", 5, 4, 2);
 	s.op(0x2A, [0x02, 0x20]);
 	s.op(0x26, [0x0D, 0x0A, 0x01]);
@@ -3662,7 +3662,7 @@ function self_intro_celes(s)
 	s.op(0x34, [0x02, 0x21]);
 	s.op(0x25, [0x09, 0x00]);
 	s.showSprite(0, "Byakuya Togami", 98, 0, 0);
-	s.showSprite(3, "Celestia Rudenberk", 98, 0, 0);
+	s.showSprite(3, "Celestia Rudenberg", 98, 0, 0);
 	s.showSprite(2, "Yasuhiro Hagakure", 98, 0, 0);
 	s.showSprite(6, "Sakura Oogami", 98, 0, 0);
 	s.op(0x34, [0x00, 0x02]);
@@ -3672,11 +3672,11 @@ function self_intro_celes(s)
 	s.op(0x3C);
 	s.op(0x34, [0x02, 0x22]);
 	s.op(0x25, [0x09, 0x01]);
-	s.showSprite(0, "Celestia Rudenberk", 0, 1, 2);
+	s.showSprite(0, "Celestia Rudenberg", 0, 1, 2);
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
-	s.playVoice("Celestia Rudenberk", 99, 1);
-	s.showLine("I do not believe that we are acquainted.\nI am Celestia Rudenberk.\n");    // "お初にお目にかかりますわね。\nセレスティア・ルーデンベルクです。\n"
+	s.playVoice("Celestia Rudenberg", 99, 1);
+	s.showLine("I do not believe that we are acquainted.\nI am Celestia Rudenberg.\n");    // "お初にお目にかかりますわね。\nセレスティア・ルーデンベルクです。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -3697,9 +3697,9 @@ function self_intro_celes(s)
 	s.waitForInput();
 
 
-	// Line 331: "Celestia Rudenberk"
-	s.showSprite(0, "Celestia Rudenberk", 3, 1, 2);
-	s.playVoice("Celestia Rudenberk", 99, 7);
+	// Line 331: "Celestia Rudenberg"
+	s.showSprite(0, "Celestia Rudenberg", 3, 1, 2);
+	s.playVoice("Celestia Rudenberg", 99, 7);
 	s.showLine("That is indeed my name.\nYou may call me \"Celes\" as well.\n");    // "わたくしの名前ですわよ。\n“セレス”と呼んでくださって結構ですわ。\n"
 	s.waitFrames(2);
 	s.waitForInput();
@@ -3712,9 +3712,9 @@ function self_intro_celes(s)
 	s.waitForInput();
 
 
-	// Line 333: "Celestia Rudenberk"
-	s.showSprite(0, "Celestia Rudenberk", 1, 1, 2);
-	s.playVoice("Celestia Rudenberk", 99, 40);
+	// Line 333: "Celestia Rudenberg"
+	s.showSprite(0, "Celestia Rudenberg", 1, 1, 2);
+	s.playVoice("Celestia Rudenberg", 99, 40);
 	s.showLine("Yes?\n");    // "それが何か？\n"
 	s.waitFrames(1);
 	s.waitForInput();
@@ -3727,15 +3727,15 @@ function self_intro_celes(s)
 	s.waitForInput();
 
 
-	// Line 335: "Celestia Rudenberk"
-	s.showSprite(0, "Celestia Rudenberk", 2, 1, 2);
-	s.playVoice("Celestia Rudenberk", 99, 5);
-	s.showLine("Ehehe, pardon me,\nbut my real name is Celestia Rudenberk.\n");    // "うふふ、嫌ですわ。わたくしの本名は、\nセレスティア・ルーデンベルクですわよ。\n"
+	// Line 335: "Celestia Rudenberg"
+	s.showSprite(0, "Celestia Rudenberg", 2, 1, 2);
+	s.playVoice("Celestia Rudenberg", 99, 5);
+	s.showLine("Ehehe, pardon me,\nbut my real name is Celestia Rudenberg.\n");    // "うふふ、嫌ですわ。わたくしの本名は、\nセレスティア・ルーデンベルクですわよ。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
-	// Line 336: "Celestia Rudenberk"
+	// Line 336: "Celestia Rudenberg"
 	s.playSoundEffectA(28, 100);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
 	s.showLine("You may call me \"Celes\"...!\n");    // "“セレス”と呼んでくださって結構ですわ…！\n"
@@ -3765,7 +3765,7 @@ function self_intro_celes(s)
 	// Line 339: "Makoto Naegi"
 	s.op(0x25, [0x01, 0x00]);
 	s.op(0x22, [0x01, 0x01, 0x18]);
-	s.showSprite(0, "Celestia Rudenberk", 2, 3, 2);
+	s.showSprite(0, "Celestia Rudenberg", 2, 3, 2);
 	s.op(0x25, [0x06, 0x01]);
 	s.op(0x06, [0x02, 0xDE, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03]);
 	s.op(0x22, [0x00, 0x01, 0x18]);
@@ -3773,7 +3773,7 @@ function self_intro_celes(s)
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>She calls herself \"Celestia Rudenberk\"...\nShe's an undefeated <CLT><CLT 3>\"super gambler\"<CLT><CLT 4>...\n<CLT>");    // "<CLT 4>自称セレスティア・ルーデンベルク…\n負け知らずの<CLT><CLT 3>“超高校級のギャンブラー”<CLT><CLT 4>で…\n<CLT>"
+	s.showLine("<CLT 4>She calls herself \"Celestia Rudenberg\"...\nShe's an undefeated <CLT><CLT 3>\"super gambler\"<CLT><CLT 4>...\n<CLT>");    // "<CLT 4>自称セレスティア・ルーデンベルク…\n負け知らずの<CLT><CLT 3>“超高校級のギャンブラー”<CLT><CLT 4>で…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
@@ -3821,7 +3821,7 @@ function self_intro_celes(s)
 	s.waitForInput();
 
 
-	// Line 343: "Celestia Rudenberk"
+	// Line 343: "Celestia Rudenberg"
 	var lines_celes = ["Here's to a good friendship.\n",
 						"Ehehehehe...\n",
 						"<CLT 4>What a scary smile...\nShe doesn't seem to be straightforward person...\n<CLT>"];
@@ -3830,20 +3830,20 @@ function self_intro_celes(s)
 	s.op(0x25, [0x33, 0x00]);
 	s.op(0x22, [0x01, 0x01, 0x18]);
 	s.op(0x06, [0x02, 0xDE, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF]);
-	s.showSprite(0, "Celestia Rudenberk", 2, 1, 2);
+	s.showSprite(0, "Celestia Rudenberg", 2, 1, 2);
 	s.op(0x25, [0x06, 0x00]);
 	s.op(0x22, [0x00, 0x01, 0x18]);
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
-	s.playVoice("Celestia Rudenberk", 99, 5);
+	s.playVoice("Celestia Rudenberg", 99, 5);
 	s.showLine(lines_celes[0]);    // "今後ともよろしくお願いしますね。\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
 
-	// Line 344: "Celestia Rudenberk"
-	s.showSprite(0, "Celestia Rudenberk", 3, 1, 2);
-	s.playVoice("Celestia Rudenberk", 99, 7);
+	// Line 344: "Celestia Rudenberg"
+	s.showSprite(0, "Celestia Rudenberg", 3, 1, 2);
+	s.playVoice("Celestia Rudenberg", 99, 7);
 	s.showLine(lines_celes[1]);    // "うふふふふ…\n"
 	s.waitFrames(1);
 	s.waitForInput();
@@ -3859,24 +3859,24 @@ function self_intro_celes(s)
 	s.waitForInput();
 
 
-	// Line 346: "Celestia Rudenberk"
+	// Line 346: "Celestia Rudenberg"
 	s.op(0x25, [0x01, 0x00]);
-	s.showSprite(0, "Celestia Rudenberk", 3, 4, 2);
+	s.showSprite(0, "Celestia Rudenberg", 3, 4, 2);
 	s.op(0x34, [0x02, 0x23]);
 	s.op(0x2A, [0x02, 0x22]);
 	s.op(0x25, [0x09, 0x01]);
-	s.showSprite(0, "Celestia Rudenberk", 2, 1, 2);
+	s.showSprite(0, "Celestia Rudenberg", 2, 1, 2);
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
-	s.playVoice("Celestia Rudenberk", 99, 5);
+	s.playVoice("Celestia Rudenberg", 99, 5);
 	s.showLine(lines_celes[0]);    // "今後ともよろしくお願いしますね。\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
 
-	// Line 347: "Celestia Rudenberk"
-	s.showSprite(0, "Celestia Rudenberk", 3, 1, 2);
-	s.playVoice("Celestia Rudenberk", 99, 7);
+	// Line 347: "Celestia Rudenberg"
+	s.showSprite(0, "Celestia Rudenberg", 3, 1, 2);
+	s.playVoice("Celestia Rudenberg", 99, 7);
 	s.showLine(lines_celes[1]);    // "うふふふふ…\n"
 	s.waitFrames(1);
 	s.waitForInput();
@@ -3893,7 +3893,7 @@ function self_intro_celes(s)
 	
 	// Clean-up for batch 3
 	s.op(0x25, [0x01, 0x00]);
-	s.showSprite(0, "Celestia Rudenberk", 3, 4, 2);
+	s.showSprite(0, "Celestia Rudenberg", 3, 4, 2);
 	s.op(0x2A, [0x02, 0x23]);
 	s.op(0x26, [0x0D, 0x0B, 0x01]);
 	s.op(0x35, [0x0D, 0x01, 0x00, 0x01, 0x06, 0x0D, 0x05, 0x00, 0x01, 0x06, 0x0D, 0x0A, 0x00, 0x01, 0x06, 0x0D, 0x0B, 0x00, 0x01]);
@@ -3901,7 +3901,7 @@ function self_intro_celes(s)
 	s.op(0x34, [0x02, 0x24]);
 	s.op(0x25, [0x09, 0x00]);
 	s.showSprite(0, "Byakuya Togami", 98, 0, 0);
-	s.showSprite(3, "Celestia Rudenberk", 98, 0, 0);
+	s.showSprite(3, "Celestia Rudenberg", 98, 0, 0);
 	s.showSprite(2, "Yasuhiro Hagakure", 98, 0, 0);
 	s.showSprite(6, "Sakura Oogami", 98, 0, 0);
 	s.op(0x34, [0x00, 0x02]);
@@ -3982,7 +3982,7 @@ function announcement(s)
 	// Line 368: "Sayaka Maizono"
 	s.showSprite(1, "Sayaka Maizono", 1, 1, 3);
 	s.playVoice("Sayaka Maizono", 99, 6);
-	s.showLine("Naegi, you said that you somehow fell asleep,\nright?\n");    // "苗木君、言ってましたよね？\n<CLT 3>色々あって寝ちゃってた<CLT>って…\n"
+	s.showLine("Naegi, you said that you <CLT 3>somehow fell asleep,<CLT>\nright?\n");    // "苗木君、言ってましたよね？\n<CLT 3>色々あって寝ちゃってた<CLT>って…\n"
 	s.waitFrames(1);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -4410,14 +4410,14 @@ function announcement(s)
 	s.waitForInput();
 
 
-	// Line 412: "Celestia Rudenberk"
-	s.showSprite(1, "Celestia Rudenberk", 3, 1, 2);
-	s.playVoice("Celestia Rudenberk", 99, 7);
+	// Line 412: "Celestia Rudenberg"
+	s.showSprite(1, "Celestia Rudenberg", 3, 1, 2);
+	s.playVoice("Celestia Rudenberg", 99, 7);
 	s.showLine("Then, if you'll excuse me...\n");    // "では、わたくしも先に失礼しますわ…\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x1E]);
 	s.playSoundEffectA(141, 100);
-	s.showSprite(1, "Celestia Rudenberk", 3, 5, 2);
+	s.showSprite(1, "Celestia Rudenberg", 3, 5, 2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x3C]);
 	s.waitForInput();
 
@@ -4531,7 +4531,7 @@ function announcement(s)
 	s.setSpeaker("Makoto Naegi");
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("The gym... huh\n");    // "体育館…だったよな。\n"
+	s.showLine("The gym, right?\n");    // "体育館…だったよな。\n"
 	s.waitFrames(1);
 	s.waitForInput();
 	s.op(0x25, [0x01, 0x00]);
