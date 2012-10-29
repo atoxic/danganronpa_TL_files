@@ -20,7 +20,7 @@ function e00_005_004_lin()
 	s.showSprite(1, "Mondo Oowada", 0, 0, 0);
 	s.showSprite(7, "Sayaka Maizono", 0, 0, 0);
 	s.showSprite(4, "Kyouko Kirigiri", 0, 0, 0);
-	s.showSprite(5, "Sakura Ookami", 0, 0, 0);
+	s.showSprite(5, "Sakura Oogami", 0, 0, 0);
 	s.showSprite(6, "Junko Enoshima (fake)", 0, 0, 0);
 	s.playBGM(3, 100, 0);
 	s.op(0x25, [0x03, 0x00]);
@@ -68,9 +68,9 @@ function e00_005_004_lin()
 	s.waitForInput();
 
 
-	// Line 6: "Sakura Ookami"
-	s.showSprite(0, "Sakura Ookami", 0, 1, 0);
-	s.playVoice("Sakura Ookami", 99, 3);
+	// Line 6: "Sakura Oogami"
+	s.showSprite(0, "Sakura Oogami", 0, 1, 0);
+	s.playVoice("Sakura Oogami", 99, 3);
 	s.showLine("In any case, we should prepare for the worst.\nNothing ventured, nothing gained...\n");    // "どちらにせよ、腹をくくる他あるまい。\n虎穴に入らずんば虎児を得ず…だ。\n"
 	s.waitFrames(2);
 	s.waitForInput();
@@ -116,14 +116,14 @@ function e00_005_004_lin()
 	s.waitForInput();
 
 
-	// Line 10: "Sakura Ookami"
-	s.showSprite(1, "Sakura Ookami", 5, 1, 0);
-	s.playVoice("Sakura Ookami", 99, 34);
+	// Line 10: "Sakura Oogami"
+	s.showSprite(1, "Sakura Oogami", 5, 1, 0);
+	s.playVoice("Sakura Oogami", 99, 34);
 	s.showLine("Then, I'm going too...\n");    // "では、我も行くとしよう…\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x1E]);
 	s.playSoundEffectA(141, 100);
-	s.showSprite(1, "Sakura Ookami", 5, 5, 0);
+	s.showSprite(1, "Sakura Oogami", 5, 5, 0);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x3C]);
 	s.waitForInput();
 
@@ -146,7 +146,7 @@ function e00_005_004_lin()
 	s.showSprite(0, "Kiyotaka Ishimaru", 98, 0, 0);
 	s.showSprite(1, "Mondo Oowada", 98, 0, 0);
 	s.showSprite(2, "Hifumi Yamada", 98, 0, 0);
-	s.showSprite(5, "Sakura Ookami", 98, 0, 0);
+	s.showSprite(5, "Sakura Oogami", 98, 0, 0);
 	s.op(0x15, [0x07, 0x01, 0xFF]);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x3C]);
 	s.op(0x25, [0x00, 0x01]);

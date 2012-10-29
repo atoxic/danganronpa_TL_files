@@ -86,7 +86,7 @@ function object_lines(s, exit_hook)
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Wh-What's this...\nhunk of mental...\n<CLT>");    // "<CLT 4>な、なんなんだ…\nこの鉄の塊…\n<CLT>"
+	s.showLine("<CLT 4>Wh-What's this...\nhunk of metal...\n<CLT>");    // "<CLT 4>な、なんなんだ…\nこの鉄の塊…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -501,7 +501,7 @@ function self_intro_ishimaru(s)
 	s.showSprite(7, "Kyouko Kirigiri", 98, 0, 0);
 	s.showSprite(8, "Aoi Asahina", 98, 0, 0);
 	s.showSprite(9, "Touko Fukawa", 98, 0, 0);
-	s.showSprite(10, "Sakura Ookami", 98, 0, 0);
+	s.showSprite(10, "Sakura Oogami", 98, 0, 0);
 	s.showSprite(11, "Celestia Rudenberk", 98, 0, 0);
 	s.showSprite(12, "Junko Enoshima (fake)", 98, 0, 0);
 	s.showSprite(13, "Chihiro Fujisaki", 98, 0, 0);
@@ -3039,7 +3039,7 @@ function self_intro_togami(s)
 	s.showSprite(0, "Byakuya Togami", 0, 0, 1);
 	s.showSprite(3, "Celestia Rudenberk", 0, 0, 21);
 	s.showSprite(2, "Yasuhiro Hagakure", 0, 0, 31);
-	s.showSprite(6, "Sakura Ookami", 0, 0, 11);
+	s.showSprite(6, "Sakura Oogami", 0, 0, 11);
 	s.op(0x25, [0x1B, 0x00]);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x3C]);
 	s.op(0x25, [0x00, 0x00]);
@@ -3137,7 +3137,7 @@ function self_intro_togami(s)
 
 	// Line 283: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>He's already running a few companies\nand has built up a fortune by himself...\n<CLT>");    // "<CLT 4>本人も、すでにいくつもの会社運営に携わり、\n個人としても莫大な資産を築き上げているという…\n<CLT>"
+	s.showLine("<CLT 4>He's already running a few companies\nand building up a fortune by himself...\n<CLT>");    // "<CLT 4>本人も、すでにいくつもの会社運営に携わり、\n個人としても莫大な資産を築き上げているという…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -3166,7 +3166,7 @@ function self_intro_togami(s)
 	// Line 286: "Byakuya Togami"
 	var lines_togami = ["Hey, I already introduced myself.\nWhy are you still here...?\n",
 						"You're an eyesore.\nLeave my sight immediately...\n",
-						"<CLT 4>He has no plan to get along with me at all.\nIs this how he rules the masses...?\n<CLT>"];
+						"<CLT 4>He has no desire to get along with me at all.\nIs this how he rules the masses...?\n<CLT>"];
 	
 	s.op(0x25, [0x00, 0x00]);
 	s.showSprite(0, "Byakuya Togami", 1, 1, 2);
@@ -3237,7 +3237,7 @@ function self_intro_hagakure(s)
 	s.showSprite(0, "Byakuya Togami", 98, 0, 0);
 	s.showSprite(3, "Celestia Rudenberk", 98, 0, 0);
 	s.showSprite(2, "Yasuhiro Hagakure", 98, 0, 0);
-	s.showSprite(6, "Sakura Ookami", 98, 0, 0);
+	s.showSprite(6, "Sakura Oogami", 98, 0, 0);
 	s.op(0x34, [0x00, 0x02]);
 	s.op(0x2A, [0x02, 0x1B]);
 	s.op(0x27, [0x02]);
@@ -3287,7 +3287,7 @@ function self_intro_hagakure(s)
 
 	// Line 295: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>but I'm interested...\nin how accurate he is.\n<CLT>");    // "<CLT 4>どれくらい当たるのか…ちょっとだけ興味あるかも。\n<CLT>"
+	s.showLine("<CLT 4>but I'm interested in how accurate he is.\n<CLT>");    // "<CLT 4>どれくらい当たるのか…ちょっとだけ興味あるかも。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -3365,7 +3365,7 @@ function self_intro_hagakure(s)
 
 
 	// Line 305: "Yasuhiro Hagakure"
-	var lines_hagakure = ["I'm 20.\nA lot happened and I got held back three times.\n",
+	var lines_hagakure = ["I'm 20, you know.\nA lot happened and I got held back three times.\n",
 						"<CLT 4>Held back 3 times...\nToo much happened, if you asked me.\n<CLT>"];
 	
 	s.showSprite(0, "Yasuhiro Hagakure", 0, 1, 2);
@@ -3413,7 +3413,7 @@ function self_intro_hagakure(s)
 
 function self_intro_oogami(s)
 {
-	// Line 309: "Sakura Ookami"
+	// Line 309: "Sakura Oogami"
 	s.showSprite(0, "Yasuhiro Hagakure", 0, 4, 2);
 	s.op(0x2A, [0x02, 0x1D]);
 	s.op(0x26, [0x0D, 0x05, 0x01]);
@@ -3424,7 +3424,7 @@ function self_intro_oogami(s)
 	s.showSprite(0, "Byakuya Togami", 98, 0, 0);
 	s.showSprite(3, "Celestia Rudenberk", 98, 0, 0);
 	s.showSprite(2, "Yasuhiro Hagakure", 98, 0, 0);
-	s.showSprite(6, "Sakura Ookami", 98, 0, 0);
+	s.showSprite(6, "Sakura Oogami", 98, 0, 0);
 	s.op(0x34, [0x00, 0x02]);
 	s.op(0x2A, [0x02, 0x1E]);
 	s.op(0x27, [0x06]);
@@ -3432,10 +3432,10 @@ function self_intro_oogami(s)
 	s.op(0x3C);
 	s.op(0x34, [0x02, 0x1F]);
 	s.op(0x25, [0x09, 0x01]);
-	s.showSprite(0, "Sakura Ookami", 0, 1, 2);
+	s.showSprite(0, "Sakura Oogami", 0, 1, 2);
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
-	s.playVoice("Sakura Ookami", 99, 1);
+	s.playVoice("Sakura Oogami", 99, 1);
 	s.showLine("I'm Sakura Oogami...\n");    // "大神さくらだ…\n"
 	s.waitFrames(1);
 	s.waitForInput();
@@ -3493,7 +3493,7 @@ function self_intro_oogami(s)
 	// Line 314: "Makoto Naegi"
 	s.op(0x25, [0x01, 0x00]);
 	s.op(0x22, [0x01, 0x01, 0x18]);
-	s.showSprite(0, "Sakura Ookami", 0, 3, 2);
+	s.showSprite(0, "Sakura Oogami", 0, 3, 2);
 	s.op(0x25, [0x06, 0x01]);
 	s.op(0x06, [0x02, 0xDE, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03]);
 	s.op(0x22, [0x00, 0x01, 0x18]);
@@ -3509,7 +3509,7 @@ function self_intro_oogami(s)
 
 	// Line 315: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>\"Sakura Oogami, a.k.a. <CLT><CLT 3>'The Ogre'<CLT><CLT 4>, may be the\nstrongest teenage female Homo sapiens ever.\n<CLT>");    // "<CLT 4>大神さくら…通称<CLT><CLT 3>“オーガ”<CLT><CLT 4>は、\n霊長類ヒト科最強に最も近い女子高生だ。\n<CLT>"
+	s.showLine("<CLT 4>\"Sakura Oogami, a.k.a. <CLT><CLT 3>'The Ogre,'<CLT><CLT 4> may be the\nstrongest teenage female Homo sapiens ever.\n<CLT>");    // "<CLT 4>大神さくら…通称<CLT><CLT 3>“オーガ”<CLT><CLT 4>は、\n霊長類ヒト科最強に最も近い女子高生だ。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -3529,7 +3529,7 @@ function self_intro_oogami(s)
 
 	// Line 317: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>don't get close to her if you value your life\"...\n<CLT>");    // "<CLT 4>命が惜しければ、決して彼女には近寄らない事だ…\n<CLT>"
+	s.showLine("<CLT 4>don't get close to her if you want to live\"...\n<CLT>");    // "<CLT 4>命が惜しければ、決して彼女には近寄らない事だ…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -3540,7 +3540,7 @@ function self_intro_oogami(s)
 	s.op(0x25, [0x33, 0x00]);
 	s.op(0x22, [0x01, 0x01, 0x18]);
 	s.op(0x06, [0x02, 0xDE, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF]);
-	s.showSprite(0, "Sakura Ookami", 0, 1, 2);
+	s.showSprite(0, "Sakura Oogami", 0, 1, 2);
 	s.op(0x25, [0x06, 0x00]);
 	s.op(0x22, [0x00, 0x01, 0x18]);
 	s.op(0x25, [0x01, 0x01]);
@@ -3552,10 +3552,10 @@ function self_intro_oogami(s)
 	s.waitForInput();
 
 
-	// Line 319: "Sakura Ookami"
+	// Line 319: "Sakura Oogami"
 	s.op(0x25, [0x00, 0x00]);
-	s.showSprite(0, "Sakura Ookami", 5, 1, 2);
-	s.playVoice("Sakura Ookami", 99, 16);
+	s.showSprite(0, "Sakura Oogami", 5, 1, 2);
+	s.playVoice("Sakura Oogami", 99, 16);
 	s.showLine("Hey, you...\n");    // "おい、お主…\n"
 	s.waitFrames(1);
 	s.waitForInput();
@@ -3582,7 +3582,7 @@ function self_intro_oogami(s)
 
 	// Line 322: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Then, she begain to touch my body...\n<CLT>");    // "<CLT 4>すると、彼女はそんなボクの体を、\nベタベタと触り始め…\n<CLT>"
+	s.showLine("<CLT 4>Then, she started touching my body...\n<CLT>");    // "<CLT 4>すると、彼女はそんなボクの体を、\nベタベタと触り始め…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -3596,20 +3596,20 @@ function self_intro_oogami(s)
 	s.waitForInput();
 
 
-	// Line 324: "Sakura Ookami"
-	s.showSprite(0, "Sakura Ookami", 2, 1, 2);
-	s.playVoice("Sakura Ookami", 99, 35);
+	// Line 324: "Sakura Oogami"
+	s.showSprite(0, "Sakura Oogami", 2, 1, 2);
+	s.playVoice("Sakura Oogami", 99, 35);
 	s.showLine("Your muscles are normal\nfor a high school student, huh...\n");    // "筋力の質、量、共に、\nごくごく普通の一般的な高校レベルといったところか…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
-	// Line 325: "Sakura Ookami"
+	// Line 325: "Sakura Oogami"
 	var lines_oogami = ["Hm, how unfortunate.\nYou can't be my sparring partner...\n",
 						"<CLT 4>No... I'm very grateful to hear that...\n<CLT>"];
 						
-	s.showSprite(0, "Sakura Ookami", 5, 1, 2);
-	s.playVoice("Sakura Ookami", 99, 15);
+	s.showSprite(0, "Sakura Oogami", 5, 1, 2);
+	s.playVoice("Sakura Oogami", 99, 15);
 	s.showLine(lines_oogami[0]);    // "ふむ、残念だったな。\nその程度では我の訓練相手は務まらぬ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
@@ -3625,16 +3625,16 @@ function self_intro_oogami(s)
 	s.waitForInput();
 
 
-	// Line 327: "Sakura Ookami"
+	// Line 327: "Sakura Oogami"
 	s.op(0x25, [0x01, 0x00]);
-	s.showSprite(0, "Sakura Ookami", 5, 4, 2);
+	s.showSprite(0, "Sakura Oogami", 5, 4, 2);
 	s.op(0x34, [0x02, 0x20]);
 	s.op(0x2A, [0x02, 0x1F]);
 	s.op(0x25, [0x09, 0x01]);
-	s.showSprite(0, "Sakura Ookami", 5, 1, 2);
+	s.showSprite(0, "Sakura Oogami", 5, 1, 2);
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
-	s.playVoice("Sakura Ookami", 99, 15);
+	s.playVoice("Sakura Oogami", 99, 15);
 	s.showLine(lines_oogami[0]);    // "ふむ、残念だったな。\nその程度では我の訓練相手は務まらぬ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
@@ -3654,7 +3654,7 @@ function self_intro_oogami(s)
 function self_intro_celes(s)
 {
 	// Line 329: "Celestia Rudenberk"
-	s.showSprite(0, "Sakura Ookami", 5, 4, 2);
+	s.showSprite(0, "Sakura Oogami", 5, 4, 2);
 	s.op(0x2A, [0x02, 0x20]);
 	s.op(0x26, [0x0D, 0x0A, 0x01]);
 	s.op(0x35, [0x0D, 0x01, 0x00, 0x01, 0x06, 0x0D, 0x05, 0x00, 0x01, 0x06, 0x0D, 0x0A, 0x00, 0x01, 0x06, 0x0D, 0x0B, 0x00, 0x01]);
@@ -3664,7 +3664,7 @@ function self_intro_celes(s)
 	s.showSprite(0, "Byakuya Togami", 98, 0, 0);
 	s.showSprite(3, "Celestia Rudenberk", 98, 0, 0);
 	s.showSprite(2, "Yasuhiro Hagakure", 98, 0, 0);
-	s.showSprite(6, "Sakura Ookami", 98, 0, 0);
+	s.showSprite(6, "Sakura Oogami", 98, 0, 0);
 	s.op(0x34, [0x00, 0x02]);
 	s.op(0x2A, [0x02, 0x21]);
 	s.op(0x27, [0x03]);
@@ -3730,7 +3730,7 @@ function self_intro_celes(s)
 	// Line 335: "Celestia Rudenberk"
 	s.showSprite(0, "Celestia Rudenberk", 2, 1, 2);
 	s.playVoice("Celestia Rudenberk", 99, 5);
-	s.showLine("Ehehe, pardon me,\nbut my real name is Celestia Rundenberk.\n");    // "うふふ、嫌ですわ。わたくしの本名は、\nセレスティア・ルーデンベルクですわよ。\n"
+	s.showLine("Ehehe, pardon me,\nbut my real name is Celestia Rudenberk.\n");    // "うふふ、嫌ですわ。わたくしの本名は、\nセレスティア・ルーデンベルクですわよ。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -3773,7 +3773,7 @@ function self_intro_celes(s)
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>She calls herself \"Celestia Rudenberk\"...\nShe's an undefeatable <CLT><CLT 3>\"super gambler\"<CLT><CLT 4>...\n<CLT>");    // "<CLT 4>自称セレスティア・ルーデンベルク…\n負け知らずの<CLT><CLT 3>“超高校級のギャンブラー”<CLT><CLT 4>で…\n<CLT>"
+	s.showLine("<CLT 4>She calls herself \"Celestia Rudenberk\"...\nShe's an undefeated <CLT><CLT 3>\"super gambler\"<CLT><CLT 4>...\n<CLT>");    // "<CLT 4>自称セレスティア・ルーデンベルク…\n負け知らずの<CLT><CLT 3>“超高校級のギャンブラー”<CLT><CLT 4>で…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
@@ -3794,7 +3794,7 @@ function self_intro_celes(s)
 	
 	// Line 340: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Other than the fact that she loves gothic lolita\nfashion, nothing is known about her...\n<CLT>");    // "<CLT 4>ゴスロリ服を愛するという事以外の素性が、\nすべてウソのベールに包まれている謎の女子高校生…\n<CLT>"
+	s.showLine("<CLT 4>Nothing is known about her other than the fact\nthat she loves gothic lolita fashion...\n<CLT>");    // "<CLT 4>ゴスロリ服を愛するという事以外の素性が、\nすべてウソのベールに包まれている謎の女子高校生…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -3903,7 +3903,7 @@ function self_intro_celes(s)
 	s.showSprite(0, "Byakuya Togami", 98, 0, 0);
 	s.showSprite(3, "Celestia Rudenberk", 98, 0, 0);
 	s.showSprite(2, "Yasuhiro Hagakure", 98, 0, 0);
-	s.showSprite(6, "Sakura Ookami", 98, 0, 0);
+	s.showSprite(6, "Sakura Oogami", 98, 0, 0);
 	s.op(0x34, [0x00, 0x02]);
 	s.op(0x2A, [0x02, 0x24]);
 	s.op(0x25, [0x01, 0x00]);
@@ -3929,7 +3929,7 @@ function announcement(s)
 
 	// Line 362: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>In any case, all of these <CLT><CLT 3>\"super students\"<CLT><CLT 4>\nwere so... unique.\n<CLT>");    // "<CLT 4>それにしても<CLT><CLT 3>“超高校級”<CLT><CLT 4>なんて呼ばれるだけあって、\nみんな個性的と言うか…なんと言うか…\n<CLT>"
+	s.showLine("<CLT 4>In any case, all of these <CLT><CLT 3>\"super students\"<CLT><CLT 4>\nare so... unique.\n<CLT>");    // "<CLT 4>それにしても<CLT><CLT 3>“超高校級”<CLT><CLT 4>なんて呼ばれるだけあって、\nみんな個性的と言うか…なんと言うか…\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -3982,7 +3982,7 @@ function announcement(s)
 	// Line 368: "Sayaka Maizono"
 	s.showSprite(1, "Sayaka Maizono", 1, 1, 3);
 	s.playVoice("Sayaka Maizono", 99, 6);
-	s.showLine("Naegi, you said that <CLT 3>things happened\nand you somehow fell asleep<CLT 4>, right?\n");    // "苗木君、言ってましたよね？\n<CLT 3>色々あって寝ちゃってた<CLT>って…\n"
+	s.showLine("Naegi, you said that you somehow fell asleep,\nright?\n");    // "苗木君、言ってましたよね？\n<CLT 3>色々あって寝ちゃってた<CLT>って…\n"
 	s.waitFrames(1);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -4008,7 +4008,7 @@ function announcement(s)
 	// Line 371: "Reon Kuwata"
 	s.showSprite(0, "Reon Kuwata", 12, 1, 4);
 	s.playVoice("Reon Kuwata", 99, 10);
-	s.showLine("After I got in the entrance hall,\nI suddenly lost consciousness...\n");    // "この玄関ホールに入った直後に、\nいきなり気を失っちまってさぁ…\n"
+	s.showLine("After I set foot into the entrance hall,\nI suddenly lost consciousness...\n");    // "この玄関ホールに入った直後に、\nいきなり気を失っちまってさぁ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -4060,7 +4060,7 @@ function announcement(s)
 	s.op(0x33, [0x06, 0x00, 0x00, 0x1E]);
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Kiyotaka Ishimaru");
-	s.showLine("...They all have been bolted shut with metal plates.\nWhat in the world is going on!?\n");    // "…至る所に、鉄板が打ち付けられていた。\nあれは一体なんだと言うのだッ！？\n"
+	s.showLine("...They've all been bolted shut with metal plates.\nWhat in the world is going on!?\n");    // "…至る所に、鉄板が打ち付けられていた。\nあれは一体なんだと言うのだッ！？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -4149,7 +4149,7 @@ function announcement(s)
 	// Line 386: "Yasuhiro Hagakure"
 	s.showSprite(0, "Yasuhiro Hagakure", 11, 1, 1);
 	s.playVoice("Yasuhiro Hagakure", 99, 8);
-	s.showLine("Don't make such a gloomy face...\n");    // "そう、シケタ面してんなって…\n"
+	s.showLine("Don't be such a downer...\n");    // "そう、シケタ面してんなって…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -4163,7 +4163,7 @@ function announcement(s)
 	// Line 388: "Yasuhiro Hagakure"
 	s.showSprite(0, "Yasuhiro Hagakure", 1, 1, 1);
 	s.playVoice("Yasuhiro Hagakure", 99, 3);
-	s.showLine("So I guess I'll take a little rest here...\n");    // "つー訳で、俺はちょっくら一休みすんべ…\n"
+	s.showLine("So I guess I'll take a little nap here...\n");    // "つー訳で、俺はちょっくら一休みすんべ…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -4179,7 +4179,7 @@ function announcement(s)
 	// Line 390: "Reon Kuwata"
 	s.showSprite(0, "Reon Kuwata", 13, 1, 2);
 	s.playVoice("Reon Kuwata", 99, 29);
-	s.showLine("What, that's all...?\nThen I guess I'll take a nap.\n");    // "何よ、そういう事なの…？\nならオレも昼寝させてもらっちゃうよ？\n"
+	s.showLine("What, that's all...?\nThen I guess I'll take a nap too.\n");    // "何よ、そういう事なの…？\nならオレも昼寝させてもらっちゃうよ？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -4217,7 +4217,7 @@ function announcement(s)
 	s.setSpeaker("[No Name]");
 	s.playSoundEffectA(156, 100);
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>\"Ding, dong... ding, dong...\"\n<CLT>");    // "<CLT 23>「キーン、コーン…　カーン、コーン…」\n<CLT>"	// TODO: better onomatopoeia?
+	s.showLine(common_line_westminster_chimes);    // "<CLT 23>「キーン、コーン…　カーン、コーン…」\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x78]);
@@ -4243,7 +4243,7 @@ function announcement(s)
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("???");
 	s.playVoice("Monokuma", 99, 156);
-	s.showLine("Testing, testing!\nSchoolwide broadcast, schoolwide broadcast...!\n");    // "あー、あー…！　マイクテスッ、マイクテスッ！\n校内放送、校内放送…！\n"
+	s.showLine("Testing, testing!\nBroadcasting, broadcasting...!\n");    // "あー、あー…！　マイクテスッ、マイクテスッ！\n校内放送、校内放送…！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -4267,7 +4267,7 @@ function announcement(s)
 
 	// Line 398: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>That's why...\nthe voice made me really uneasy.\n<CLT>");    // "<CLT 4>それゆえに…\nボクは、その声に強烈な不快感を抱いた。\n<CLT>"
+	s.showLine("<CLT 4>That's why...\nit made me really uneasy.\n<CLT>");    // "<CLT 4>それゆえに…\nボクは、その声に強烈な不快感を抱いた。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -4275,7 +4275,7 @@ function announcement(s)
 
 	// Line 399: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>It's a screeching laughter at an accident scene...\n<CLT>");    // "<CLT 4>例えば、事故現場で鳴り響く笑い声のように、\n思わず眉をしかめたくなるような不快感…\n<CLT>"
+	s.showLine("<CLT 4>It's like a screeching laughter\nat an accident scene...\n<CLT>");    // "<CLT 4>例えば、事故現場で鳴り響く笑い声のように、\n思わず眉をしかめたくなるような不快感…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -4292,7 +4292,7 @@ function announcement(s)
 
 	// Line 401: "Monokuma"
 	s.playVoice("Monokuma", 99, 159);
-	s.showLine("So please come to the gym right away~\n");    // "至急、体育館までお集まりくださ～い。\n"
+	s.showLine("so please come to the gym right away~\n");    // "至急、体育館までお集まりくださ～い。\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -4361,7 +4361,7 @@ function announcement(s)
 	// Line 407: "Yasuhiro Hagakure"
 	s.showSprite(1, "Yasuhiro Hagakure", 11, 1, 0);
 	s.playVoice("Yasuhiro Hagakure", 99, 29);
-	s.showLine("Entrance ceremony... I see, so that's how it is...\nThis is also part of the entrance ceremony, huh.\n");    // "入学式…なるほど、そういう事ね…\nこれは入学式って催し物の一部だったってか。\n"
+	s.showLine("Entrance ceremony... I see, so that's how it is...\nSo this is also part of the entrance ceremony, huh?\n");    // "入学式…なるほど、そういう事ね…\nこれは入学式って催し物の一部だったってか。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -4389,7 +4389,7 @@ function announcement(s)
 	// Line 410: "Reon Kuwata"
 	s.showSprite(1, "Reon Kuwata", 13, 1, 3);
 	s.playVoice("Reon Kuwata", 99, 39);
-	s.showLine("I thought that I had a chance to catch a nap...\nSeriously, be more considerate.\n");    // "せっかく一眠りしようと思ってたっつーのに…\n空気読めよなマジで。\n"	// TODO: not casual enough
+	s.showLine("I thought that I had a chance to catch a nap...\nSeriously, be more considerate.\n");    // "せっかく一眠りしようと思ってたっつーのに…\n空気読めよなマジで。\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x1E]);
 	s.playSoundEffectA(141, 100);
@@ -4472,7 +4472,7 @@ function announcement(s)
 	// Line 418: "Junko Enoshima (fake)"
 	s.showSprite(0, "Junko Enoshima (fake)", 2, 1, 2);
 	s.playVoice("Junko Enoshima (fake)", 99, 9);
-	s.showLine("That schoolwide broadcast\nwas really weird...\n");    // "今の校内放送にしたって、\n妙に怪しかったしね…\n"
+	s.showLine("That announcement was really wacko...\n");    // "今の校内放送にしたって、\n妙に怪しかったしね…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -4491,11 +4491,11 @@ function announcement(s)
 	s.waitForInput();
 
 
-	// Line 421: "Sakura Ookami"
-	line_oogami_2 = "We won't know anything unless we make progress...\nThen we don't have a choice.\n";
-	s.showSprite(0, "Sakura Ookami", 2, 1, 2);
-	s.playVoice("Sakura Ookami", 99, 35);
-	s.showLine(line_oogami_2);    // "先に進まぬ限りは何もわからぬままという事か…\nならば、行くしかあるまい。\n"	// TODO: overflow
+	// Line 421: "Sakura Oogami"
+	line_oogami_2 = "We won't know anything unless we\nmake progress... That leaves us with no choice.\n";
+	s.showSprite(0, "Sakura Oogami", 2, 1, 2);
+	s.playVoice("Sakura Oogami", 99, 35);
+	s.showLine(line_oogami_2);    // "先に進まぬ限りは何もわからぬままという事か…\nならば、行くしかあるまい。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -4542,7 +4542,7 @@ function before_going_to_gym(s)
 	// Line 426: "Sayaka Maizono"
 	s.op(0x33, [0x06, 0x00, 0x00, 0x1E]);
 	s.op(0x22, [0x01, 0x01, 0x18]);
-	s.showSprite(0, "Sakura Ookami", 2, 3, 2);
+	s.showSprite(0, "Sakura Oogami", 2, 3, 2);
 	s.showSprite(1, "Kyouko Kirigiri", 0, 3, 3);
 	s.playBGM(255, 0, 0);
 	s.op(0x33, [0x0F, 0x00, 0x00, 0x17]);
@@ -4564,7 +4564,7 @@ function before_going_to_gym(s)
 	s.showSprite(0, "Sayaka Maizono", 0, 0, 0);
 	s.showSprite(9, "Junko Enoshima (fake)", 0, 0, 0);
 	s.showSprite(2, "Kyouko Kirigiri", 0, 0, 0);
-	s.showSprite(3, "Sakura Ookami", 0, 0, 0);
+	s.showSprite(3, "Sakura Oogami", 0, 0, 0);
 	s.showSprite(4, "Kiyotaka Ishimaru", 0, 0, 0);
 	s.showSprite(5, "Hifumi Yamada", 0, 0, 0);
 	s.showSprite(8, "Mondo Oowada", 0, 0, 0);
@@ -4618,18 +4618,18 @@ function before_going_to_gym(s)
 	s.op(0x25, [0x01, 0x00]);
 
 
-	// Line 429: "Sakura Ookami"
+	// Line 429: "Sakura Oogami"
 	s.op(0x27, [0x03]);
 	s.op(0x25, [0x09, 0x01]);
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x02, 0x01]);
 	s.op(0x25, [0x01, 0x01]);
-	s.showSprite(0, "Sakura Ookami", 2, 1, 2);
-	s.playVoice("Sakura Ookami", 99, 3);
+	s.showSprite(0, "Sakura Oogami", 2, 1, 2);
+	s.playVoice("Sakura Oogami", 99, 3);
 	s.showLine(line_oogami_2);    // "先に進まぬ限りは何もわからぬ…\n行くしかあるまい。\n"
 	s.waitFrames(2);
 	s.waitForInput();
-	s.showSprite(0, "Sakura Ookami", 2, 4, 2);
+	s.showSprite(0, "Sakura Oogami", 2, 4, 2);
 	s.op(0x25, [0x01, 0x00]);
 
 

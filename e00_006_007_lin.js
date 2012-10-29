@@ -21,7 +21,7 @@ function e00_006_007_lin()
 	s.showSprite(0, "Kyouko Kirigiri", 0, 0, 0);
 	s.showSprite(1, "Celestia Rudenberk", 0, 0, 0);
 	s.showSprite(3, "Aoi Asahina", 0, 0, 0);
-	s.showSprite(4, "Sakura Ookami", 0, 0, 0);
+	s.showSprite(4, "Sakura Oogami", 0, 0, 0);
 	s.showSprite(8, "Byakuya Togami", 0, 0, 0);
 	s.showSprite(9, "Chihiro Fujisaki", 0, 0, 0);
 	s.showSprite(10, "Kiyotaka Ishimaru", 0, 0, 0);
@@ -362,9 +362,9 @@ function e00_006_007_lin()
 	s.waitForInput();
 
 
-	// Line 31: "Sakura Ookami"
-	s.showSprite(1, "Sakura Ookami", 0, 1, 0);
-	s.playVoice("Sakura Ookami", 99, 3);
+	// Line 31: "Sakura Oogami"
+	s.showSprite(1, "Sakura Oogami", 0, 1, 0);
+	s.playVoice("Sakura Oogami", 99, 3);
 	s.showLine("...He gave up, huh.\n");    // "…諦めたな。\n"
 	s.waitFrames(1);
 	s.waitForInput();
