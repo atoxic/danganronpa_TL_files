@@ -22,7 +22,7 @@ function e00_004_003_lin()
 	object_lines(s, true);
 	self_intro_togami(s);
 	self_intro_hagakure(s);
-	self_intro_ookami(s);
+	self_intro_oogami(s);
 	self_intro_celes(s);
 	object_lines(s, true);
 	announcement(s);
@@ -253,7 +253,7 @@ function enter_entrance_hall(s)
 	// Line 5: "Chihiro Fujisaki"
 	s.setSpeaker("???");
 	s.playVoice("Chihiro Fujisaki", 99, 67);
-	s.showLine("Yeah. We're the freshmen who were supposed\nto enroll in this school today...\n");    // "うん。今日、希望ヶ峰学園に入学する予定の…\n新入生だよ。\n"
+	s.showLine("Yeah. We're all freshmen who were supposed\nto enroll in this school today...\n");    // "うん。今日、希望ヶ峰学園に入学する予定の…\n新入生だよ。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -271,7 +271,7 @@ function enter_entrance_hall(s)
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>So they're... the <CLT><CLT 3>\"super students\"<CLT><CLT 4>\nchosen by Mount Hope Academy...\n<CLT>");    // "<CLT 4>彼らが…希望ヶ峰学園に選ばれた\n<CLT><CLT 3>“超高校級”<CLT 4>の生徒達…\n<CLT>"
+	s.showLine("<CLT 4>So... they're the <CLT><CLT 3>\"super students\"<CLT><CLT 4>\nchosen by Mount Hope Academy...\n<CLT>");    // "<CLT 4>彼らが…希望ヶ峰学園に選ばれた\n<CLT><CLT 3>“超高校級”<CLT 4>の生徒達…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
@@ -350,7 +350,7 @@ function enter_entrance_hall(s)
 
 	// Line 15: "Makoto Naegi"
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("U-Um... what's going on?\nI don't understand what this situation is...\n");    // "あ、あの…どういう事？\nよく状況を把握出来ていないんだけど…\n"
+	s.showLine("U-Um... what's going on?\nI don't understand what the situation is...\n");    // "あ、あの…どういう事？\nよく状況を把握出来ていないんだけど…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -467,7 +467,7 @@ function enter_entrance_hall(s)
 
 	// Line 28: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Although I investigated about everyone <CLT><CLT 3>online<CLT><CLT 4>...\n<CLT>");    // "<CLT 4>みんなの事は、<CLT><CLT 3>“希望ヶ峰学園新入生スレ”<CLT><CLT 4>で、\n一通りは調べてあるけど…\n<CLT>"
+	s.showLine("<CLT 4>Although I investigated everyone's background\n<CLT><CLT 3>online<CLT><CLT 4>...\n<CLT>");    // "<CLT 4>みんなの事は、<CLT><CLT 3>“希望ヶ峰学園新入生スレ”<CLT><CLT 4>で、\n一通りは調べてあるけど…\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -769,7 +769,7 @@ function self_intro_reon(s)
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>the ace and clean-up hitter of a team that won\nthe nationals.\n<CLT>");    // "<CLT 4>高校野球大会の優勝チームで、エースで４番バッター。\nプロも注目する<CLT><CLT 3>“超高校級の野球選手”<CLT><CLT 4>だったよな。\n<CLT>"
+	s.showLine("<CLT 4>the ace and clean-up hitter of a team\nthat won the nationals.\n<CLT>");    // "<CLT 4>高校野球大会の優勝チームで、エースで４番バッター。\nプロも注目する<CLT><CLT 3>“超高校級の野球選手”<CLT><CLT 4>だったよな。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
@@ -818,7 +818,7 @@ function self_intro_reon(s)
 	// Line 50: "Reon Kuwata"
 	s.showSprite(0, "Reon Kuwata", 1, 1, 2);
 	s.playVoice("Reon Kuwata", 99, 8);
-	s.showLine("Huh? What up?\n");    // "あ？　どーしたん？\n"
+	s.showLine("Huh? What up, dawg?\n");    // "あ？　どーしたん？\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -902,7 +902,7 @@ function self_intro_reon(s)
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("But I'll never cut or undye my hair ever again!\nGot it!?\n");    // "もう、ぜってーに髪は切んねぇ。\n色も戻さねぇかんな！\n"
+	s.showLine("but I'll never cut or undye my hair ever again!\nGot it!?\n");    // "もう、ぜってーに髪は切んねぇ。\n色も戻さねぇかんな！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -1049,7 +1049,7 @@ function self_intro_yamada(s)
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
 	s.playVoice("Hifumi Yamada", 99, 1);
-	s.showLine("Yamada Hifumi...\nYou can also call me \"the first and the last.\"\n");    // "山田一二三…“すべての始まりにして終わりなる者”\n二つ名の方で呼んで頂いても構いませんぞ。\n"	// TODO: replace Xenogears reference?
+	s.showLine("Yamada Hifumi...\nYou can also call me \"the alpha and the omega.\"\n");    // "山田一二三…“すべての始まりにして終わりなる者”\n二つ名の方で呼んで頂いても構いませんぞ。\n"	// TODO: replace Xenogears reference?
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1085,7 +1085,7 @@ function self_intro_yamada(s)
 	// Line 74: "Hifumi Yamada"
 	s.showSprite(0, "Hifumi Yamada", 4, 1, 2);
 	s.playVoice("Hifumi Yamada", 99, 14);
-	s.showLine("I made my name as the <CLT 3>\"super doujin author\"<CLT>\nworking with 2D, hehe.\n");    // "そっちの業界では<CLT 3>“超高校級の同人作家”<CLT>って事で、\n僕もそれなりに名が通ってるんですよねぇ、むふふ。\n"
+	s.showLine("I made my name as the <CLT 3>\"super doujin author\"<CLT>\nby working with 2D, hehe.\n");    // "そっちの業界では<CLT 3>“超高校級の同人作家”<CLT>って事で、\n僕もそれなりに名が通ってるんですよねぇ、むふふ。\n"
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
 	s.waitFrames(2);
@@ -1112,7 +1112,7 @@ function self_intro_yamada(s)
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>I feel bad for those classmates...\nBut selling 10000 copies is out of the ordinary.\n<CLT>");    // "<CLT 4>そのクラスメイト達には気の毒だけど…\n文化祭で１万部って、確かに尋常じゃない数字だな。\n<CLT>"
+	s.showLine("<CLT 4>I feel bad for those classmates...\nbut selling 10000 copies is out of the ordinary.\n<CLT>");    // "<CLT 4>そのクラスメイト達には気の毒だけど…\n文化祭で１万部って、確かに尋常じゃない数字だな。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1143,7 +1143,7 @@ function self_intro_yamada(s)
 	var line_hifumi = "<CLT 4>I don't think I want to know...\n<CLT>";
 	s.showSprite(0, "Hifumi Yamada", 2, 1, 2);
 	s.playVoice("Hifumi Yamada", 99, 8);
-	s.showLine("You too will understand the themes\nthat run deep within them.\n");    // "僕の作品に根付く深いテーマにね…\n"
+	s.showLine("you too will understand the themes\nthat run deep within them.\n");    // "僕の作品に根付く深いテーマにね…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -1405,7 +1405,7 @@ function self_intro_maizono(s)
 	s.playVoice("Sayaka Maizono", 99, 18);
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("...That's right.\nThere 's no doubt about it...\n");    // "…そうだ。\nやっぱり…そうですよね…\n"
+	s.showLine("...That's right.\nThere's no doubt about it...\n");    // "…そうだ。\nやっぱり…そうですよね…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1427,7 +1427,7 @@ function self_intro_maizono(s)
 	s.setSpeaker("Kiyotaka Ishimaru");
 	s.op(0x2A, [0x02, 0x00]);
 	s.playVoice("Kiyotaka Ishimaru", 99, 44);
-	s.showLine("Hey, you two! Are you going to\nspend all day introducing yourselves!?\n");    // "おい、君達ッ！！　いつまで長話をしているのだ！\n自己紹介だけで貴重な１日を終わらせるつもりか！？\n"
+	s.showLine("Hey, you two! Are you gonna\nspend all day introducing yourselves!?\n");    // "おい、君達ッ！！　いつまで長話をしているのだ！\n自己紹介だけで貴重な１日を終わらせるつもりか！？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1451,7 +1451,7 @@ function self_intro_maizono(s)
 	s.setSpeaker("Kiyotaka Ishimaru");
 	s.op(0x2A, [0x02, 0x02]);
 	s.playVoice("Kiyotaka Ishimaru", 99, 11);
-	s.showLine("Remember that self-introductions are about\nintroducing yourself, not about random chatter!\n");    // "自己紹介とは自己を紹介する場であって、\n決して雑談の場ではないと心得よ！！\n"
+	s.showLine("Remember that self-introductions are about\nintroducing yourself, not random chatter!\n");    // "自己紹介とは自己を紹介する場であって、\n決して雑談の場ではないと心得よ！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1624,7 +1624,7 @@ function self_intro_fukawa(s)
 
 	// Line 123: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>was such a hit among young girls\nthat fishermen became popular for a while.\n<CLT>");    // "<CLT 4>影響を受けた若い女性の間で漁師が大人気になるなど、\n社会現象を生み出す大ヒットとなった。\n<CLT>"
+	s.showLine("<CLT 4>was such a social phenomenon that fishermen\nbecame popular among young girls for a while.\n<CLT>");    // "<CLT 4>影響を受けた若い女性の間で漁師が大人気になるなど、\n社会現象を生み出す大ヒットとなった。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1881,7 +1881,8 @@ function self_intro_oowada(s)
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>He's the second leader of\nJapan's biggest and baddest biker gang...\n<CLT>");    // "<CLT 4>日本最大最凶と称される暴走族に、\n２代目総長として君臨する人物…\n<CLT>"
+	// TODO: not sure about "second-ever"
+	s.showLine("<CLT 4>He's the second-ever leader of\nJapan's biggest and baddest biker gang...\n<CLT>");    // "<CLT 4>日本最大最凶と称される暴走族に、\n２代目総長として君臨する人物…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -2068,7 +2069,7 @@ function self_intro_kirigiri(s)
 
 	// Line 173: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>And her name...\n<CLT>");    // "<CLT 4>それに、この子の名前…\n<CLT>"
+	s.showLine("<CLT 4>Besides, her name...\n<CLT>");    // "<CLT 4>それに、この子の名前…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -2101,7 +2102,7 @@ function self_intro_kirigiri(s)
 
 	// Line 176: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>There were some unknown freshmen...\n<CLT>");    // "<CLT 4>素性が明らかにならない新入生がいるんだっけ…\n<CLT>"
+	s.showLine("<CLT 4>there were some unknown freshmen...\n<CLT>");    // "<CLT 4>素性が明らかにならない新入生がいるんだっけ…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -2312,7 +2313,7 @@ function self_intro_asahina(s)
 
 	// Line 195: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Her talent and looks has even the Internet\ntalking about her...\n<CLT>");    // "<CLT 4>実力、容姿、プロポーションと揃った逸材って、\nネットでも騒がれてたっけ…\n<CLT>"
+	s.showLine("<CLT 4>Her talent and looks has\nthe Internet talking about her...\n<CLT>");    // "<CLT 4>実力、容姿、プロポーションと揃った逸材って、\nネットでも騒がれてたっけ…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -2393,7 +2394,7 @@ function self_intro_asahina(s)
 
 	// Line 205: "Makoto Naegi"
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("Never heard about this...\n");    // "聞いた事ないけど…\n"
+	s.showLine("I've never heard about this...\n");    // "聞いた事ないけど…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -2440,7 +2441,7 @@ function self_intro_asahina(s)
 	// Line 211: "Aoi Asahina"
 	var lines_asahina = ["Well, anyway! I hope we get along!\n",
 						"Y-Yea...\nMe too...\n",
-						"<CLT 4>Anyway... At least I got to know that\nshe's a very energetic person...\n<CLT>"];
+						"<CLT 4>Anyway... at least I got to know that\nshe's a very energetic person...\n<CLT>"];
 	
 	s.showSprite(0, "Aoi Asahina", 4, 1, 2);
 	s.playVoice("Aoi Asahina", 99, 41);
@@ -2563,7 +2564,7 @@ function self_intro_junko(s)
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>the <CLT><CLT 3>\"super gal\"<CLT><CLT 4> who's a charismatic figure\nfor all high school girls...\n<CLT>");    // "<CLT 4>全国の女子高校生達の間でカリスマ的存在の…\n<CLT><CLT 3>“超高校級のギャル”<CLT><CLT 4>だったよな…\n<CLT>"
+	s.showLine("<CLT 4>the <CLT><CLT 3>\"super fashion girl\"<CLT><CLT 4> who's a charismatic figure\nfor all high school girls...\n<CLT>");    // "<CLT 4>全国の女子高校生達の間でカリスマ的存在の…\n<CLT><CLT 3>“超高校級のギャル”<CLT><CLT 4>だったよな…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
@@ -2576,7 +2577,7 @@ function self_intro_junko(s)
 
 	// Line 220: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>But...\nCompared to the magazines...\n<CLT>");    // "<CLT 4>でも、なんか…雑誌で見たのと…\n<CLT>"
+	s.showLine("<CLT 4>but...\ncompared to the magazines...\n<CLT>");    // "<CLT 4>でも、なんか…雑誌で見たのと…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -2672,7 +2673,7 @@ function self_intro_junko(s)
 	// Line 229: "Junko Enoshima (fake)"
 	s.showSprite(0, "Junko Enoshima (fake)", 6, 1, 2);
 	s.playVoice("Junko Enoshima (fake)", 99, 29);
-	s.showLine("But it's normal for cover shots\nto be touched up now!\n");    // "いまどき、カバーショットで盛るなんて\n全然当たり前なんだって！\n"
+	s.showLine("but now it's normal for cover shots\nto be touched up!\n");    // "いまどき、カバーショットで盛るなんて\n全然当たり前なんだって！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -2702,7 +2703,7 @@ function self_intro_junko(s)
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>I feel like...\nMy dream has been shattered...\n<CLT>");    // "<CLT 4>なんだか…夢を壊された気分だな…\n<CLT>"
+	s.showLine("<CLT 4>I feel like...\nmy dreams have been shattered...\n<CLT>");    // "<CLT 4>なんだか…夢を壊された気分だな…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -2718,7 +2719,7 @@ function self_intro_junko(s)
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
 	s.playVoice("Junko Enoshima (fake)", 99, 16);
-	s.showLine("Well, we don't fit well character-wise,\nand you don't think that I'm the heroine, right?\n");    // "ま、アンタとはキャラ的に合わないだろうし、\nあたしがヒロインだとも思ってないっしょ？\n"
+	s.showLine("Well, our characters don't fit well together,\nand you don't think that I'm the heroine, right?\n");    // "ま、アンタとはキャラ的に合わないだろうし、\nあたしがヒロインだとも思ってないっしょ？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -3120,7 +3121,7 @@ function self_intro_togami(s)
 
 	// Line 282: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Byakuya Togami...\nHe's the prince of the Togami plutocrats.\n<CLT>");    // "<CLT 4>十神白夜…巨大財閥である十神一族の御曹司であり、\n幼い頃から、あらゆる帝王学を叩き込まれ…\n<CLT>"
+	s.showLine("<CLT 4>Byakuya Togami...\nThe prince of the Togami plutocrats.\n<CLT>");    // "<CLT 4>十神白夜…巨大財閥である十神一族の御曹司であり、\n幼い頃から、あらゆる帝王学を叩き込まれ…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -3410,7 +3411,7 @@ function self_intro_hagakure(s)
 	s.op(0x25, [0x01, 0x00]);
 }
 
-function self_intro_ookami(s)
+function self_intro_oogami(s)
 {
 	// Line 309: "Sakura Ookami"
 	s.showSprite(0, "Yasuhiro Hagakure", 0, 4, 2);
@@ -3435,7 +3436,7 @@ function self_intro_ookami(s)
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
 	s.playVoice("Sakura Ookami", 99, 1);
-	s.showLine("I'm Sakura Ookami...\n");    // "大神さくらだ…\n"
+	s.showLine("I'm Sakura Oogami...\n");    // "大神さくらだ…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -3508,7 +3509,7 @@ function self_intro_ookami(s)
 
 	// Line 315: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>\"Sakura Ookami, a.k.a. <CLT><CLT 3>'The Ogre'<CLT><CLT 4>, may be the\nstrongest teenage female Homo sapiens ever.\n<CLT>");    // "<CLT 4>大神さくら…通称<CLT><CLT 3>“オーガ”<CLT><CLT 4>は、\n霊長類ヒト科最強に最も近い女子高生だ。\n<CLT>"
+	s.showLine("<CLT 4>\"Sakura Oogami, a.k.a. <CLT><CLT 3>'The Ogre'<CLT><CLT 4>, may be the\nstrongest teenage female Homo sapiens ever.\n<CLT>");    // "<CLT 4>大神さくら…通称<CLT><CLT 3>“オーガ”<CLT><CLT 4>は、\n霊長類ヒト科最強に最も近い女子高生だ。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -3604,12 +3605,12 @@ function self_intro_ookami(s)
 
 
 	// Line 325: "Sakura Ookami"
-	var lines_ookami = ["Hm, how unfortunate.\nYou can't be my sparring partner...\n",
+	var lines_oogami = ["Hm, how unfortunate.\nYou can't be my sparring partner...\n",
 						"<CLT 4>No... I'm very grateful to hear that...\n<CLT>"];
 						
 	s.showSprite(0, "Sakura Ookami", 5, 1, 2);
 	s.playVoice("Sakura Ookami", 99, 15);
-	s.showLine(lines_ookami[0]);    // "ふむ、残念だったな。\nその程度では我の訓練相手は務まらぬ…\n"
+	s.showLine(lines_oogami[0]);    // "ふむ、残念だったな。\nその程度では我の訓練相手は務まらぬ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -3618,7 +3619,7 @@ function self_intro_ookami(s)
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine(lines_ookami[1]);    // "<CLT 4>いや…むしろ、ありがたいんですけど…\n<CLT>"
+	s.showLine(lines_oogami[1]);    // "<CLT 4>いや…むしろ、ありがたいんですけど…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -3634,7 +3635,7 @@ function self_intro_ookami(s)
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
 	s.playVoice("Sakura Ookami", 99, 15);
-	s.showLine(lines_ookami[0]);    // "ふむ、残念だったな。\nその程度では我の訓練相手は務まらぬ…\n"
+	s.showLine(lines_oogami[0]);    // "ふむ、残念だったな。\nその程度では我の訓練相手は務まらぬ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -3643,7 +3644,7 @@ function self_intro_ookami(s)
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine(lines_ookami[1]);    // "<CLT 4>いや…むしろ、ありがたいんですけど…\n<CLT>"
+	s.showLine(lines_oogami[1]);    // "<CLT 4>いや…むしろ、ありがたいんですけど…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -4491,10 +4492,10 @@ function announcement(s)
 
 
 	// Line 421: "Sakura Ookami"
-	line_ookami_2 = "We won't know anything unless we make progress...\nThen we don't have a choice.\n";
+	line_oogami_2 = "We won't know anything unless we make progress...\nThen we don't have a choice.\n";
 	s.showSprite(0, "Sakura Ookami", 2, 1, 2);
 	s.playVoice("Sakura Ookami", 99, 35);
-	s.showLine(line_ookami_2);    // "先に進まぬ限りは何もわからぬままという事か…\nならば、行くしかあるまい。\n"	// TODO: overflow
+	s.showLine(line_oogami_2);    // "先に進まぬ限りは何もわからぬままという事か…\nならば、行くしかあるまい。\n"	// TODO: overflow
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -4625,7 +4626,7 @@ function before_going_to_gym(s)
 	s.op(0x25, [0x01, 0x01]);
 	s.showSprite(0, "Sakura Ookami", 2, 1, 2);
 	s.playVoice("Sakura Ookami", 99, 3);
-	s.showLine(line_ookami_2);    // "先に進まぬ限りは何もわからぬ…\n行くしかあるまい。\n"
+	s.showLine(line_oogami_2);    // "先に進まぬ限りは何もわからぬ…\n行くしかあるまい。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 	s.showSprite(0, "Sakura Ookami", 2, 4, 2);
