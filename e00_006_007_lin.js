@@ -813,7 +813,7 @@ function e00_006_007_lin()
 
 	// Line 84: "Monokuma"
 	s.op(0x03, [0x03]);
-	s.showLine("<CLT 3>\"You can get out if you kill someone\"<CLT>...\nThat's the rule, simple as that.\n");    // "<CLT 3>『誰かを殺した生徒だけがここから出られる…』<CLT>\nそれだけの簡単なルールだよ。\n"
+	s.showLine("<CLT 3>\"You can leave if you kill someone\"<CLT>...\nThat's the rule, simple as that.\n");    // "<CLT 3>『誰かを殺した生徒だけがここから出られる…』<CLT>\nそれだけの簡単なルールだよ。\n"
 	s.op(0x03, [0x00]);
 	s.waitFrames(2);
 	s.waitForInput();
@@ -839,7 +839,7 @@ function e00_006_007_lin()
 
 	// Line 87: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>The words \"you can get out if you kill someone\"\nsent a chill up my spine all the way to my head.\n<CLT>");    // "<CLT 4>『誰かを殺した生徒だけがここから出られる』\nその言葉を聞いた途端…\n<CLT>"
+	s.showLine("<CLT 4>The words \"you can leave if you kill someone\"\nsent a chill up my spine all the way to my head.\n<CLT>");    // "<CLT 4>『誰かを殺した生徒だけがここから出られる』\nその言葉を聞いた途端…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();

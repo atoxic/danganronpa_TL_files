@@ -1,3 +1,4 @@
+loadScript("common.js");
 loadScript("chapter00_common.js");
 
 /**
