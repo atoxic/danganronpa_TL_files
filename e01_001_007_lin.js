@@ -767,7 +767,7 @@ function e01_001_007_lin()
 	// Line 65: "Kiyotaka Ishimaru"
 	s.showSprite(1, "Kiyotaka Ishimaru", 14, 1, 3);
 	s.playVoice("Kiyotaka Ishimaru", 99, 25);
-	s.showLine("ここはどこなのか？　脱出口はないのか？\n食糧や生活品はあるのか？\n");    // "ここはどこなのか？　脱出口はないのか？\n食糧や生活品はあるのか？\n"
+	s.showLine("Where is this? Is there an exit?\nDo we have food and supplies?\n");    // "ここはどこなのか？　脱出口はないのか？\n食糧や生活品はあるのか？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -778,7 +778,7 @@ function e01_001_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("僕らには、知らなければならない事が山積みだッ！\n");    // "僕らには、知らなければならない事が山積みだッ！\n"
+	s.showLine("We have a mountain of things\nthat we must find out!\n");    // "僕らには、知らなければならない事が山積みだッ！\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -791,7 +791,7 @@ function e01_001_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("うぉっしゃあ！\nさっそく、みんな一緒に探索すんぞー！\n");    // "うぉっしゃあ！\nさっそく、みんな一緒に探索すんぞー！\n"
+	s.showLine("Alright!\nLet's go check things out together!\n");    // "うぉっしゃあ！\nさっそく、みんな一緒に探索すんぞー！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -803,7 +803,7 @@ function e01_001_007_lin()
 	s.playVoice("Byakuya Togami", 99, 4);
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("…俺は１人で行くぞ。\n");    // "…俺は１人で行くぞ。\n"
+	s.showLine("...I'm going by myself.\n");    // "…俺は１人で行くぞ。\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -811,7 +811,7 @@ function e01_001_007_lin()
 	// Line 69: "Junko Enoshima (fake)"
 	s.showSprite(0, "Junko Enoshima (fake)", 8, 1, 3);
 	s.playVoice("Junko Enoshima (fake)", 99, 22);
-	s.showLine("はぁ！？　どうしてよ！\n流れ的におかしくない？\n");    // "はぁ！？　どうしてよ！\n流れ的におかしくない？\n"
+	s.showLine("Huh!? Why!?\nWhy do you have to be such a rebel?\n");    // "はぁ！？　どうしてよ！\n流れ的におかしくない？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -819,13 +819,13 @@ function e01_001_007_lin()
 	// Line 70: "Byakuya Togami"
 	s.showSprite(1, "Byakuya Togami", 6, 1, 2);
 	s.playVoice("Byakuya Togami", 99, 4);
-	s.showLine("すでに他人を殺そうと目論んでいるヤツが、\nこの中にいるかもしれない…\n");    // "すでに他人を殺そうと目論んでいるヤツが、\nこの中にいるかもしれない…\n"
+	s.showLine("Someone may already be planning to kill...\n");    // "すでに他人を殺そうと目論んでいるヤツが、\nこの中にいるかもしれない…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 71: "Byakuya Togami"
-	s.showLine("そんなヤツと一緒に行動しろと言うのか？\n");    // "そんなヤツと一緒に行動しろと言うのか？\n"
+	s.showLine("Do you really want to be with them?\n");    // "そんなヤツと一緒に行動しろと言うのか？\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -833,7 +833,7 @@ function e01_001_007_lin()
 	// Line 72: "Sayaka Maizono"
 	s.showSprite(0, "Sayaka Maizono", 9, 1, 1);
 	s.playVoice("Sayaka Maizono", 99, 21);
-	s.showLine("ちょ、ちょっと待ってください。\nそんな事…！\n");    // "ちょ、ちょっと待ってください。\nそんな事…！\n"
+	s.showLine("W-Wait a minute.\nThat's ridi-...!\n");    // "ちょ、ちょっと待ってください。\nそんな事…！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -844,14 +844,14 @@ function e01_001_007_lin()
 	s.playVoice("Byakuya Togami", 99, 5);
 	s.playSoundEffectA(28, 100);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("ないとは言い切れないはずだ。\n");    // "ないとは言い切れないはずだ。\n"
+	s.showLine("It's not impossible.\n");    // "ないとは言い切れないはずだ。\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.waitForInput();
 
 
 	// Line 74: "Byakuya Togami"
-	s.showLine("だからこそ、お前らは卒業のルールを聞いて恐怖した。\n");    // "だからこそ、お前らは卒業のルールを聞いて恐怖した。\n"
+	s.showLine("That's why you guys were scared\nafter hearing about the graduation rule.\n");    // "だからこそ、お前らは卒業のルールを聞いて恐怖した。\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -861,7 +861,7 @@ function e01_001_007_lin()
 	s.playVoice("Byakuya Togami", 99, 7);
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("…違うか？\n");    // "…違うか？\n"
+	s.showLine("...Am I wrong?\n");    // "…違うか？\n"
 	s.waitFrames(1);
 	s.playBGM(6, 100, 0);
 	s.waitForInput();
@@ -870,13 +870,13 @@ function e01_001_007_lin()
 	// Line 76: "Sayaka Maizono"
 	s.showSprite(0, "Sayaka Maizono", 2, 1, 1);
 	s.playVoice("Sayaka Maizono", 99, 6);
-	s.showLine("そ、それは…\n");    // "そ、それは…\n"
+	s.showLine("W-Well...\n");    // "そ、それは…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
 
 	// Line 77: "Sayaka Maizono"
-	s.showLine("………………\n");    // "………………\n"
+	s.showLine("..................\n");    // "………………\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -884,7 +884,7 @@ function e01_001_007_lin()
 	// Line 78: "Byakuya Togami"
 	s.showSprite(1, "Byakuya Togami", 14, 1, 2);
 	s.playVoice("Byakuya Togami", 99, 4);
-	s.showLine("…俺は自分の思った通りに行動させてもらう。\n");    // "…俺は自分の思った通りに行動させてもらう。\n"
+	s.showLine("...I'll do whatever I please.\n");    // "…俺は自分の思った通りに行動させてもらう。\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -892,7 +892,7 @@ function e01_001_007_lin()
 	// Line 79: "Mondo Oowada"
 	s.showSprite(0, "Mondo Oowada", 6, 1, 4);
 	s.playVoice("Mondo Oowada", 99, 12);
-	s.showLine("待てコラ…んな勝手は許さねぇぞ…\n");    // "待てコラ…んな勝手は許さねぇぞ…\n"
+	s.showLine("Wait... You can't just run off like that...\n");    // "待てコラ…んな勝手は許さねぇぞ…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -900,7 +900,7 @@ function e01_001_007_lin()
 	// Line 80: "Byakuya Togami"
 	s.showSprite(1, "Byakuya Togami", 4, 1, 2);
 	s.playVoice("Byakuya Togami", 99, 13);
-	s.showLine("…どけよ、プランクトン。\n");    // "…どけよ、プランクトン。\n"
+	s.showLine("...Move, you plankton.\n");    // "…どけよ、プランクトン。\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -910,7 +910,7 @@ function e01_001_007_lin()
 	s.playVoice("Mondo Oowada", 99, 8);
 	s.playSoundEffectA(25, 100);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("ああッ！？　どういう意味だッ！？\n");    // "ああッ！？　どういう意味だッ！？\n"
+	s.showLine("Huh!? What does that mean!?\n");    // "ああッ！？　どういう意味だッ！？\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -918,13 +918,13 @@ function e01_001_007_lin()
 	// Line 82: "Byakuya Togami"
 	s.showSprite(1, "Byakuya Togami", 6, 1, 2);
 	s.playVoice("Byakuya Togami", 99, 45);
-	s.showLine("大海に漂う１匹のプランクトン…\n");    // "大海に漂う１匹のプランクトン…\n"
+	s.showLine("One plankton floating in an ocean...\n");    // "大海に漂う１匹のプランクトン…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
 
 	// Line 83: "Byakuya Togami"
-	s.showLine("何をしようが、広い海に影響を及ぼす事のない\nちっぽけな存在だ…\n");    // "何をしようが、広い海に影響を及ぼす事のない\nちっぽけな存在だ…\n"
+	s.showLine("is a miserable existence\nwho can't change the ocean at all...\n");    // "何をしようが、広い海に影響を及ぼす事のない\nちっぽけな存在だ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -935,7 +935,7 @@ function e01_001_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("…ころがされてぇみてーだな！\n");    // "…ころがされてぇみてーだな！\n"
+	s.showLine("...Looks like you're asking for a beating!\n");    // "…ころがされてぇみてーだな！\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -944,7 +944,7 @@ function e01_001_007_lin()
 
 	// Line 85: "Makoto Naegi"
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("ちょ、ちょっと待ってよ！\nケンカはマズイって！！\n");    // "ちょ、ちょっと待ってよ！\nケンカはマズイって！！\n"
+	s.showLine("W-Wait!\nDon't fight!\n");    // "ちょ、ちょっと待ってよ！\nケンカはマズイって！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -952,7 +952,7 @@ function e01_001_007_lin()
 	// Line 86: "Mondo Oowada"
 	s.showSprite(0, "Mondo Oowada", 6, 1, 4);
 	s.playVoice("Mondo Oowada", 99, 8);
-	s.showLine("あぁ？　なんだオメェ…\n今キレイ事言ったな？\n");    // "あぁ？　なんだオメェ…\n今キレイ事言ったな？\n"
+	s.showLine("Huh? What didja say...?\n");    // "あぁ？　なんだオメェ…\n今キレイ事言ったな？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -962,14 +962,14 @@ function e01_001_007_lin()
 	s.playVoice("Mondo Oowada", 99, 15);
 	s.playSoundEffectA(28, 100);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("そいつは説教かぁ？\nオレに教えを説くっつーのか！？\n");    // "そいつは説教かぁ？\nオレに教えを説くっつーのか！？\n"
+	s.showLine("Are you lecturing me?\nWell, are ya!?\n");    // "そいつは説教かぁ？\nオレに教えを説くっつーのか！？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 88: "Makoto Naegi"
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("い、いや、そんなつもりは…\n");    // "い、いや、そんなつもりは…\n"
+	s.showLine("N-No, that's not what I mean...\n");    // "い、いや、そんなつもりは…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -980,7 +980,7 @@ function e01_001_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("るせぇっ！！\n");    // "るせぇっ！！\n"
+	s.showLine("Shaddup!!\n");    // "るせぇっ！！\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -999,7 +999,7 @@ function e01_001_007_lin()
 	s.setSpeaker("Makoto Naegi");
 	s.playSoundEffectA(210, 100);
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>「ガンッ！！」\n<CLT>");    // "<CLT 23>「ガンッ！！」\n<CLT>"
+	s.showLine("<CLT 23>\"Bam!\"\n<CLT>");    // "<CLT 23>「ガンッ！！」\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
@@ -1022,7 +1022,7 @@ function e01_001_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>殴られた…\n<CLT>");    // "<CLT 4>殴られた…\n<CLT>"
+	s.showLine("<CLT 4>He punched me...\n<CLT>");    // "<CLT 4>殴られた…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1031,7 +1031,7 @@ function e01_001_007_lin()
 	// Line 92: "Makoto Naegi"
 	s.playSoundEffectA(216, 100);
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>そして吹っ飛んだ。\n<CLT>");    // "<CLT 4>そして吹っ飛んだ。\n<CLT>"
+	s.showLine("<CLT 4>I flew.\n<CLT>");    // "<CLT 4>そして吹っ飛んだ。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1039,7 +1039,7 @@ function e01_001_007_lin()
 
 	// Line 93: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>マンガみたいにキレイに吹っ飛んだ。\n<CLT>");    // "<CLT 4>マンガみたいにキレイに吹っ飛んだ。\n<CLT>"
+	s.showLine("<CLT 4>I flew, just like they do in manga.\n<CLT>");    // "<CLT 4>マンガみたいにキレイに吹っ飛んだ。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1047,22 +1047,24 @@ function e01_001_007_lin()
 
 	// Line 94: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>なんの前ふりも伏線もなく、\n極めて唐突で突発的に…\n");    // "<CLT 4>なんの前ふりも伏線もなく、\n極めて唐突で突発的に…\n"
+	s.showLine("<CLT 4>Without any warning or lead-up,\nI was suddenly punched into the air...\n");    // "<CLT 4>なんの前ふりも伏線もなく、\n極めて唐突で突発的に…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
-
+	
+	/*
 	// Line 95: "Makoto Naegi"
 	s.op(0x03, [0x04]);
 	s.showLine("<CLT 4>殴られて吹っ飛んだ……\n<CLT>");    // "<CLT 4>殴られて吹っ飛んだ……\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
+	// */
 
 
 	// Line 96: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>そう言えば…ボクは忘れていたのかもしれない…\n<CLT>");    // "<CLT 4>そう言えば…ボクは忘れていたのかもしれない…\n<CLT>"
+	s.showLine("<CLT 4>Oh yeah...\nI guess I forgot...\n<CLT>");    // "<CLT 4>そう言えば…ボクは忘れていたのかもしれない…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1070,7 +1072,7 @@ function e01_001_007_lin()
 
 	// Line 97: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>そもそも、ボクが相手にしているのは、\nそういう人達だったんだよな…\n<CLT>");    // "<CLT 4>そもそも、ボクが相手にしているのは、\nそういう人達だったんだよな…\n<CLT>"
+	s.showLine("<CLT 4>who the people I'm dealing with are...\n<CLT>");    // "<CLT 4>そもそも、ボクが相手にしているのは、\nそういう人達だったんだよな…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1078,7 +1080,7 @@ function e01_001_007_lin()
 
 	// Line 98: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>今までのボクの常識なんてまるで通じない…\n“超高校級”なんて、非常識な集まり…\n<CLT>");    // "<CLT 4>今までのボクの常識なんてまるで通じない…\n“超高校級”なんて、非常識な集まり…\n<CLT>"
+	s.showLine("<CLT 4>My common sense doesn't work here...\nThese super students defy them...\n<CLT>");    // "<CLT 4>今までのボクの常識なんてまるで通じない…\n“超高校級”なんて、非常識な集まり…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1086,7 +1088,7 @@ function e01_001_007_lin()
 
 	// Line 99: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>当然、こんな非常識な展開もあり得る。\n<CLT>");    // "<CLT 4>当然、こんな非常識な展開もあり得る。\n<CLT>"
+	s.showLine("<CLT 4>It makes sense that this turn of events would\ndefy common sense too...\n<CLT>");    // "<CLT 4>当然、こんな非常識な展開もあり得る。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1094,7 +1096,7 @@ function e01_001_007_lin()
 
 	// Line 100: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>それを…ボクは忘れてた……のかも……\n<CLT>");    // "<CLT 4>それを…ボクは忘れてた……のかも……\n<CLT>"
+	s.showLine("<CLT 4>That's what... I... forgot...\n<CLT>");    // "<CLT 4>それを…ボクは忘れてた……のかも……\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1102,18 +1104,20 @@ function e01_001_007_lin()
 
 	// Line 101: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>ボクの意識は、ゆっくりと遠のき…\n<CLT>");    // "<CLT 4>ボクの意識は、ゆっくりと遠のき…\n<CLT>"
+	s.showLine("<CLT 4>My consciousness faded away...\nthen paused.\n<CLT>");    // "<CLT 4>ボクの意識は、ゆっくりと遠のき…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
 
-
+	
+	/*
 	// Line 102: "Makoto Naegi"
 	s.op(0x03, [0x04]);
 	s.showLine("<CLT 4>そこで途切れた。\n<CLT>");    // "<CLT 4>そこで途切れた。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
+	// */
 
 
 	// Line 103: "Makoto Naegi"
@@ -1123,7 +1127,7 @@ function e01_001_007_lin()
 	s.op(0x25, [0x00, 0x01]);
 	s.op(0x25, [0x01, 0x01]);
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>そして、次に目を覚ました時、\nそこは…\n<CLT>");    // "<CLT 4>そして、次に目を覚ました時、\nそこは…\n<CLT>"
+	s.showLine("<CLT 4>Then, when I woke up...\n<CLT>");    // "<CLT 4>そして、次に目を覚ました時、\nそこは…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
