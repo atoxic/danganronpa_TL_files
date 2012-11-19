@@ -4719,7 +4719,7 @@ function cleanup(s)
 	s.op(0x2B, [0x13]);
 	s.setSpeaker("[No Name]");
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>Exit the room?\n<CLT>");    // "<CLT 23>外に出ますか？\n<CLT>"
+	s.showLine(common_line_exit);    // "<CLT 23>外に出ますか？\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x2B, [0xFF]);

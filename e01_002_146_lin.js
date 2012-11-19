@@ -1,6 +1,6 @@
 loadScript("common.js");
 
-function e01_000_146_lin()
+function e01_002_146_lin()
 {
 	var s = new LINScript();
 	// Line 1: "Makoto Naegi"
@@ -33,6 +33,8 @@ function e01_000_146_lin()
 
 	// Line 4: "[No Name]"
 	s.op(0x25, [0x01, 0x00]);
+	s.op(0x33, [0x1E, 0x00, 0x00, 0x12]);
+	s.op(0x1B, [0x08, 0x1E, 0x00]);
 	s.op(0x29, [0xFE]);
 	s.op(0x25, [0x02, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
@@ -65,9 +67,9 @@ function e01_000_146_lin()
 	s.op(0x33, [0x08, 0x00, 0x00, 0x05]);
 	s.playSoundEffectA(145, 100);
 	s.op(0x22, [0x65, 0x01, 0x18]);
-	s.goToScript(1, 0, 101);
+	s.goToScript(1, 2, 101);
 	s.op(0x1A);
 	s.op(0x1A);
-	s.setFlags(0x2B, 0x02);
+	s.setFlags(0x01, 0x00);
 	return(s);
 }
