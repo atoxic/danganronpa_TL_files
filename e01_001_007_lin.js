@@ -93,7 +93,7 @@ function e01_001_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Then, her blunt words pierced through this heavy atmosphere...\n<CLT>");    // "<CLT 4>そんな重苦しい空気…\n<CLT>"
+	s.showLine("<CLT 4>Then, her blunt words pierced through\nthis heavy atmosphere...\n<CLT>");    // "<CLT 4>そんな重苦しい空気…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
