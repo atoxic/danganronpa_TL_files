@@ -239,7 +239,7 @@ function e01_001_007_lin()
 
 
 	// Line 21: "Chihiro Fujisaki"
-	s.showLine("I think that we should check the <CLT 3>rules<CLT> that Monokuma talked about first...\n");    // "動き回る前に、モノクマが言ってた<CLT 3>“校則”<CLT>を\n確認しておいた方がいいと思うんだ…\n"
+	s.showLine("I think that we should check the <CLT 3>rules<CLT>\nthat Monokuma talked about first...\n");    // "動き回る前に、モノクマが言ってた<CLT 3>“校則”<CLT>を\n確認しておいた方がいいと思うんだ…\n"
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
 	s.waitFrames(2);
@@ -249,7 +249,7 @@ function e01_001_007_lin()
 	// Line 22: "Celestia Rudenberg"
 	s.showSprite(1, "Celestia Rudenberg", 3, 1, 2);
 	s.playVoice("Celestia Rudenberg", 99, 6);
-	s.showLine("I presume that none of us want to be blown up for\nnot knowing the rules, like what almost happened.\n");    // "ルールも知らずに行動して、さっきのように\nドカンとなってしまったら困りますものね。\n"
+	s.showLine("I presume that none of us want to be blown up\nfor not knowing the rules.\n");    // "ルールも知らずに行動して、さっきのように\nドカンとなってしまったら困りますものね。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
