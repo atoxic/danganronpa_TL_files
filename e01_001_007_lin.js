@@ -217,7 +217,7 @@ function e01_001_007_lin()
 	// Line 18: "Reon Kuwata"
 	s.showSprite(1, "Reon Kuwata", 14, 1, 1);
 	s.playVoice("Reon Kuwata", 99, 42);
-	s.showLine("Looking for an exit, duh!\n");    // "バァカ！　逃げ道を探すに決まってんじゃん！\n"
+	s.showLine("To look for an exit, duh!\n");    // "バァカ！　逃げ道を探すに決まってんじゃん！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
