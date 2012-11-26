@@ -242,7 +242,7 @@ function e00_006_007_lin()
 	s.playVoice("Hifumi Yamada", 99, 29);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.playSoundEffectA(29, 100);
-	s.showLine("Ooh...Uwawawa...\nThe stuffed animal talked!\n");    // "う…うわわわ…\nヌイグルミが喋ったぁぁぁ！！\n"
+	s.showLine("U-... Uwawawa...\nThe stuffed animal talked!\n");    // "う…うわわわ…\nヌイグルミが喋ったぁぁぁ！！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -397,7 +397,7 @@ function e00_006_007_lin()
 	// Line 35: "Monokuma"
 	s.showSprite(1, "Monokuma", 0, 1, 2);
 	s.playVoice("Monokuma", 99, 3);
-	s.showLine("Then, I would like to hold\na memorable entrance ceremony!\n");    // "では、これより記念すべき入学式を\n執り行いたいと思います！\n"
+	s.showLine("Now I'd like to hold an entrance ceremony\nthat you'll all remember!\n");    // "では、これより記念すべき入学式を\n執り行いたいと思います！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -429,7 +429,7 @@ function e00_006_007_lin()
 	s.playSoundEffectA(28, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.op(0x03, [0x03]);
-	s.showLine("will be living together in this school and\n<CLT 3>be forbidden from going outside<CLT>!\n");    // "<CLT 3>“この学園内だけ”<CLT>で、\n共同生活を送ってもらいます！\n"
+	s.showLine("will be living together in this school and\n<CLT 3>forbidden from going outside<CLT>!\n");    // "<CLT 3>“この学園内だけ”<CLT>で、\n共同生活を送ってもらいます！\n"
 	s.op(0x03, [0x00]);
 	s.waitFrames(2);
 	s.waitForInput();
@@ -467,7 +467,7 @@ function e00_006_007_lin()
 	s.playVoice("Monokuma", 99, 79);
 	s.playSoundEffectA(28, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("You guys will stay here <CLT 3>for the rest of your lives<CLT>!\n");    // "期限はありませんっ！！\n"
+	s.showLine("You guys will stay here\n<CLT 3>for the rest of your lives<CLT>!\n");    // "期限はありませんっ！！\n"
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
 	s.waitFrames(2);
@@ -538,7 +538,7 @@ function e00_006_007_lin()
 	// Line 51: "Monokuma"
 	s.showSprite(0, "Monokuma", 0, 1, 2);
 	s.playVoice("Monokuma", 99, 2);
-	s.showLine("Ah, let me just point out... that you're completely\nisolated from the outside world!\n");    // "あ、ついでに言っておくけど…\n外の世界とは完全にシャットアウトされてますから！\n"
+	s.showLine("Ah, let me just point out... that you're\ntotally isolated from the outside world!\n");    // "あ、ついでに言っておくけど…\n外の世界とは完全にシャットアウトされてますから！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -643,7 +643,7 @@ function e00_006_007_lin()
 	// Line 63: "Monokuma"
 	s.showSprite(1, "Monokuma", 3, 1, 2);
 	s.playVoice("Monokuma", 99, 43);
-	s.showLine("But I can't blame you... In this day and age, we've\ngotta be suspicious of anyone and everyone.\n");    // "でも、それもしょうがないかぁ。\n隣人を疑わなきゃ生き抜けないご時世だもんね。\n"
+	s.showLine("But I can't blame you... In this day and age,\nwe've gotta be suspicious of everyone.\n");    // "でも、それもしょうがないかぁ。\n隣人を疑わなきゃ生き抜けないご時世だもんね。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -655,7 +655,7 @@ function e00_006_007_lin()
 
 
 	// Line 65: "Monokuma"
-	s.showLine("You'll see\nthat I'm telling the 100% uncut truth!\n");    // "そうすれば、すぐにわかるから。\nボクの言葉が、純度１００％の真実だって事がさ！\n"
+	s.showLine("Then you'll see that I'm telling\nthe 100% uncut truth!\n");    // "そうすれば、すぐにわかるから。\nボクの言葉が、純度１００％の真実だって事がさ！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -683,7 +683,7 @@ function e00_006_007_lin()
 
 
 	// Line 69: "Monokuma"
-	s.showLine("And now, you guys want to go home in the middle\nof the entrance ceremony...\n");    // "それなのに、入学式の途中で、\nもう帰りたいとか言い出すなんてさぁ……\n"
+	s.showLine("And now, you guys want to go home\nin the middle of the entrance ceremony...\n");    // "それなのに、入学式の途中で、\nもう帰りたいとか言い出すなんてさぁ……\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -742,13 +742,13 @@ function e00_006_007_lin()
 
 
 	// Line 76: "Monokuma"
-	s.showLine("You guys are responsible for protecting the \"peace\"\nof your lives together in this school...\n");    // "オマエラには、学園内での“秩序”を守った共同生活が\n義務付けられた訳ですが…\n"
+	s.showLine("You guys are responsible for upholding\nthe \"peace\" within this school...\n");    // "オマエラには、学園内での“秩序”を守った共同生活が\n義務付けられた訳ですが…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 77: "Monokuma"
-	s.showLine("but if someone breaks that peace, then that person\nand only that person will be able to get out.\n");    // "もし、その秩序を破った者が現れた場合…\nその人物だけは、学園から出て行く事になるのです。\n"
+	s.showLine("but if someone breaks that peace, then they\nand only they will be able to get out.\n");    // "もし、その秩序を破った者が現れた場合…\nその人物だけは、学園から出て行く事になるのです。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -806,7 +806,7 @@ function e00_006_007_lin()
 	// Line 83: "Monokuma"
 	s.showSprite(1, "Monokuma", 0, 1, 2);
 	s.playVoice("Monokuma", 99, 9);
-	s.showLine("Beating, impaling, decapitating, burning, crushing,\nstrangling, cursing... It doesn't matter how.\n");    // "殴殺刺殺撲殺斬殺焼殺圧殺絞殺惨殺呪殺…\n殺し方は問いません。\n"
+	s.showLine("Beating, impaling, decapitating, burning,\ncrushing, strangling, cursing... It doesn't matter.\n");    // "殴殺刺殺撲殺斬殺焼殺圧殺絞殺惨殺呪殺…\n殺し方は問いません。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -822,7 +822,7 @@ function e00_006_007_lin()
 	// Line 85: "Monokuma"
 	s.showSprite(1, "Monokuma", 12, 1, 2);
 	s.playVoice("Monokuma", 99, 30);
-	s.showLine("Please work hard to use the worst means\nto get the best end..\n");    // "最悪の手段で最良の結果を導けるよう、\nせいぜい努力してください。\n"
+	s.showLine("Please work hard to use the worst means\nto achieve the best end...\n");    // "最悪の手段で最良の結果を導けるよう、\nせいぜい努力してください。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -865,7 +865,7 @@ function e00_006_007_lin()
 
 
 	// Line 90: "Monokuma"
-	s.showLine("I said that you guys are \"the hopes of the world\"...\n");    // "さっきも言った通り、\nオマエラは言わば“世界の希望”な訳だけど…\n"
+	s.showLine("I said that you guys are\n\"the hopes of the world\"...\n");    // "さっきも言った通り、\nオマエラは言わば“世界の希望”な訳だけど…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -984,13 +984,13 @@ function e00_006_007_lin()
 	s.waitFrames(2);
 	s.waitForInput();
 	
-	s.showLine("over and over and over and over and over and over\nand over and over and over and over and over...\n");    // "何が帰してだ。\n同じ事を何度も何度も何度も何度も…\n"
+	s.showLine("over and over and over and over and over and\nover and over and over and over and over...\n");    // "何が帰してだ。\n同じ事を何度も何度も何度も何度も…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 101: "Monokuma"
-	s.showLine("Listen up. This school is going to be your home\nand your world, okay?\n");    // "いいかい？　これからは、\nこの学園が、オマエラの家であり世界なんだよ？\n"
+	s.showLine("Listen up. This school is gonna be your home\nand your world, okay?\n");    // "いいかい？　これからは、\nこの学園が、オマエラの家であり世界なんだよ？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1117,7 +1117,7 @@ function e00_006_007_lin()
 
 	// Line 114: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>It was the sound of Oowada kicking up the floor.\n<CLT>");    // "<CLT 4>大和田クンが、足元の床を げた音だった。\n<CLT>"
+	s.showLine("<CLT 4>It was the sound of Oowada\nkicking up the floor.\n<CLT>");    // "<CLT 4>大和田クンが、足元の床を げた音だった。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1243,7 +1243,7 @@ function e00_006_007_lin()
 	// Line 125: "Kyouko Kirigiri"
 	s.showSprite(1, "Kyouko Kirigiri", 13, 1, 2);
 	s.playVoice("Kyouko Kirigiri", 99, 47);
-	s.showLine("Watch out!\nThrow him...!\n");    // "危ない、投げて…ッ！\n"
+	s.showLine("Watch out!\nThrow him away...!\n");    // "危ない、投げて…ッ！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -1264,7 +1264,7 @@ function e00_006_007_lin()
 	s.showSprite(1, "Kyouko Kirigiri", 13, 1, 2);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.playSoundEffectA(25, 100);
-	s.showLine("Just listen to me and throw him...!\n");    // "いいから早く…ッ！\n"
+	s.showLine("Just listen to me\nand throw him as far away as you can...!\n");    // "いいから早く…ッ！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -1470,7 +1470,7 @@ function e00_006_007_lin()
 	// Line 147: "Monokuma"
 	s.showSprite(1, "Monokuma", 3, 1, 2);
 	s.playVoice("Monokuma", 99, 29);
-	s.showLine("Upupupu... Next time, I won't miss...\nDon't let there be a next time!\n");    // "うぷぷ…次からは外さないから…\nそうならないように気をつけてね！\n"
+	s.showLine("Upupupu... Next time, I won't miss...\nSo don't let there be a next time!\n");    // "うぷぷ…次からは外さないから…\nそうならないように気をつけてね！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1487,7 +1487,7 @@ function e00_006_007_lin()
 	// Line 149: "Monokuma"
 	s.showSprite(1, "Monokuma", 0, 1, 2);
 	s.playVoice("Monokuma", 99, 4);
-	s.showLine("Then... finally, let me give you guys this present\nto celebrate your entrance into this school.\n");    // "じゃあ…最後に、入学祝いとして、\nオマエラにこれを渡しておきましょう。\n"
+	s.showLine("Then... finally, let me give you guys this present\nto celebrate your enrollment into this school.\n");    // "じゃあ…最後に、入学祝いとして、\nオマエラにこれを渡しておきましょう。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1562,7 +1562,7 @@ function e00_006_007_lin()
 
 
 	// Line 159: "Monokuma"
-	s.showLine("It can also endure 10 tons of pressure!\n");    // "耐久性も抜群で、\n１０トンくらいの重さなら平気だよ！\n"
+	s.showLine("They can also endure 10 tons of pressure!\n");    // "耐久性も抜群で、\n１０トンくらいの重さなら平気だよ！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1596,20 +1596,20 @@ function e00_006_007_lin()
 	s.playVoice("Monokuma", 99, 9);
 	s.playSoundEffectA(28, 100);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("Like laws, we need punishments\nfor those who break the rules!\n");    // "それと一緒！\nだから、違反者は厳しく罰する必要があるのです！\n"
+	s.showLine("Those who break the rules must get punished,\njust like those who break the law!\n");    // "それと一緒！\nだから、違反者は厳しく罰する必要があるのです！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 164: "Monokuma"
-	s.showLine("Then, that's all for the entrance ceremony!\n");    // "ではでは、入学式はこれで終了となります！！\n"
+	s.showLine("Well, that's all for the entrance ceremony!\n");    // "ではでは、入学式はこれで終了となります！！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
 
 	// Line 165: "Monokuma"
 	s.playVoice("Monokuma", 99, 63);
-	s.showLine("Please enjoy your rich and gloomy school lives!\nThen, see you later~!\n");    // "豊かで陰惨な学園生活をどうぞ楽しんでください！\nそれじゃあ、まったね～！\n"
+	s.showLine("Please enjoy your gloomy and eventful time here!\nSee you later~!\n");    // "豊かで陰惨な学園生活をどうぞ楽しんでください！\nそれじゃあ、まったね～！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1703,7 +1703,7 @@ function e00_006_007_lin()
 
 
 	// Line 174: "Kyouko Kirigiri"
-	s.showLine("The first choice is to live together in this school\nfor the rest of our lives...\n");    // "１つは、みんなと共に、\nこの学園内で“期限のない共同生活”を送るか…\n"
+	s.showLine("The first choice is to live together\nin this school for the rest of our lives...\n");    // "１つは、みんなと共に、\nこの学園内で“期限のない共同生活”を送るか…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1782,7 +1782,7 @@ function e00_006_007_lin()
 	s.playVoice("Byakuya Togami", 99, 23);
 	s.playSoundEffectA(28, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("Whether or not there's someone among us\nwho took his words seriously...\n");    // "この中に、その話を本気にするヤツが\nいるかどうかだ…\n"
+	s.showLine("whether or not there's someone among us\nwho took his words seriously...\n");    // "この中に、その話を本気にするヤツが\nいるかどうかだ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1900,7 +1900,7 @@ function e00_006_007_lin()
 	// Line 194: "Makoto Naegi"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
-	s.showLine("<CLT 4>I realized that this place isn't the <CLT><CLT 3>\"Academy of Hope.\"\n<CLT>");    // "<CLT><CLT 3>“希望の学園”<CLT><CLT 4>なんかじゃなかった。\n"
+	s.showLine("<CLT 4>I realized that this place isn't\nthe <CLT><CLT 3>\"Academy of Hope.\"\n<CLT>");    // "<CLT><CLT 3>“希望の学園”<CLT><CLT 4>なんかじゃなかった。\n"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x04]);
 	s.waitFrames(1);

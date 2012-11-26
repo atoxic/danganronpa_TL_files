@@ -292,7 +292,7 @@ function e01_002_101_lin()
 	s.setSpeaker("Makoto Naegi");
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("It's almost time to meet up...right?\n");    // "その集合時間が…もうすぐって事？\n"
+	s.showLine("It's almost time to meet up... right?\n");    // "その集合時間が…もうすぐって事？\n"
 	s.waitFrames(1);
 	s.waitForInput();
 

@@ -33,13 +33,13 @@ function e00_005_004_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Mondo Oowada");
 	s.playVoice("Mondo Oowada", 99, 5);
-	s.showLine("Never woulda thought that Mount Hope Academy\nis such a dark place...\n");    // "それにしてもよぉ…\n希望ヶ峰学園がこんな辛気くせぇ場所だとはなぁ…\n"
+	s.showLine("Never woulda thought that Mount Hope\nAcademy is such a dark place...\n");    // "それにしてもよぉ…\n希望ヶ峰学園がこんな辛気くせぇ場所だとはなぁ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
 
 	// Line 2: "Mondo Oowada"
-	s.showLine("Just like the juvie I was in.\nNo, worse...\n");    // "どっちかっつーと、俺のいた鑑別所みてーだ。\nいや、それよりヒデーかもな…\n"
+	s.showLine("It's just like the juvie I was in.\nNo, worse...\n");    // "どっちかっつーと、俺のいた鑑別所みてーだ。\nいや、それよりヒデーかもな…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -47,7 +47,7 @@ function e00_005_004_lin()
 	// Line 3: "Sayaka Maizono"
 	s.showSprite(1, "Sayaka Maizono", 1, 1, 3);
 	s.playVoice("Sayaka Maizono", 99, 6);
-	s.showLine("Also... why isn't anyone else here?\nWe haven't seen anyone else...\n");    // "それに…どうして誰もいないんですかね？\n今だって校内を歩いてても、誰とも会わなかったし…\n"
+	s.showLine("Also... why isn't anyone else here?\nWe haven't seen any other students...\n");    // "それに…どうして誰もいないんですかね？\n今だって校内を歩いてても、誰とも会わなかったし…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 

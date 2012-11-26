@@ -219,7 +219,7 @@ function enter_entrance_hall(s)
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>...and met them.\n<CLT>");    // "<CLT 4>…彼らの姿があった。\n<CLT>"
+	s.showLine("<CLT 4>...and bumped into them.\n<CLT>");    // "<CLT 4>…彼らの姿があった。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -262,7 +262,7 @@ function enter_entrance_hall(s)
 	// Line 6: "Hifumi Yamada"
 	s.setSpeaker("???");
 	s.playVoice("Hifumi Yamada", 99, 71);
-	s.showLine("Now there are 15... It's a nice round number,\nso I guess this is all of us...\n");    // "これで１５人ですか…\nキリがいいし、これで揃いましたかね…\n"
+	s.showLine("Now there's 15 of us... It's a nice round number,\nso I guess this is all of us...\n");    // "これで１５人ですか…\nキリがいいし、これで揃いましたかね…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1882,7 +1882,6 @@ function self_intro_oowada(s)
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	// TODO: not sure about "second-ever"
 	s.showLine("<CLT 4>He's the second-ever leader of\nJapan's biggest and baddest biker gang...\n<CLT>");    // "<CLT 4>日本最大最凶と称される暴走族に、\n２代目総長として君臨する人物…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
@@ -2388,7 +2387,7 @@ function self_intro_asahina(s)
 	// Line 204: "Aoi Asahina"
 	s.showSprite(0, "Aoi Asahina", 21, 1, 2);
 	s.playVoice("Aoi Asahina", 99, 16);
-	s.showLine("Oh, this? I heard that all I have to do remember\na name is to write it on my palm 3 times!\n");    // "あ、これ？　知らないんスか？\n人の名前覚える時は、３回手の平に書くといいって！\n"
+	s.showLine("Oh, this? I heard that writing a name three times\non my palm will make me remember it!\n");    // "あ、これ？　知らないんスか？\n人の名前覚える時は、３回手の平に書くといいって！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -2644,7 +2643,7 @@ function self_intro_junko(s)
 	s.op(0x25, [0x33, 0x01]);
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Junko Enoshima (fake)");
-	s.showLine("Y'know... They edited them!\nHaven't you heard about Photoshop?\n");    // "だからさ…加工してんだって！\n画像編集ソフト知ってんでしょ？\n"
+	s.showLine("Y'know... They edited them!\nHaven't you ever heard about Photoshop?\n");    // "だからさ…加工してんだって！\n画像編集ソフト知ってんでしょ？\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -2872,7 +2871,7 @@ function self_intro_chihiro(s)
 
 	// Line 248: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Her timid demeanor has gathered her\na fanatic group of fans...\n<CLT>");    // "<CLT 4>それに加え、その小動物を思わせる雰囲気も相まって、\n一部には、熱狂的なファンも存在するらしいけど…\n<CLT>"
+	s.showLine("<CLT 4>Her timid demeanor has earned her\na fanatic group of fans...\n<CLT>");    // "<CLT 4>それに加え、その小動物を思わせる雰囲気も相まって、\n一部には、熱狂的なファンも存在するらしいけど…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -3774,7 +3773,7 @@ function self_intro_celes(s)
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>She calls herself \"Celestia Rudenberg\"...\nShe's an undefeated <CLT><CLT 3>\"super gambler\"<CLT><CLT 4>...\n<CLT>");    // "<CLT 4>自称セレスティア・ルーデンベルク…\n負け知らずの<CLT><CLT 3>“超高校級のギャンブラー”<CLT><CLT 4>で…\n<CLT>"
+	s.showLine("<CLT 4>She calls herself \"Celestia Rudenberg\"...\nShe's the undefeated <CLT><CLT 3>\"super gambler\"<CLT><CLT 4>...\n<CLT>");    // "<CLT 4>自称セレスティア・ルーデンベルク…\n負け知らずの<CLT><CLT 3>“超高校級のギャンブラー”<CLT><CLT 4>で…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
@@ -3816,7 +3815,7 @@ function self_intro_celes(s)
 
 	// Line 342: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>They say that she took everything\nthe other players had and destroyed their lives...\n<CLT>");    // "<CLT 4>他の参加者の財産を奪い取り、人生を破滅させたなんて\n恐ろしい噂を持つ、高校生ギャンブラーらしい…\n<CLT>"
+	s.showLine("<CLT 4>They say that she took everything that\nthe other players had and destroyed their lives...\n<CLT>");    // "<CLT 4>他の参加者の財産を奪い取り、人生を破滅させたなんて\n恐ろしい噂を持つ、高校生ギャンブラーらしい…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -4077,7 +4076,7 @@ function announcement(s)
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Junko Enoshima (fake)");
 	s.playVoice("Junko Enoshima (fake)", 99, 31);
-	s.showLine("Also, where's my luggage?\nMy cell phone is also gone...\n");    // "それに、あたしの荷物どこ行っちゃったの？\nケータイも行方不明だし…\n"
+	s.showLine("Also, where's my luggage?\nMy cell phone is gone too...\n");    // "それに、あたしの荷物どこ行っちゃったの？\nケータイも行方不明だし…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -4093,7 +4092,7 @@ function announcement(s)
 	// Line 379: "Kiyotaka Ishimaru"
 	s.showSprite(1, "Kiyotaka Ishimaru", 1, 1, 2);
 	s.playVoice("Kiyotaka Ishimaru", 99, 3);
-	s.showLine("This entrance hall is also strange!\n");    // "それに、妙なのは、\nこの玄関ホールもだ！\n"
+	s.showLine("And this entrance hall is strange!\n");    // "それに、妙なのは、\nこの玄関ホールもだ！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -4206,7 +4205,7 @@ function announcement(s)
 	// Line 393: "Reon Kuwata"
 	s.showSprite(0, "Reon Kuwata", 2, 4, 3);
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Then \"that\" began without warning.\n<CLT>");    // "<CLT 4>突然“それ”は始まった。\n<CLT>"
+	s.showLine("<CLT 4>Then \"that\" came out of nowhere.\n<CLT>");    // "<CLT 4>突然“それ”は始まった。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -4330,7 +4329,7 @@ function announcement(s)
 	s.playVoice("Junko Enoshima (fake)", 99, 24);
 	s.playSoundEffectA(27, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("Wha...?\nWhat was that...?\n");    // "なに…？　なんなの、今の…？\n"
+	s.showLine("Wha-...?\nWhat was that...?\n");    // "なに…？　なんなの、今の…？\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -4414,7 +4413,7 @@ function announcement(s)
 	// Line 412: "Celestia Rudenberg"
 	s.showSprite(1, "Celestia Rudenberg", 3, 1, 2);
 	s.playVoice("Celestia Rudenberg", 99, 7);
-	s.showLine("Then, if you'll excuse me...\n");    // "では、わたくしも先に失礼しますわ…\n"
+	s.showLine("Well, if you'll excuse me...\n");    // "では、わたくしも先に失礼しますわ…\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x1E]);
 	s.playSoundEffectA(141, 100);
@@ -4447,7 +4446,7 @@ function announcement(s)
 
 	// Line 415: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>I couldn't get the \"bad feeling\" in my guts to leave.\n<CLT>");    // "<CLT 4>頭に浮かんだ“嫌な予感”が、\nどうしても頭から離れなかったせいだ。\n<CLT>"
+	s.showLine("<CLT 4>I couldn't get the \"bad feeling\"\nin my guts to leave.\n<CLT>");    // "<CLT 4>頭に浮かんだ“嫌な予感”が、\nどうしても頭から離れなかったせいだ。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();

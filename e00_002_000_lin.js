@@ -70,7 +70,7 @@ function e00_002_000_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.playVoice("Makoto Naegi", 99, 44);
-	s.showLine("H-...Huh...?\n");    // "あ…れ…？\n"
+	s.showLine("H-... Huh...?\n");    // "あ…れ…？\n"
 	s.waitFrames(1);
 	s.waitForInput();
 

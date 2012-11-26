@@ -26,7 +26,7 @@ function e01_001_103_lin()
 	s.op(0x25, [0x00, 0x00]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x25, [0x01, 0x01]);
-	s.showLine("Ooh...Ooh...\n");    // "うっ…うぅ……\n"
+	s.showLine("Ooh... Ooh...\n");    // "うっ…うぅ……\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -34,13 +34,13 @@ function e01_001_103_lin()
 	// Line 2: "Makoto Naegi"
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("...H-...Huh?\n");    // "…あ…れ？　\n"
+	s.showLine("...H-... Huh?\n");    // "…あ…れ？　\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
 
 	// Line 3: "Makoto Naegi"
-	s.showLine("Wh-...Where is this...?\n");    // "こ…ここは…？\n"
+	s.showLine("Wh-... Where is this...?\n");    // "こ…ここは…？\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
