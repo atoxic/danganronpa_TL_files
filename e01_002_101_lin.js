@@ -36,7 +36,7 @@ function e01_002_101_lin()
 
 	// Line 2: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>However, what awaited me was...\na manga-esque situation.\n<CLT>");    // "<CLT 4>だけど、そこで、\nボクを待っていたのは…\n<CLT>"
+	s.showLine("<CLT 4>However, what awaited me...\nwas a manga-esque situation.\n<CLT>");    // "<CLT 4>だけど、そこで、\nボクを待っていたのは…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -339,7 +339,7 @@ function e01_002_101_lin()
 
 	// Line 34: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>I don't need to go there right now.\nI gotta go meet up with everyone in the cafeteria.\n<CLT>");    // "<CLT 4>今は用はなさそうだ。\nみんな集まってるだろうし、食堂へ行こう。\n<CLT>"
+	s.showLine("<CLT 4>I don't need to go there right now.\nI gotta go to the cafeteria.\n<CLT>");    // "<CLT 4>今は用はなさそうだ。\nみんな集まってるだろうし、食堂へ行こう。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -404,7 +404,7 @@ function e01_002_101_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>I gotta go meet up with everyone in the cafeteria.\n<CLT>");    // "<CLT 4>みんな集まってるだろうし、食堂へ行こう。\n<CLT>"
+	s.showLine("<CLT 4>I gotta go meet up with everyone\nin the cafeteria.\n<CLT>");    // "<CLT 4>みんな集まってるだろうし、食堂へ行こう。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -418,7 +418,7 @@ function e01_002_101_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>I gotta go meet up with everyone in the cafeteria.\n<CLT>");    // "<CLT 4>みんな集まってるだろうし、食堂へ行こう。\n<CLT>"
+	s.showLine("<CLT 4>I gotta go meet up with everyone\nin the cafeteria.\n<CLT>");    // "<CLT 4>みんな集まってるだろうし、食堂へ行こう。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();

@@ -83,7 +83,7 @@ function e01_001_103_lin()
 	s.op(0x03, [0x17]);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
-	s.showLine("<CLT 23>You can now use the <CLT><CLT 3>tablet menu<CLT><CLT 23>, which contains\ninformation you collect in this game.\n<CLT>");    // "<CLT 23><CLT><CLT 3>手帳メニュー<CLT><CLT 23>を使えるようになります。\nゲーム中のさまざまな情報をご確認頂けます。\n<CLT>"
+	s.showLine("<CLT 23>You can now use the <CLT><CLT 3>tablet menu<CLT><CLT 23>, which\ncontains information you collect in this game.\n<CLT>");    // "<CLT 23><CLT><CLT 3>手帳メニュー<CLT><CLT 23>を使えるようになります。\nゲーム中のさまざまな情報をご確認頂けます。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x17]);
 	s.waitFrames(2);
@@ -109,7 +109,7 @@ function e01_001_103_lin()
 
 	// Line 9: "[No Name]"
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>From there, you can go read the <CLT><CLT 3>\"Rules\"<CLT><CLT 23>\nand <CLT><CLT 3>information on everyone else<CLT><CLT 23> in \"Contacts.\"\n<CLT>");    // "<CLT 23>手帳メニューでは<CLT><CLT 3>“校則”<CLT><CLT 23>や、皆様のプロフィールを\n記録した<CLT><CLT 3>“通信簿”<CLT><CLT 23>などがご確認頂けます。\n<CLT>"
+	s.showLine("<CLT 23>From there, you can go read the <CLT><CLT 3>\"Rules\"<CLT><CLT 23>\nand information on everyone else in <CLT><CLT 3>\"Contacts.\"<CLT><CLT 23>\n<CLT>");    // "<CLT 23>手帳メニューでは<CLT><CLT 3>“校則”<CLT><CLT 23>や、皆様のプロフィールを\n記録した<CLT><CLT 3>“通信簿”<CLT><CLT 23>などがご確認頂けます。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -262,7 +262,7 @@ function e01_001_103_lin()
 
 
 	// Line 21: "Makoto Naegi"
-	var line_lint = "<CLT 4>This... is a lint remover.\bWe have to clean our own messes, huh...\n<CLT>";
+	var line_lint = "<CLT 4>This... is a lint remover.\nWe have to clean our own messes, huh...\n<CLT>";
 	s.op(0x26, [0x0F, 0x01, 0x01]);
 	s.op(0x25, [0x01, 0x00]);
 	s.op(0x35, [0x0F, 0x00, 0x00, 0x01, 0x06, 0x0F, 0x01, 0x00, 0x01, 0x06, 0x0F, 0x04, 0x00, 0x01, 0x06, 0x0F, 0x06, 0x00, 0x01, 0x06, 0x0F, 0x0C, 0x00, 0x01]);
@@ -340,7 +340,7 @@ function e01_001_103_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>There's a piece of paper tape to the wall.\nIt says...\n<CLT>");    // "<CLT 4>壁に紙が貼られている。\n書いてある内容は…\n<CLT>"
+	s.showLine("<CLT 4>There's a piece of paper taped to the wall.\nIt says...\n<CLT>");    // "<CLT 4>壁に紙が貼られている。\n書いてある内容は…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -351,7 +351,7 @@ function e01_001_103_lin()
 	s.op(0x33, [0x06, 0x00, 0x00, 0x1E]);
 	s.setSpeaker("[No Name]");
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>Notice from Principal Monokuma\n<CLT>");    // "<CLT 23>モノクマ学園長からのお知らせ…\n<CLT>"
+	s.showLine("<CLT 23>Notice from Principal Monokuma:\n<CLT>");    // "<CLT 23>モノクマ学園長からのお知らせ…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -359,7 +359,7 @@ function e01_001_103_lin()
 
 	// Line 28: "[No Name]"
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>The room locks are reinforced against lock picking.\n<CLT>");    // "<CLT 23>部屋の鍵には、ピッキング防止加工が施されています。\n<CLT>"
+	s.showLine("<CLT 23>The room locks are reinforced\nagainst lock picking.\n<CLT>");    // "<CLT 23>部屋の鍵には、ピッキング防止加工が施されています。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -375,7 +375,7 @@ function e01_001_103_lin()
 
 	// Line 30: "[No Name]"
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>Even though this room has its own shower room,\nplease note that <CLT><CLT 3>they don't work at night<CLT><CLT 23>.\n<CLT>");    // "<CLT 23>部屋には、シャワールームが完備されていますが、\n<CLT><CLT 3>夜時間は水が出ない<CLT><CLT 23>ので注意してください。\n<CLT>"
+	s.showLine("<CLT 23>Although this room has its own shower room,\nplease note that <CLT><CLT 3>they don't work at night<CLT><CLT 23>.\n<CLT>");    // "<CLT 23>部屋には、シャワールームが完備されていますが、\n<CLT><CLT 3>夜時間は水が出ない<CLT><CLT 23>ので注意してください。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
@@ -427,7 +427,7 @@ function e01_001_103_lin()
 
 	// Line 35: "[No Name]"
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>The sewing sets each have a map of the vital parts\nof the human body to help girls kill in one strike.\n<CLT>");    // "<CLT 23>裁縫セットには人体急所マップも付いているので、\n女子のみなさんは、針で一突きするのが効果的です。\n<CLT>"
+	s.showLine("<CLT 23>The sewing sets each have a map of the vitals\nof the human body to help girls kill in one strike.\n<CLT>");    // "<CLT 23>裁縫セットには人体急所マップも付いているので、\n女子のみなさんは、針で一突きするのが効果的です。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -707,7 +707,7 @@ function e01_001_103_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Anyway...\nlet's explore this room...\n<CLT>");    // "<CLT 4>とりあえず…\nこの部屋の事を調べてみよう…\n<CLT>"
+	s.showLine("<CLT 4>I have to explore this room...\n<CLT>");    // "<CLT 4>とりあえず…\nこの部屋の事を調べてみよう…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -744,7 +744,7 @@ function e01_001_103_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("[No Name]");
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>Students may only sleep within their rooms and\nwill be punished if they purposely sleep elsewhere.\n<CLT>");    // "<CLT 23>就寝は寄宿舎エリアに設けられた個室でのみ可能です。\n他の部屋での故意の就寝は居眠りとみなし罰します。\n<CLT>"
+	s.showLine("<CLT 23>Students may only sleep in their bedrooms.\n<CLT>");    // "<CLT 23>就寝は寄宿舎エリアに設けられた個室でのみ可能です。\n他の部屋での故意の就寝は居眠りとみなし罰します。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();

@@ -353,7 +353,7 @@ function e01_001_007_lin()
 	s.op(0x25, [0x02, 0x00]);
 	s.setSpeaker("[No Name]");
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>The students will live solely within this school.\n<CLT>");    // "<CLT 23>生徒達はこの学園内だけで共同生活を行いましょう。\n共同生活の期限はありません。\n<CLT>"
+	s.showLine("<CLT 23>The students will live solely within this\nschool for an indefinite amount of time.\n<CLT>");    // "<CLT 23>生徒達はこの学園内だけで共同生活を行いましょう。\n共同生活の期限はありません。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -374,7 +374,7 @@ function e01_001_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("[No Name]");
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 3>\"Night\"<CLT><CLT 23> is defined as the time from 10pm to 7am.\nStudents cannot enter some areas during night.\n<CLT>");    // "<CLT 23>夜１０時から朝７時までを<CLT><CLT 3>“夜時間”<CLT><CLT 23>とします。\n夜時間は立ち入り禁止区域があるので注意しましょう。\n<CLT>"
+	s.showLine("<CLT 23>Students may not enter some areas\nduring <CLT><CLT 3>\"night\"<CLT><CLT 23> (10pm to 7am).\n<CLT>");    // "<CLT 23>夜１０時から朝７時までを<CLT><CLT 3>“夜時間”<CLT><CLT 23>とします。\n夜時間は立ち入り禁止区域があるので注意しましょう。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -399,7 +399,7 @@ function e01_001_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("[No Name]");
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>Students may only sleep within their rooms and\nwill be punished if they purposely sleep elsewhere.\n<CLT>");    // "<CLT 23>就寝は寄宿舎エリアに設けられた個室でのみ可能です。\n他の部屋での故意の就寝は居眠りとみなし罰します。\n<CLT>"
+	s.showLine("<CLT 23>Students may only sleep in their bedrooms.\n<CLT>");    // "<CLT 23>就寝は寄宿舎エリアに設けられた個室でのみ可能です。\n他の部屋での故意の就寝は居眠りとみなし罰します。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -420,7 +420,7 @@ function e01_001_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("[No Name]");
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>Students may freely investigate Mount Hope\nAcademy.\n<CLT>");    // "<CLT 23>希望ヶ峰学園について調べるのは自由です。\n特に行動に制限は課せられません。\n<CLT>"
+	s.showLine("<CLT 23>Students may freely investigate\nMount Hope Academy.\n<CLT>");    // "<CLT 23>希望ヶ峰学園について調べるのは自由です。\n特に行動に制限は課せられません。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -441,7 +441,7 @@ function e01_001_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("[No Name]");
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>Physically assaulting Principal Monokuma and\nbreaking security cameras aren't allowed.\n<CLT>");    // "<CLT 23>学園長ことモノクマへの暴力を禁じます。\n監視カメラの破壊を禁じます。\n<CLT>"
+	s.showLine("<CLT 23>Students may neither assult Principal\nMonokuma nor break any security cameras.\n<CLT>");    // "<CLT 23>学園長ことモノクマへの暴力を禁じます。\n監視カメラの破壊を禁じます。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -463,7 +463,7 @@ function e01_001_007_lin()
 	s.setSpeaker("[No Name]");
 	s.op(0x03, [0x17]);
 	// TODO: wording so that it's ambiguous whether or not it's one person or multiple
-	s.showLine("<CLT 23>A student may only \"graduate\" if they kill someone\nand don't get exposed as the killer.\n<CLT>");    // "<CLT 23>仲間の誰かを殺したクロは<CLT><CLT 3>“卒業”<CLT><CLT 23>となりますが、\n自分がクロだと他の生徒に知られてはいけません。\n<CLT>"
+	s.showLine("<CLT 23>Students may \"graduate\" only by killing\nsomeone without getting exposed.\n<CLT>");    // "<CLT 23>仲間の誰かを殺したクロは<CLT><CLT 3>“卒業”<CLT><CLT 23>となりますが、\n自分がクロだと他の生徒に知られてはいけません。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -488,7 +488,7 @@ function e01_001_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("[No Name]");
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>More rules may be created in the future.\n<CLT>");    // "<CLT 23>なお、校則は順次増えていく場合があります。\n<CLT>"
+	s.showLine("<CLT 23>More rules may be added in the future.\n<CLT>");    // "<CLT 23>なお、校則は順次増えていく場合があります。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -654,7 +654,7 @@ function e01_001_007_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("[No Name]");
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>A student may only \"graduate\" if they kill someone\nand don't get exposed as the killer.\n<CLT>");    // "<CLT 23>仲間の誰かを殺したクロは<CLT><CLT 3>“卒業”<CLT><CLT 23>となりますが、\n自分がクロだと他の生徒に知られてはいけません。\n<CLT>"
+	s.showLine("<CLT 23>Students may \"graduate\" only by killing\nsomeone without getting exposed.\n<CLT>");    // "<CLT 23>仲間の誰かを殺したクロは<CLT><CLT 3>“卒業”<CLT><CLT 23>となりますが、\n自分がクロだと他の生徒に知られてはいけません。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -676,7 +676,7 @@ function e01_001_007_lin()
 	s.op(0x25, [0x02, 0x01]);
 	s.op(0x25, [0x00, 0x00]);
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("You're talking about the <CLT 3>\"don't get exposed\"<CLT> part,\nright?\n");    // "後半の<CLT 3>『他の生徒に知られてはならない』<CLT>の\n部分だよね？\n"
+	s.showLine("You're talking about the <CLT 3>\"without getting\nexposed\"<CLT> part, right?\n");    // "後半の<CLT 3>『他の生徒に知られてはならない』<CLT>の\n部分だよね？\n"
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
 	s.waitFrames(2);
@@ -693,7 +693,7 @@ function e01_001_007_lin()
 	s.showSprite(0, "Byakuya Togami", 0, 1, 2);
 	s.op(0x25, [0x01, 0x01]);
 	s.playVoice("Byakuya Togami", 99, 4);
-	s.showLine("...It means that you need to kill without getting\nfound out in order to graduate.\n");    // "…卒業したいなら、\n誰にも知られないように殺せという事だろう。\n"
+	s.showLine("...It means that you need to kill without\ngetting found out in order to graduate.\n");    // "…卒業したいなら、\n誰にも知られないように殺せという事だろう。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -778,7 +778,7 @@ function e01_001_007_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("We have a mountain of things\nthat we must find out!\n");    // "僕らには、知らなければならない事が山積みだッ！\n"
+	s.showLine("We have a mountain of things\nthat we must know!\n");    // "僕らには、知らなければならない事が山積みだッ！\n"
 	s.waitFrames(1);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -819,7 +819,7 @@ function e01_001_007_lin()
 	// Line 70: "Byakuya Togami"
 	s.showSprite(1, "Byakuya Togami", 6, 1, 2);
 	s.playVoice("Byakuya Togami", 99, 4);
-	s.showLine("Someone may already be planning to kill...\n");    // "すでに他人を殺そうと目論んでいるヤツが、\nこの中にいるかもしれない…\n"
+	s.showLine("Someone may already be hatching a plan...\n");    // "すでに他人を殺そうと目論んでいるヤツが、\nこの中にいるかもしれない…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1047,7 +1047,7 @@ function e01_001_007_lin()
 
 	// Line 94: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>Without any warning or lead-up,\nI was suddenly punched into the air...\n");    // "<CLT 4>なんの前ふりも伏線もなく、\n極めて唐突で突発的に…\n"
+	s.showLine("<CLT 4>Without any warning or build-up,\nI was suddenly punched into the air...\n");    // "<CLT 4>なんの前ふりも伏線もなく、\n極めて唐突で突発的に…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -1088,7 +1088,7 @@ function e01_001_007_lin()
 
 	// Line 99: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>It makes sense that this turn of events would\ndefy common sense too...\n<CLT>");    // "<CLT 4>当然、こんな非常識な展開もあり得る。\n<CLT>"
+	s.showLine("<CLT 4>It makes sense that this turn of events\nwould defy common sense too...\n<CLT>");    // "<CLT 4>当然、こんな非常識な展開もあり得る。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();

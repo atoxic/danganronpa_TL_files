@@ -2,7 +2,7 @@ function _20_handbookdesc_pak()
 {
 	var p = new BinPAK(2, true, false);
 	p.add("View the map of Mount Hope Academy\nand warp to specific places.");
-	p.add("Check the evidence and testimony.");
+	p.add("Check the evidence and testimony you've collected.");
 	p.add("Check your posessions.");
 	p.add("View information on the students of Mount Hope Academy.");
 	p.add("Read the rules that govern Mount Hope Academy.");

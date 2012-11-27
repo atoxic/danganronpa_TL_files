@@ -2,10 +2,10 @@ function _19_handbookmenu_pak()
 {
 	var p = new BinPAK(2, true, false);
 	p.add("Map");
-	p.add("Ammunition");
+	p.add("Ammo");
 	p.add("Presents");
 	p.add("Contacts");
-	p.add("School Rules");
+	p.add("Rules");
 	p.add("System");
 	p.add("Save");
 	p.add("Load");
