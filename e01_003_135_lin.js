@@ -1,3 +1,6 @@
+loadScript("common.js");
+loadScript("chapter01_common.js");
+
 function e01_003_135_lin()
 {
 	var s = new LINScript();
@@ -17,7 +20,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x11, 0x01]);
 	s.op(0x34, [0x01, 0xF4]);
 	s.op(0x2B, [0x00]);
-	s.showLine("【確認したい事】\n");    // "【確認したい事】\n"
+	s.showLine("[something that I wanted to check]\n");    // "【確認したい事】\n"
 	s.waitFrames(1);
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
@@ -379,12 +382,12 @@ function e01_003_135_lin()
 	s.op(0x25, [0x01, 0x00]);
 	s.showSprite(0, "Sayaka Maizono", 5, 4, 2);
 	s.op(0x2B, [0x01]);
-	s.showLine("【自己紹介の時の続き】\n");    // "【自己紹介の時の続き】\n"
+	s.showLine("[When we introduced ourselves to each other]\n");    // "【自己紹介の時の続き】\n"
 	s.waitFrames(1);
 	s.op(0x25, [0x00, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("自己紹介の時の続き…？\n");    // "自己紹介の時の続き…？\n"
+	s.showLine("When we introduced ourselves...?\n");    // "自己紹介の時の続き…？\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -392,7 +395,7 @@ function e01_003_135_lin()
 	// Line 46: "Sayaka Maizono"
 	s.showSprite(0, "Sayaka Maizono", 1, 1, 2);
 	s.playVoice("Sayaka Maizono", 99, 6);
-	s.showLine("さっきは、途中で終わっちゃいましたけど、\n苗木君に聞いておきたい事があるんです。\n");    // "さっきは、途中で終わっちゃいましたけど、\n苗木君に聞いておきたい事があるんです。\n"
+	s.showLine("We got cut off before I could\nget the chance to ask you about something.\n");    // "さっきは、途中で終わっちゃいましたけど、\n苗木君に聞いておきたい事があるんです。\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -401,7 +404,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>舞園さんがボクに聞きたい事なんて…\n<CLT>");    // "<CLT 4>舞園さんがボクに聞きたい事なんて…\n<CLT>"
+	s.showLine("<CLT 4>Maizono wants to ask me about something...\n<CLT>");    // "<CLT 4>舞園さんがボクに聞きたい事なんて…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -409,7 +412,7 @@ function e01_003_135_lin()
 
 	// Line 48: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>…なんだろう。気になるな。\n<CLT>");    // "<CLT 4>…なんだろう。気になるな。\n<CLT>"
+	s.showLine("<CLT 4>...What could it be?\nI'm curious.\n<CLT>");    // "<CLT 4>…なんだろう。気になるな。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -419,7 +422,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x01, 0x00]);
 	s.showSprite(0, "Sayaka Maizono", 1, 4, 2);
 	s.op(0x2B, [0x02]);
-	s.showLine("【紫色の言葉】\n");    // "【紫色の言葉】\n"
+	s.showLine("[purple text]\n");    // "【紫色の言葉】\n"
 	s.waitFrames(1);
 	s.op(0x25, [0x02, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
@@ -445,7 +448,7 @@ function e01_003_135_lin()
 
 	// Line 53: "[No Name]"
 	s.op(0x2B, [0x03]);
-	s.showLine("【学園生活】\n");    // "【学園生活】\n"
+	s.showLine("[school life]\n");    // "【学園生活】\n"
 	s.waitFrames(1);
 	s.op(0x25, [0x02, 0x00]);
 	s.op(0x25, [0x01, 0x01]);
@@ -588,7 +591,7 @@ function e01_003_135_lin()
 
 	// Line 67: "[No Name]"
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>I'm here to explain the <CLT><CLT 3>\"Reaction Talk\"<CLT><CLT 23> mechanism.\n<CLT>");    // "<CLT 23>今回は<CLT><CLT 3>“リアクショントーク”<CLT><CLT 23>について\nご説明させて頂きます。\n<CLT>"
+	s.showLine("<CLT 23>I'm here to explain the <CLT><CLT 3>\"Reaction Talk\"<CLT><CLT 23>\nmechanism.\n<CLT>");    // "<CLT 23>今回は<CLT><CLT 3>“リアクショントーク”<CLT><CLT 23>について\nご説明させて頂きます。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -608,7 +611,7 @@ function e01_003_135_lin()
 
 	// Line 69: "[No Name]"
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>話しかけた際に、<CLT><CLT 1>【紫色の言葉】<CLT><CLT 23>が出てきます。\nこんな感じでございます。\n<CLT>");    // "<CLT 23>話しかけた際に、<CLT><CLT 1>【紫色の言葉】<CLT><CLT 23>が出てきます。\nこんな感じでございます。\n<CLT>"
+	s.showLine("<CLT 23>While you talk to her, you may see\nsome <CLT><CLT 1>[purple text]<CLT><CLT 23> like this.\n<CLT>");    // "<CLT 23>話しかけた際に、<CLT><CLT 1>【紫色の言葉】<CLT><CLT 23>が出てきます。\nこんな感じでございます。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x01]);
 	s.op(0x03, [0x00]);
@@ -622,7 +625,7 @@ function e01_003_135_lin()
 	s.op(0x03, [0x17]);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x01]);
-	s.showLine("<CLT 23><CLT><CLT 1>【紫色の言葉】<CLT><CLT 23>が表示されている時に、△ボタンを\nお押し頂くと、リアクションモードとなります。\n<CLT>");    // "<CLT 23><CLT><CLT 1>【紫色の言葉】<CLT><CLT 23>が表示されている時に、△ボタンを\nお押し頂くと、リアクションモードとなります。\n<CLT>"
+	s.showLine("<CLT 23>When you see <CLT><CLT 1>[purple text]<CLT><CLT 23>, you can press\nthe △ button to enter Reaction Mode.\n<CLT>");    // "<CLT 23><CLT><CLT 1>【紫色の言葉】<CLT><CLT 23>が表示されている時に、△ボタンを\nお押し頂くと、リアクションモードとなります。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x17]);
 	s.waitFrames(2);
@@ -634,7 +637,7 @@ function e01_003_135_lin()
 	s.op(0x03, [0x17]);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
-	s.showLine("<CLT 23><CLT><CLT 3>方向キー<CLT><CLT 23>で、言葉を選択し、\n<CLT><CLT 3>○ボタン<CLT><CLT 23>を押して頂く事で…\n<CLT>");    // "<CLT 23><CLT><CLT 3>方向キー<CLT><CLT 23>で、言葉を選択し、\n<CLT><CLT 3>○ボタン<CLT><CLT 23>を押して頂く事で…\n<CLT>"
+	s.showLine("<CLT 23>By using <CLT><CLT 3>the D-pad<CLT><CLT 23> to choose words,\nthen pressing <CLT><CLT 3>the " + config.getConfirmButton() + " button<CLT><CLT 23>...\n<CLT>");    // "<CLT 23><CLT><CLT 3>方向キー<CLT><CLT 23>で、言葉を選択し、\n<CLT><CLT 3>○ボタン<CLT><CLT 23>を押して頂く事で…\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x17]);
 	s.waitFrames(1);
@@ -649,7 +652,7 @@ function e01_003_135_lin()
 
 	// Line 72: "[No Name]"
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>その言葉に対し、さらに深く内容を<CLT><CLT 3>聞き返す<CLT><CLT 23>事が\n可能でございます。\n<CLT>");    // "<CLT 23>その言葉に対し、さらに深く内容を<CLT><CLT 3>聞き返す<CLT><CLT 23>事が\n可能でございます。\n<CLT>"
+	s.showLine("<CLT 23>you can <CLT><CLT 3>ask the speaker<CLT><CLT 23>\nto elaborate on those words.\n<CLT>");    // "<CLT 23>その言葉に対し、さらに深く内容を<CLT><CLT 3>聞き返す<CLT><CLT 23>事が\n可能でございます。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -661,7 +664,7 @@ function e01_003_135_lin()
 
 	// Line 73: "[No Name]"
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>お相手様の発言に対し聞き返す…\nこれが<CLT><CLT 3>“リアクショントーク”<CLT><CLT 23>でございます。\n<CLT>");    // "<CLT 23>お相手様の発言に対し聞き返す…\nこれが<CLT><CLT 3>“リアクショントーク”<CLT><CLT 23>でございます。\n<CLT>"
+	s.showLine("<CLT 23>Inquiring into others' words...\nThat's <CLT><CLT 3>\"Reaction Talk.\"<CLT><CLT 23>\n<CLT>");    // "<CLT 23>お相手様の発言に対し聞き返す…\nこれが<CLT><CLT 3>“リアクショントーク”<CLT><CLT 23>でございます。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
@@ -674,7 +677,7 @@ function e01_003_135_lin()
 
 	// Line 74: "[No Name]"
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>では、有意義な<CLT><CLT 1>【学園生活】<CLT><CLT 23>をお楽しみください。\n<CLT>");    // "<CLT 23>では、有意義な<CLT><CLT 1>【学園生活】<CLT><CLT 23>をお楽しみください。\n<CLT>"
+	s.showLine("<CLT 23>Please enjoy your eventful <CLT><CLT 1>[school life]<CLT><CLT 23>.\n<CLT>");    // "<CLT 23>では、有意義な<CLT><CLT 1>【学園生活】<CLT><CLT 23>をお楽しみください。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x01]);
 	s.op(0x03, [0x00]);
@@ -699,14 +702,14 @@ function e01_003_135_lin()
 	s.op(0x34, [0x01, 0xF8]);
 	s.showSprite(0, "Sayaka Maizono", 0, 1, 2);
 	s.playVoice("Sayaka Maizono", 99, 2);
-	s.showLine("ところで、苗木君…\n");    // "ところで、苗木君…\n"
+	s.showLine("By the way, Naegi...\n");    // "ところで、苗木君…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
 
 	// Line 76: "Makoto Naegi"
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("えっ、何…？\n");    // "えっ、何…？\n"
+	s.showLine("Huh?\nWhat is it...?\n");    // "えっ、何…？\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -714,14 +717,14 @@ function e01_003_135_lin()
 	// Line 77: "Sayaka Maizono"
 	s.showSprite(0, "Sayaka Maizono", 3, 1, 2);
 	s.playVoice("Sayaka Maizono", 99, 3);
-	s.showLine("えっと、あのですね…\n");    // "えっと、あのですね…\n"
+	s.showLine("Well, um...\n");    // "えっと、あのですね…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
 
 	// Line 78: "Sayaka Maizono"
 	s.op(0x03, [0x01]);
-	s.showLine("<CLT 1>【自己紹介の時の続き】<CLT>になっちゃうんですけど、\n苗木君に<CLT 1>【確認したい事】<CLT>があるんです。\n");    // "<CLT 1>【自己紹介の時の続き】<CLT>になっちゃうんですけど、\n苗木君に<CLT 1>【確認したい事】<CLT>があるんです。\n"
+	s.showLine("<CLT 1>[When we introduced ourselves to each other]<CLT>,\nthere was <CLT 1>[something that I wanted to check]<CLT>.\n");    // "<CLT 1>【自己紹介の時の続き】<CLT>になっちゃうんですけど、\n苗木君に<CLT 1>【確認したい事】<CLT>があるんです。\n"
 	s.op(0x03, [0x00]);
 	s.waitFrames(1);
 	s.op(0x03, [0x01]);
@@ -734,7 +737,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>…確認したい事？\n<CLT>");    // "<CLT 4>…確認したい事？\n<CLT>"
+	s.showLine("<CLT 4>...Something that she wanted to check?\n<CLT>");    // "<CLT 4>…確認したい事？\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -742,7 +745,7 @@ function e01_003_135_lin()
 
 	// Line 80: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>なんだろう。話を聞いてみるべきかな…\n<CLT>");    // "<CLT 4>なんだろう。話を聞いてみるべきかな…\n<CLT>"
+	s.showLine("<CLT 4>What could it be?\nI should ask her about it...\n<CLT>");    // "<CLT 4>なんだろう。話を聞いてみるべきかな…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -755,7 +758,7 @@ function e01_003_135_lin()
 	s.op(0x2A, [0x01, 0xF8]);
 	s.showSprite(0, "Sayaka Maizono", 5, 1, 2);
 	s.playVoice("Sayaka Maizono", 99, 26);
-	s.showLine("今から、私は“超高校級の助手”です！\n一緒に頑張って、ここから脱出しましょうね！\n");    // "今から、私は“超高校級の助手”です！\n一緒に頑張って、ここから脱出しましょうね！\n"
+	s.showLine("From now on, I'll be your \"super assistant\"!\nI'll do my best to help you get us out of here!\n");    // "今から、私は“超高校級の助手”です！\n一緒に頑張って、ここから脱出しましょうね！\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -771,7 +774,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>えっと、今の時刻は…\n<CLT>");    // "<CLT 4>えっと、今の時刻は…\n<CLT>"
+	s.showLine("<CLT 4>Um, it's now...\n<CLT>");    // "<CLT 4>えっと、今の時刻は…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -782,7 +785,7 @@ function e01_003_135_lin()
 	s.playSoundEffectA(27, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
 	s.op(0x25, [0x0D, 0x01]);
-	s.showLine("えっ！？　７時…！？　\nそれって夕方の？\n");    // "えっ！？　７時…！？　\nそれって夕方の？\n"
+	s.showLine("Huh!? Seven o'clock...!?\nIt's night already?\n");    // "えっ！？　７時…！？　\nそれって夕方の？\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -800,7 +803,7 @@ function e01_003_135_lin()
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.showSprite(0, "Sayaka Maizono", 9, 1, 2);
 	s.playVoice("Sayaka Maizono", 99, 6);
-	s.showLine("苗木君…ずいぶん長い時間、\n気を失ってたんですよ…\n");    // "苗木君…ずいぶん長い時間、\n気を失ってたんですよ…\n"
+	s.showLine("Naegi...\nyou were out for a long time...\n");    // "苗木君…ずいぶん長い時間、\n気を失ってたんですよ…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -809,7 +812,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>…そうだったんだ。\n<CLT>");    // "<CLT 4>…そうだったんだ。\n<CLT>"
+	s.showLine("<CLT 4>...That's right.\n<CLT>");    // "<CLT 4>…そうだったんだ。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -817,7 +820,7 @@ function e01_003_135_lin()
 
 	// Line 86: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>窓がないせいで、\n時間の感覚がまるで掴めなかった。\n<CLT>");    // "<CLT 4>窓がないせいで、\n時間の感覚がまるで掴めなかった。\n<CLT>"
+	s.showLine("<CLT 4>Without any open windows,\nI can't sense the time at all.\n<CLT>");    // "<CLT 4>窓がないせいで、\n時間の感覚がまるで掴めなかった。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -825,7 +828,7 @@ function e01_003_135_lin()
 
 	// Line 87: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>こんな環境にずっといたら…気が狂いそうだな。\n<CLT>");    // "<CLT 4>こんな環境にずっといたら…気が狂いそうだな。\n<CLT>"
+	s.showLine("<CLT 4>I'll go crazy if I stay here for too long.\n<CLT>");    // "<CLT 4>こんな環境にずっといたら…気が狂いそうだな。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -847,7 +850,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>モノクマが写るモニター…\n今は校章が浮かんでいるだけだけど…\n<CLT>");    // "<CLT 4>モノクマが写るモニター…\n今は校章が浮かんでいるだけだけど…\n<CLT>"
+	s.showLine("<CLT 4>A monitor that Monokuma uses for broadcasts...\nonly shows the school emblem right now...\n<CLT>");    // "<CLT 4>モノクマが写るモニター…\n今は校章が浮かんでいるだけだけど…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -855,7 +858,7 @@ function e01_003_135_lin()
 
 	// Line 89: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>でも、またいつモノクマが出てくるかと思うと…\n<CLT>");    // "<CLT 4>でも、またいつモノクマが出てくるかと思うと…\n<CLT>"
+	s.showLine("<CLT 4>However, when I think about how Monokuma will\neventually show up on it again...\n<CLT>");    // "<CLT 4>でも、またいつモノクマが出てくるかと思うと…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -864,7 +867,7 @@ function e01_003_135_lin()
 	// Line 90: "Makoto Naegi"
 	s.op(0x25, [0x00, 0x00]);
 	s.setSpeaker("Makoto Naegi");
-	s.showLine("はあ……\n");    // "はあ……\n"
+	s.showLine("Sigh...\n");    // "はあ……\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -877,7 +880,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>監視カメラ…\n<CLT>");    // "<CLT 4>監視カメラ…\n<CLT>"
+	s.showLine(lines_camera[0]);    // "<CLT 4>監視カメラ…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -885,7 +888,7 @@ function e01_003_135_lin()
 
 	// Line 92: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>こんなカメラで見られていると思うと、\n気分が悪いけど…\n<CLT>");    // "<CLT 4>こんなカメラで見られていると思うと、\n気分が悪いけど…\n<CLT>"
+	s.showLine(lines_camera[1]);    // "<CLT 4>こんなカメラで見られていると思うと、\n気分が悪いけど…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -893,7 +896,7 @@ function e01_003_135_lin()
 
 	// Line 93: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>校則によると、監視カメラを壊したらマズイんだよな。\nムカツクけど、放っておくしかない…\n<CLT>");    // "<CLT 4>校則によると、監視カメラを壊したらマズイんだよな。\nムカツクけど、放っておくしかない…\n<CLT>"
+	s.showLine(lines_camera[2]);    // "<CLT 4>校則によると、監視カメラを壊したらマズイんだよな。\nムカツクけど、放っておくしかない…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -908,7 +911,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>うろちょろしないで、\n大人しく、ここで待っていよう…\n<CLT>");    // "<CLT 4>うろちょろしないで、\n大人しく、ここで待っていよう…\n<CLT>"
+	s.showLine("<CLT 4>I can't wander off...\nI gotta stay here...\n<CLT>");    // "<CLT 4>うろちょろしないで、\n大人しく、ここで待っていよう…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -921,7 +924,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>今、ここから出てもしかたない。\nみんなを待たないと。\n<CLT>");    // "<CLT 4>今、ここから出てもしかたない。\nみんなを待たないと。\n<CLT>"
+	s.showLine("<CLT 4>It's not like I can do anything out there,\nso I gotta wait for everyone.\n<CLT>");    // "<CLT 4>今、ここから出てもしかたない。\nみんなを待たないと。\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -935,7 +938,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x00, 0x00]);
 	s.showSprite(0, "Sayaka Maizono", 16, 1, 2);
 	s.playVoice("Sayaka Maizono", 99, 2);
-	s.showLine("それにしても、みんな遅いですね。\nそろそろ来てもいいと思うんですけど…\n");    // "それにしても、みんな遅いですね。\nそろそろ来てもいいと思うんですけど…\n"
+	s.showLine("Everyone sure is late.\nThey should be coming any second now...\n");    // "それにしても、みんな遅いですね。\nそろそろ来てもいいと思うんですけど…\n"
 	s.waitFrames(2);
 	s.waitForInput();
 
@@ -944,7 +947,7 @@ function e01_003_135_lin()
 	s.op(0x25, [0x00, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>と言った矢先だった。\nタイミングよく食堂のドアが開け放たれ…\n<CLT>");    // "<CLT 4>と言った矢先だった。\nタイミングよく食堂のドアが開け放たれ…\n<CLT>"
+	s.showLine("<CLT 4>Right after she said that,\nthe doors opened...\n<CLT>");    // "<CLT 4>と言った矢先だった。\nタイミングよく食堂のドアが開け放たれ…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -960,7 +963,7 @@ function e01_003_135_lin()
 	s.playVoice("Kiyotaka Ishimaru", 99, 42);
 	s.playSoundEffectA(26, 100);
 	s.op(0x1F, [0xFF, 0xFF, 0xFF, 0x04, 0x00, 0x1E, 0xFF]);
-	s.showLine("苗木くんと舞園くん！　君達が一番乗りだったか！\n");    // "苗木くんと舞園くん！　君達が一番乗りだったか！\n"
+	s.showLine("Naegi and Maizono!\nSo you two were here first!?\n");    // "苗木くんと舞園くん！　君達が一番乗りだったか！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -968,7 +971,7 @@ function e01_003_135_lin()
 	// Line 99: "Kiyotaka Ishimaru"
 	s.showSprite(1, "Kiyotaka Ishimaru", 17, 1, 1);
 	s.playVoice("Kiyotaka Ishimaru", 99, 52);
-	s.showLine("残念だ…僕が最初だと思ったのだが…\n");    // "残念だ…僕が最初だと思ったのだが…\n"
+	s.showLine("That's too bad...\nI thought that I would be first...\n");    // "残念だ…僕が最初だと思ったのだが…\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -976,7 +979,7 @@ function e01_003_135_lin()
 	// Line 100: "Kiyotaka Ishimaru"
 	s.showSprite(1, "Kiyotaka Ishimaru", 3, 1, 1);
 	s.playVoice("Kiyotaka Ishimaru", 99, 5);
-	s.showLine("まだ…気合が足りんという事か…！\n");    // "まだ…気合が足りんという事か…！\n"
+	s.showLine("That means...\nthat I didn't put in enough effort...!\n");    // "まだ…気合が足りんという事か…！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -987,7 +990,7 @@ function e01_003_135_lin()
 	s.playSoundEffectA(25, 100);
 	s.op(0x25, [0x0D, 0x01]);
 	s.op(0x20, [0x04, 0x00, 0x1E, 0x04, 0x02]);
-	s.showLine("だが諦めんぞ。次は必ずや勝ってみせるッ！！\n正義は必ず勝つのだッ！！\n");    // "だが諦めんぞ。次は必ずや勝ってみせるッ！！\n正義は必ず勝つのだッ！！\n"
+	s.showLine("But I'm not giving up. I'll win next time!\nJustice will always win in the end!\n");    // "だが諦めんぞ。次は必ずや勝ってみせるッ！！\n正義は必ず勝つのだッ！！\n"
 	s.waitFrames(2);
 	s.op(0x33, [0x06, 0x00, 0x00, 0x0A]);
 	s.op(0x25, [0x0D, 0x00]);
@@ -997,7 +1000,7 @@ function e01_003_135_lin()
 	// Line 102: "Sayaka Maizono"
 	s.showSprite(0, "Sayaka Maizono", 5, 1, 2);
 	s.playVoice("Sayaka Maizono", 99, 12);
-	s.showLine("もうっ、大げさですって！\n");    // "もうっ、大げさですって！\n"
+	s.showLine("It's not that big of a deal!\n");    // "もうっ、大げさですって！\n"
 	s.waitFrames(1);
 	s.waitForInput();
 
@@ -1018,23 +1021,25 @@ function e01_003_135_lin()
 	s.op(0x25, [0x01, 0x01]);
 	s.setSpeaker("Makoto Naegi");
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>それから間もなく…\n<CLT>");    // "<CLT 4>それから間もなく…\n<CLT>"
+	s.showLine("<CLT 4>Soon after that,\neveryone else came to the cafeteria.\n<CLT>");    // "<CLT 4>それから間もなく…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
 
 
+	/*
 	// Line 104: "Makoto Naegi"
 	s.op(0x03, [0x04]);
 	s.showLine("<CLT 4>石丸クンに続くようにして、\n他のみんなも次々と食堂に集まってきて…\n<CLT>");    // "<CLT 4>石丸クンに続くようにして、\n他のみんなも次々と食堂に集まってきて…\n<CLT>"
 	s.waitFrames(2);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
+	// */
 
 
 	// Line 105: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>そして、数分後には…\n<CLT>");    // "<CLT 4>そして、数分後には…\n<CLT>"
+	s.showLine("<CLT 4>Then, a few minutes later...\n<CLT>");    // "<CLT 4>そして、数分後には…\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();
@@ -1042,7 +1047,7 @@ function e01_003_135_lin()
 
 	// Line 106: "Makoto Naegi"
 	s.op(0x03, [0x04]);
-	s.showLine("<CLT 4>…ようやく全員が揃った。\n<CLT>");    // "<CLT 4>…ようやく全員が揃った。\n<CLT>"
+	s.showLine("<CLT 4>...everyone was here.\n<CLT>");    // "<CLT 4>…ようやく全員が揃った。\n<CLT>"
 	s.waitFrames(1);
 	s.op(0x03, [0x00]);
 	s.waitForInput();

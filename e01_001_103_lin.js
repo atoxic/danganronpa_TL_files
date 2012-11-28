@@ -1,4 +1,5 @@
 loadScript("common.js");
+loadScript("chapter01_common.js");
 
 function e01_001_103_lin()
 {
@@ -95,7 +96,7 @@ function e01_001_103_lin()
 	s.op(0x03, [0x17]);
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
-	s.showLine("<CLT 23>You can turn on the <CLT><CLT 3>tablet menu<CLT><CLT 23>\nby pressing the <CLT><CLT 3>□ button<CLT><CLT 23>.\n<CLT>");    // "<CLT 23><CLT><CLT 3>□ボタン<CLT><CLT 23>で、<CLT><CLT 3>手帳メニュー<CLT><CLT 23>を開く事が\n可能でございます。\n<CLT>"
+	s.showLine("<CLT 23>You can turn on the <CLT><CLT 3>tablet menu<CLT><CLT 23>\nby pressing <CLT><CLT 3>the □ button<CLT><CLT 23>.\n<CLT>");    // "<CLT 23><CLT><CLT 3>□ボタン<CLT><CLT 23>で、<CLT><CLT 3>手帳メニュー<CLT><CLT 23>を開く事が\n可能でございます。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x17]);
 	s.op(0x03, [0x00]);
@@ -155,7 +156,7 @@ function e01_001_103_lin()
 
 	// Line 12: "[No Name]"
 	s.op(0x03, [0x17]);
-	s.showLine("<CLT 23>You can also view the <CLT><CLT 3>\"Log\"<CLT><CLT 23>\nusing the <CLT><CLT 3>Select button<CLT><CLT 23>.\n<CLT>");    // "<CLT 23>また、<CLT><CLT 3>ＳＥＬＥＣＴボタン<CLT><CLT 23>で、<CLT><CLT 3>“バックログ”<CLT><CLT 23>を\nご覧頂けます。\n<CLT>"
+	s.showLine("<CLT 23>You can also view the <CLT><CLT 3>\"Log\"<CLT><CLT 23>\nusing <CLT><CLT 3>the Select button<CLT><CLT 23>.\n<CLT>");    // "<CLT 23>また、<CLT><CLT 3>ＳＥＬＥＣＴボタン<CLT><CLT 23>で、<CLT><CLT 3>“バックログ”<CLT><CLT 23>を\nご覧頂けます。\n<CLT>"
 	s.op(0x03, [0x00]);
 	s.op(0x03, [0x03]);
 	s.op(0x03, [0x00]);
@@ -500,9 +501,6 @@ function e01_001_103_lin()
 
 
 	// Line 42: "Makoto Naegi"
-	var lines_camera = ["<CLT 4>A security camera...\n<CLT>",
-						"<CLT 4>I feel sick when I think about\nhow I'm being watched through this camera...\n<CLT>",
-						"<CLT 4>However, it's against the rules to break it...\nso I gotta leave it be, as frustrating as that is...\n<CLT>"];
 	s.op(0x25, [0x01, 0x00]);
 	s.op(0x29, [0x15]);
 	s.op(0x25, [0x0F, 0x00]);
